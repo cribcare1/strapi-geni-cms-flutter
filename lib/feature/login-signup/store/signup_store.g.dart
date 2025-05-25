@@ -1,0 +1,203 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'signup_store.dart';
+
+// **************************************************************************
+// StoreGenerator
+// **************************************************************************
+
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
+
+mixin _$SignupStore on _SignupStoreBase, Store {
+  late final _$isLoadingAtom =
+      Atom(name: '_SignupStoreBase.isLoading', context: context);
+
+  @override
+  bool get isLoading {
+    _$isLoadingAtom.reportRead();
+    return super.isLoading;
+  }
+
+  @override
+  set isLoading(bool value) {
+    _$isLoadingAtom.reportWrite(value, super.isLoading, () {
+      super.isLoading = value;
+    });
+  }
+
+  late final _$firstNameAtom =
+      Atom(name: '_SignupStoreBase.firstName', context: context);
+
+  @override
+  String get firstName {
+    _$firstNameAtom.reportRead();
+    return super.firstName;
+  }
+
+  @override
+  set firstName(String value) {
+    _$firstNameAtom.reportWrite(value, super.firstName, () {
+      super.firstName = value;
+    });
+  }
+
+  late final _$lastNameAtom =
+      Atom(name: '_SignupStoreBase.lastName', context: context);
+
+  @override
+  String get lastName {
+    _$lastNameAtom.reportRead();
+    return super.lastName;
+  }
+
+  @override
+  set lastName(String value) {
+    _$lastNameAtom.reportWrite(value, super.lastName, () {
+      super.lastName = value;
+    });
+  }
+
+  late final _$dobAtom = Atom(name: '_SignupStoreBase.dob', context: context);
+
+  @override
+  String get dob {
+    _$dobAtom.reportRead();
+    return super.dob;
+  }
+
+  @override
+  set dob(String value) {
+    _$dobAtom.reportWrite(value, super.dob, () {
+      super.dob = value;
+    });
+  }
+
+  late final _$emailAtom =
+      Atom(name: '_SignupStoreBase.email', context: context);
+
+  @override
+  String get email {
+    _$emailAtom.reportRead();
+    return super.email;
+  }
+
+  @override
+  set email(String value) {
+    _$emailAtom.reportWrite(value, super.email, () {
+      super.email = value;
+    });
+  }
+
+  late final _$phoneNumberAtom =
+      Atom(name: '_SignupStoreBase.phoneNumber', context: context);
+
+  @override
+  String get phoneNumber {
+    _$phoneNumberAtom.reportRead();
+    return super.phoneNumber;
+  }
+
+  @override
+  set phoneNumber(String value) {
+    _$phoneNumberAtom.reportWrite(value, super.phoneNumber, () {
+      super.phoneNumber = value;
+    });
+  }
+
+  late final _$authFailureAtom =
+      Atom(name: '_SignupStoreBase.authFailure', context: context);
+
+  @override
+  Either<AuthFailure, void>? get authFailure {
+    _$authFailureAtom.reportRead();
+    return super.authFailure;
+  }
+
+  @override
+  set authFailure(Either<AuthFailure, void>? value) {
+    _$authFailureAtom.reportWrite(value, super.authFailure, () {
+      super.authFailure = value;
+    });
+  }
+
+  late final _$selectCountryDialCodeAtom =
+      Atom(name: '_SignupStoreBase.selectCountryDialCode', context: context);
+
+  @override
+  String? get selectCountryDialCode {
+    _$selectCountryDialCodeAtom.reportRead();
+    return super.selectCountryDialCode;
+  }
+
+  @override
+  set selectCountryDialCode(String? value) {
+    _$selectCountryDialCodeAtom.reportWrite(value, super.selectCountryDialCode,
+        () {
+      super.selectCountryDialCode = value;
+    });
+  }
+
+  late final _$selectCountryCodeAtom =
+      Atom(name: '_SignupStoreBase.selectCountryCode', context: context);
+
+  @override
+  String? get selectCountryCode {
+    _$selectCountryCodeAtom.reportRead();
+    return super.selectCountryCode;
+  }
+
+  @override
+  set selectCountryCode(String? value) {
+    _$selectCountryCodeAtom.reportWrite(value, super.selectCountryCode, () {
+      super.selectCountryCode = value;
+    });
+  }
+
+  late final _$selectCountryFlagEmojiAtom =
+      Atom(name: '_SignupStoreBase.selectCountryFlagEmoji', context: context);
+
+  @override
+  String? get selectCountryFlagEmoji {
+    _$selectCountryFlagEmojiAtom.reportRead();
+    return super.selectCountryFlagEmoji;
+  }
+
+  @override
+  set selectCountryFlagEmoji(String? value) {
+    _$selectCountryFlagEmojiAtom
+        .reportWrite(value, super.selectCountryFlagEmoji, () {
+      super.selectCountryFlagEmoji = value;
+    });
+  }
+
+  late final _$_SignupStoreBaseActionController =
+      ActionController(name: '_SignupStoreBase', context: context);
+
+  @override
+  void signup(String firstName, String lastName, String dob, String email,
+      String phoneNumber) {
+    final _$actionInfo = _$_SignupStoreBaseActionController.startAction(
+        name: '_SignupStoreBase.signup');
+    try {
+      return super.signup(firstName, lastName, dob, email, phoneNumber);
+    } finally {
+      _$_SignupStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  String toString() {
+    return '''
+isLoading: ${isLoading},
+firstName: ${firstName},
+lastName: ${lastName},
+dob: ${dob},
+email: ${email},
+phoneNumber: ${phoneNumber},
+authFailure: ${authFailure},
+selectCountryDialCode: ${selectCountryDialCode},
+selectCountryCode: ${selectCountryCode},
+selectCountryFlagEmoji: ${selectCountryFlagEmoji}
+    ''';
+  }
+}

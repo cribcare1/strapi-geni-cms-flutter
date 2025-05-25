@@ -1,0 +1,88 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'notification_model.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$NotificationModelImpl _$$NotificationModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$NotificationModelImpl(
+      data: (json['data'] as List<dynamic>)
+          .map((e) => AppNotifications.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$NotificationModelImplToJson(
+        _$NotificationModelImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data,
+    };
+
+_$AppNotificationsImpl _$$AppNotificationsImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AppNotificationsImpl(
+      id: (json['id'] as num).toInt(),
+      notificationMetaData: NotificationMetaData.fromJson(
+          json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$AppNotificationsImplToJson(
+        _$AppNotificationsImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'attributes': instance.notificationMetaData,
+    };
+
+_$NotificationMetaDataImpl _$$NotificationMetaDataImplFromJson(
+        Map<String, dynamic> json) =>
+    _$NotificationMetaDataImpl(
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      title: json['title'] as String,
+      message: json['message'] as String,
+      read: json['read'] as bool,
+      type: json['type'] as String,
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      actionType: json['actionType'] as String,
+      actionUrl: json['actionUrl'] as String?,
+      image: BannerImage.fromJson(json['image'] as Map<String, dynamic>),
+      additionalData: (json['additionalData'] as List<dynamic>)
+          .map((e) => AdditionalDatum.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      readAt: json['readAt'] == null
+          ? null
+          : DateTime.parse(json['readAt'] as String),
+    );
+
+Map<String, dynamic> _$$NotificationMetaDataImplToJson(
+        _$NotificationMetaDataImpl instance) =>
+    <String, dynamic>{
+      'createdAt': instance.createdAt.toIso8601String(),
+      'title': instance.title,
+      'message': instance.message,
+      'read': instance.read,
+      'type': instance.type,
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'actionType': instance.actionType,
+      'actionUrl': instance.actionUrl,
+      'image': instance.image,
+      'additionalData': instance.additionalData,
+      'readAt': instance.readAt?.toIso8601String(),
+    };
+
+_$AdditionalDatumImpl _$$AdditionalDatumImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AdditionalDatumImpl(
+      id: (json['id'] as num).toInt(),
+      key: json['key'] as String,
+      value: json['value'] as String,
+    );
+
+Map<String, dynamic> _$$AdditionalDatumImplToJson(
+        _$AdditionalDatumImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'key': instance.key,
+      'value': instance.value,
+    };

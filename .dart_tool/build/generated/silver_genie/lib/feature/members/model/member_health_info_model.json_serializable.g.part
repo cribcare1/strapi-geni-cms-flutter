@@ -1,0 +1,33 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$MemberHealthInfoImpl _$$MemberHealthInfoImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MemberHealthInfoImpl(
+      name: json['name'] as String,
+      relation: json['relation'] as String,
+      age: json['age'] as String,
+      bloodPressure: json['bloodPressure'] as String,
+      bloodOxygen: json['bloodOxygen'] as String,
+      heartRate: json['heartRate'] as String,
+      fastGlucose: json['fastGlucose'] as String,
+      lastUpdated: json['lastUpdated'] as String,
+      phrUrl: json['phrUrl'] as String,
+      eprUrl: json['eprUrl'] as String,
+    );
+
+Map<String, dynamic> _$$MemberHealthInfoImplToJson(
+        _$MemberHealthInfoImpl instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'relation': instance.relation,
+      'age': instance.age,
+      'bloodPressure': instance.bloodPressure,
+      'bloodOxygen': instance.bloodOxygen,
+      'heartRate': instance.heartRate,
+      'fastGlucose': instance.fastGlucose,
+      'lastUpdated': instance.lastUpdated,
+      'phrUrl': instance.phrUrl,
+      'eprUrl': instance.eprUrl,
+    };

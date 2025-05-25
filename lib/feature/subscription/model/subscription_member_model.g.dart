@@ -1,0 +1,29 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'subscription_member_model.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$SubscriptionMemberModelImpl _$$SubscriptionMemberModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$SubscriptionMemberModelImpl(
+      name: json['name'] as String,
+      relation: json['relation'] as String,
+      age: (json['age'] as num).toInt(),
+      plan: json['plan'] as String,
+      status: json['status'] as String,
+      planEndsDate: json['planEndsDate'] as String,
+    );
+
+Map<String, dynamic> _$$SubscriptionMemberModelImplToJson(
+        _$SubscriptionMemberModelImpl instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'relation': instance.relation,
+      'age': instance.age,
+      'plan': instance.plan,
+      'status': instance.status,
+      'planEndsDate': instance.planEndsDate,
+    };

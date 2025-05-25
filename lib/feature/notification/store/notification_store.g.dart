@@ -1,0 +1,176 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'notification_store.dart';
+
+// **************************************************************************
+// StoreGenerator
+// **************************************************************************
+
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
+
+mixin _$NotificationStore on _NotificationStoreBase, Store {
+  Computed<List<AppNotifications>>? _$getTodayNotificationsComputed;
+
+  @override
+  List<AppNotifications> get getTodayNotifications =>
+      (_$getTodayNotificationsComputed ??= Computed<List<AppNotifications>>(
+              () => super.getTodayNotifications,
+              name: '_NotificationStoreBase.getTodayNotifications'))
+          .value;
+  Computed<bool>? _$isAnyNotifyRemainToReadComputed;
+
+  @override
+  bool get isAnyNotifyRemainToRead => (_$isAnyNotifyRemainToReadComputed ??=
+          Computed<bool>(() => super.isAnyNotifyRemainToRead,
+              name: '_NotificationStoreBase.isAnyNotifyRemainToRead'))
+      .value;
+  Computed<List<AppNotifications>>? _$getEarlierNotificationsComputed;
+
+  @override
+  List<AppNotifications> get getEarlierNotifications =>
+      (_$getEarlierNotificationsComputed ??= Computed<List<AppNotifications>>(
+              () => super.getEarlierNotifications,
+              name: '_NotificationStoreBase.getEarlierNotifications'))
+          .value;
+
+  late final _$isNotificationRefreshLoadingAtom = Atom(
+      name: '_NotificationStoreBase.isNotificationRefreshLoading',
+      context: context);
+
+  @override
+  bool get isNotificationRefreshLoading {
+    _$isNotificationRefreshLoadingAtom.reportRead();
+    return super.isNotificationRefreshLoading;
+  }
+
+  @override
+  set isNotificationRefreshLoading(bool value) {
+    _$isNotificationRefreshLoadingAtom
+        .reportWrite(value, super.isNotificationRefreshLoading, () {
+      super.isNotificationRefreshLoading = value;
+    });
+  }
+
+  late final _$notificationRefreshFailureAtom = Atom(
+      name: '_NotificationStoreBase.notificationRefreshFailure',
+      context: context);
+
+  @override
+  String? get notificationRefreshFailure {
+    _$notificationRefreshFailureAtom.reportRead();
+    return super.notificationRefreshFailure;
+  }
+
+  @override
+  set notificationRefreshFailure(String? value) {
+    _$notificationRefreshFailureAtom
+        .reportWrite(value, super.notificationRefreshFailure, () {
+      super.notificationRefreshFailure = value;
+    });
+  }
+
+  late final _$notificationsAtom =
+      Atom(name: '_NotificationStoreBase.notifications', context: context);
+
+  @override
+  NotificationModel? get notifications {
+    _$notificationsAtom.reportRead();
+    return super.notifications;
+  }
+
+  @override
+  set notifications(NotificationModel? value) {
+    _$notificationsAtom.reportWrite(value, super.notifications, () {
+      super.notifications = value;
+    });
+  }
+
+  late final _$notificationfailureAtom = Atom(
+      name: '_NotificationStoreBase.notificationfailure', context: context);
+
+  @override
+  String? get notificationfailure {
+    _$notificationfailureAtom.reportRead();
+    return super.notificationfailure;
+  }
+
+  @override
+  set notificationfailure(String? value) {
+    _$notificationfailureAtom.reportWrite(value, super.notificationfailure, () {
+      super.notificationfailure = value;
+    });
+  }
+
+  late final _$isNotificationLoadingAtom = Atom(
+      name: '_NotificationStoreBase.isNotificationLoading', context: context);
+
+  @override
+  bool get isNotificationLoading {
+    _$isNotificationLoadingAtom.reportRead();
+    return super.isNotificationLoading;
+  }
+
+  @override
+  set isNotificationLoading(bool value) {
+    _$isNotificationLoadingAtom.reportWrite(value, super.isNotificationLoading,
+        () {
+      super.isNotificationLoading = value;
+    });
+  }
+
+  late final _$notificationsLoadedAtom = Atom(
+      name: '_NotificationStoreBase.notificationsLoaded', context: context);
+
+  @override
+  bool get notificationsLoaded {
+    _$notificationsLoadedAtom.reportRead();
+    return super.notificationsLoaded;
+  }
+
+  @override
+  set notificationsLoaded(bool value) {
+    _$notificationsLoadedAtom.reportWrite(value, super.notificationsLoaded, () {
+      super.notificationsLoaded = value;
+    });
+  }
+
+  late final _$_NotificationStoreBaseActionController =
+      ActionController(name: '_NotificationStoreBase', context: context);
+
+  @override
+  void fetchNotifications() {
+    final _$actionInfo = _$_NotificationStoreBaseActionController.startAction(
+        name: '_NotificationStoreBase.fetchNotifications');
+    try {
+      return super.fetchNotifications();
+    } finally {
+      _$_NotificationStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void refresh() {
+    final _$actionInfo = _$_NotificationStoreBaseActionController.startAction(
+        name: '_NotificationStoreBase.refresh');
+    try {
+      return super.refresh();
+    } finally {
+      _$_NotificationStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  String toString() {
+    return '''
+isNotificationRefreshLoading: ${isNotificationRefreshLoading},
+notificationRefreshFailure: ${notificationRefreshFailure},
+notifications: ${notifications},
+notificationfailure: ${notificationfailure},
+isNotificationLoading: ${isNotificationLoading},
+notificationsLoaded: ${notificationsLoaded},
+getTodayNotifications: ${getTodayNotifications},
+isAnyNotifyRemainToRead: ${isAnyNotifyRemainToRead},
+getEarlierNotifications: ${getEarlierNotifications}
+    ''';
+  }
+}

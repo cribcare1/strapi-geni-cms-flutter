@@ -1,0 +1,190 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'member_model.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$MemberImpl _$$MemberImplFromJson(Map<String, dynamic> json) => _$MemberImpl(
+      id: (json['id'] as num).toInt(),
+      username: json['username'] as String,
+      email: json['email'] as String,
+      gender: json['gender'] as String,
+      phoneNumber: json['phoneNumber'] as String,
+      dateOfBirth: DateTime.parse(json['dateOfBirth'] as String),
+      firstName: json['firstName'] as String,
+      lastName: json['lastName'] as String,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      fcm: json['fcm'] as String? ?? null,
+      careCoach: json['care_coach'] == null
+          ? null
+          : CareCoach.fromJson(json['care_coach'] as Map<String, dynamic>),
+      userDetail: json['user_detail'] == null
+          ? null
+          : UserDetail.fromJson(json['user_detail'] as Map<String, dynamic>),
+      profileImg: json['profileImg'] == null
+          ? null
+          : ProfileImg.fromJson(json['profileImg'] as Map<String, dynamic>),
+      address: json['address'] == null
+          ? null
+          : Address.fromJson(json['address'] as Map<String, dynamic>),
+      subscriptions: (json['subscriptions'] as List<dynamic>?)
+              ?.map((e) =>
+                  SubscriptionDetails.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      relation: json['relation'] as String? ?? 'Self',
+      isFamilyMember: json['isFamilyMember'] as bool? ?? false,
+      phrModel: json['phr'] == null
+          ? null
+          : PhrModel.fromJson(json['phr'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$MemberImplToJson(_$MemberImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'username': instance.username,
+      'email': instance.email,
+      'gender': instance.gender,
+      'phoneNumber': instance.phoneNumber,
+      'dateOfBirth': instance.dateOfBirth.toIso8601String(),
+      'firstName': instance.firstName,
+      'lastName': instance.lastName,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'fcm': instance.fcm,
+      'care_coach': instance.careCoach,
+      'user_detail': instance.userDetail,
+      'profileImg': instance.profileImg,
+      'address': instance.address,
+      'subscriptions': instance.subscriptions,
+      'relation': instance.relation,
+      'isFamilyMember': instance.isFamilyMember,
+      'phr': instance.phrModel,
+    };
+
+_$UserDetailImpl _$$UserDetailImplFromJson(Map<String, dynamic> json) =>
+    _$UserDetailImpl(
+      id: (json['id'] as num).toInt(),
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+    );
+
+Map<String, dynamic> _$$UserDetailImplToJson(_$UserDetailImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+_$CareCoachImpl _$$CareCoachImplFromJson(Map<String, dynamic> json) =>
+    _$CareCoachImpl(
+      id: (json['id'] as num).toInt(),
+      firstName: json['firstName'] as String,
+      lastName: json['lastName'] as String?,
+      contactNo: json['contactNo'] as String,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      publishedAt: DateTime.parse(json['publishedAt'] as String),
+      profileImg: json['profileImg'] == null
+          ? null
+          : ProfileImg.fromJson(json['profileImg'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$CareCoachImplToJson(_$CareCoachImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'firstName': instance.firstName,
+      'lastName': instance.lastName,
+      'contactNo': instance.contactNo,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'publishedAt': instance.publishedAt.toIso8601String(),
+      'profileImg': instance.profileImg,
+    };
+
+_$PhrModelImpl _$$PhrModelImplFromJson(Map<String, dynamic> json) =>
+    _$PhrModelImpl(
+      id: (json['id'] as num).toInt(),
+      firstName: json['firstName'] as String? ?? null,
+      lastName: json['lastName'] as String? ?? null,
+      age: (json['age'] as num?)?.toInt() ?? null,
+      email: json['email'] as String? ?? null,
+      gender: json['gender'] as String?,
+      bloodGroup: json['bloodGroup'] as String?,
+      downloadPhr: json['downloadPhr'] as bool,
+      uniqueKey: json['uniqueKey'] as String,
+      additionalInformation: json['additionalInformation'] as String?,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      diagnosedServices: (json['diagnosedServices'] as List<dynamic>?)
+          ?.map((e) => DiagnosedService.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$PhrModelImplToJson(_$PhrModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'firstName': instance.firstName,
+      'lastName': instance.lastName,
+      'age': instance.age,
+      'email': instance.email,
+      'gender': instance.gender,
+      'bloodGroup': instance.bloodGroup,
+      'downloadPhr': instance.downloadPhr,
+      'uniqueKey': instance.uniqueKey,
+      'additionalInformation': instance.additionalInformation,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'diagnosedServices': instance.diagnosedServices,
+    };
+
+_$DiagnosedServiceImpl _$$DiagnosedServiceImplFromJson(
+        Map<String, dynamic> json) =>
+    _$DiagnosedServiceImpl(
+      id: (json['id'] as num).toInt(),
+      diagnosedDate: json['diagnosedDate'] == null
+          ? null
+          : DateTime.parse(json['diagnosedDate'] as String),
+      description: json['description'] as String?,
+      value: json['value'] as String,
+      publish: json['publish'] as bool? ?? null,
+      serviceName: json['serviceName'] == null
+          ? null
+          : ServiceName.fromJson(json['serviceName'] as Map<String, dynamic>),
+      serviceProvider: json['serviceProvider'],
+    );
+
+Map<String, dynamic> _$$DiagnosedServiceImplToJson(
+        _$DiagnosedServiceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'diagnosedDate': instance.diagnosedDate?.toIso8601String(),
+      'description': instance.description,
+      'value': instance.value,
+      'publish': instance.publish,
+      'serviceName': instance.serviceName,
+      'serviceProvider': instance.serviceProvider,
+    };
+
+_$ServiceNameImpl _$$ServiceNameImplFromJson(Map<String, dynamic> json) =>
+    _$ServiceNameImpl(
+      id: (json['id'] as num).toInt(),
+      name: json['name'] as String,
+      maxValue: json['maxValue'] as String? ?? '',
+      description: json['description'],
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+    );
+
+Map<String, dynamic> _$$ServiceNameImplToJson(_$ServiceNameImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'maxValue': instance.maxValue,
+      'description': instance.description,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };

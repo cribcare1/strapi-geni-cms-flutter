@@ -1,0 +1,96 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$EprDataModelImpl _$$EprDataModelImplFromJson(Map<String, dynamic> json) =>
+    _$EprDataModelImpl(
+      id: (json['id'] as num).toInt(),
+      emergencyContacts: (json['emergencyContacts'] as List<dynamic>?)
+              ?.map((e) => EmergencyContact.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      userInsurance: (json['UserInsurance'] as List<dynamic>?)
+              ?.map((e) => UserInsurance.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      preferredServices: (json['preferredServices'] as List<dynamic>?)
+              ?.map((e) => PreferredService.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$$EprDataModelImplToJson(_$EprDataModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'emergencyContacts': instance.emergencyContacts,
+      'UserInsurance': instance.userInsurance,
+      'preferredServices': instance.preferredServices,
+    };
+
+_$EmergencyContactImpl _$$EmergencyContactImplFromJson(
+        Map<String, dynamic> json) =>
+    _$EmergencyContactImpl(
+      id: (json['id'] as num).toInt(),
+      contactPersonName: json['contactPersonName'] as String,
+      email: json['email'] as String,
+      contactNumber: json['contactNumber'] as String,
+      contactType: json['contactType'] as String? ?? '',
+      country: json['country'] as String? ?? '',
+      relation: json['relation'] as String?,
+      contactDegree: json['contactDegree'] ?? '',
+    );
+
+Map<String, dynamic> _$$EmergencyContactImplToJson(
+        _$EmergencyContactImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'contactPersonName': instance.contactPersonName,
+      'email': instance.email,
+      'contactNumber': instance.contactNumber,
+      'contactType': instance.contactType,
+      'country': instance.country,
+      'relation': instance.relation,
+      'contactDegree': instance.contactDegree,
+    };
+
+_$PreferredServiceImpl _$$PreferredServiceImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PreferredServiceImpl(
+      id: (json['id'] as num).toInt(),
+      name: json['name'] as String,
+      contactPerson: json['contactPerson'] as String,
+      contactNumber: json['contactNumber'] as String,
+      preferredRank: (json['preferredRank'] as num?)?.toInt(),
+      ambulanceContact: json['ambulanceContact'] as String?,
+      serviceType: json['serviceType'] as String? ?? 'Hospital',
+    );
+
+Map<String, dynamic> _$$PreferredServiceImplToJson(
+        _$PreferredServiceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'contactPerson': instance.contactPerson,
+      'contactNumber': instance.contactNumber,
+      'preferredRank': instance.preferredRank,
+      'ambulanceContact': instance.ambulanceContact,
+      'serviceType': instance.serviceType,
+    };
+
+_$UserInsuranceImpl _$$UserInsuranceImplFromJson(Map<String, dynamic> json) =>
+    _$UserInsuranceImpl(
+      id: (json['id'] as num).toInt(),
+      insuranceProvider: json['insuranceProvider'] as String,
+      policyNumber: json['policyNumber'] as String?,
+      contactPerson: json['contactPerson'] as String,
+      contactNumber: json['contactNumber'] as String,
+    );
+
+Map<String, dynamic> _$$UserInsuranceImplToJson(_$UserInsuranceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'insuranceProvider': instance.insuranceProvider,
+      'policyNumber': instance.policyNumber,
+      'contactPerson': instance.contactPerson,
+      'contactNumber': instance.contactNumber,
+    };

@@ -1,0 +1,99 @@
+// **************************************************************************
+// StoreGenerator
+// **************************************************************************
+
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
+
+mixin _$AuthStore on _AuthStoreBase, Store {
+  Computed<bool>? _$isAuthenticatedComputed;
+
+  @override
+  bool get isAuthenticated =>
+      (_$isAuthenticatedComputed ??= Computed<bool>(() => super.isAuthenticated,
+              name: '_AuthStoreBase.isAuthenticated'))
+          .value;
+
+  late final _$initialisedAtom =
+      Atom(name: '_AuthStoreBase.initialised', context: context);
+
+  @override
+  bool get initialised {
+    _$initialisedAtom.reportRead();
+    return super.initialised;
+  }
+
+  @override
+  set initialised(bool value) {
+    _$initialisedAtom.reportWrite(value, super.initialised, () {
+      super.initialised = value;
+    });
+  }
+
+  late final _$authTokenExitsAtom =
+      Atom(name: '_AuthStoreBase.authTokenExits', context: context);
+
+  @override
+  bool get authTokenExits {
+    _$authTokenExitsAtom.reportRead();
+    return super.authTokenExits;
+  }
+
+  @override
+  set authTokenExits(bool value) {
+    _$authTokenExitsAtom.reportWrite(value, super.authTokenExits, () {
+      super.authTokenExits = value;
+    });
+  }
+
+  late final _$userDetailsCacheExistsAtom =
+      Atom(name: '_AuthStoreBase.userDetailsCacheExists', context: context);
+
+  @override
+  bool get userDetailsCacheExists {
+    _$userDetailsCacheExistsAtom.reportRead();
+    return super.userDetailsCacheExists;
+  }
+
+  @override
+  set userDetailsCacheExists(bool value) {
+    _$userDetailsCacheExistsAtom
+        .reportWrite(value, super.userDetailsCacheExists, () {
+      super.userDetailsCacheExists = value;
+    });
+  }
+
+  late final _$_AuthStoreBaseActionController =
+      ActionController(name: '_AuthStoreBase', context: context);
+
+  @override
+  void refresh() {
+    final _$actionInfo = _$_AuthStoreBaseActionController.startAction(
+        name: '_AuthStoreBase.refresh');
+    try {
+      return super.refresh();
+    } finally {
+      _$_AuthStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void logout() {
+    final _$actionInfo = _$_AuthStoreBaseActionController.startAction(
+        name: '_AuthStoreBase.logout');
+    try {
+      return super.logout();
+    } finally {
+      _$_AuthStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  String toString() {
+    return '''
+initialised: ${initialised},
+authTokenExits: ${authTokenExits},
+userDetailsCacheExists: ${userDetailsCacheExists},
+isAuthenticated: ${isAuthenticated}
+    ''';
+  }
+}

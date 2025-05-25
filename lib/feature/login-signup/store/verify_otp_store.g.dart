@@ -1,0 +1,187 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'verify_otp_store.dart';
+
+// **************************************************************************
+// StoreGenerator
+// **************************************************************************
+
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
+
+mixin _$VerityOtpStore on _VerityOtpStoreBase, Store {
+  late final _$isLoadingAtom =
+      Atom(name: '_VerityOtpStoreBase.isLoading', context: context);
+
+  @override
+  bool get isLoading {
+    _$isLoadingAtom.reportRead();
+    return super.isLoading;
+  }
+
+  @override
+  set isLoading(bool value) {
+    _$isLoadingAtom.reportWrite(value, super.isLoading, () {
+      super.isLoading = value;
+    });
+  }
+
+  late final _$authFailureAtom =
+      Atom(name: '_VerityOtpStoreBase.authFailure', context: context);
+
+  @override
+  Either<VerifyOTPFailure, void>? get authFailure {
+    _$authFailureAtom.reportRead();
+    return super.authFailure;
+  }
+
+  @override
+  set authFailure(Either<VerifyOTPFailure, void>? value) {
+    _$authFailureAtom.reportWrite(value, super.authFailure, () {
+      super.authFailure = value;
+    });
+  }
+
+  late final _$countdownAtom =
+      Atom(name: '_VerityOtpStoreBase.countdown', context: context);
+
+  @override
+  int get countdown {
+    _$countdownAtom.reportRead();
+    return super.countdown;
+  }
+
+  @override
+  set countdown(int value) {
+    _$countdownAtom.reportWrite(value, super.countdown, () {
+      super.countdown = value;
+    });
+  }
+
+  late final _$showResendButtonAtom =
+      Atom(name: '_VerityOtpStoreBase.showResendButton', context: context);
+
+  @override
+  bool get showResendButton {
+    _$showResendButtonAtom.reportRead();
+    return super.showResendButton;
+  }
+
+  @override
+  set showResendButton(bool value) {
+    _$showResendButtonAtom.reportWrite(value, super.showResendButton, () {
+      super.showResendButton = value;
+    });
+  }
+
+  late final _$isResendLoadingAtom =
+      Atom(name: '_VerityOtpStoreBase.isResendLoading', context: context);
+
+  @override
+  bool get isResendLoading {
+    _$isResendLoadingAtom.reportRead();
+    return super.isResendLoading;
+  }
+
+  @override
+  set isResendLoading(bool value) {
+    _$isResendLoadingAtom.reportWrite(value, super.isResendLoading, () {
+      super.isResendLoading = value;
+    });
+  }
+
+  late final _$isErrorAtom =
+      Atom(name: '_VerityOtpStoreBase.isError', context: context);
+
+  @override
+  bool get isError {
+    _$isErrorAtom.reportRead();
+    return super.isError;
+  }
+
+  @override
+  set isError(bool value) {
+    _$isErrorAtom.reportWrite(value, super.isError, () {
+      super.isError = value;
+    });
+  }
+
+  late final _$_VerityOtpStoreBaseActionController =
+      ActionController(name: '_VerityOtpStoreBase', context: context);
+
+  @override
+  void verifyOtp(
+      {required String otp,
+      required String? phoneNumber,
+      required String? email,
+      required bool isFromLoginPage}) {
+    final _$actionInfo = _$_VerityOtpStoreBaseActionController.startAction(
+        name: '_VerityOtpStoreBase.verifyOtp');
+    try {
+      return super.verifyOtp(
+          otp: otp,
+          phoneNumber: phoneNumber,
+          email: email,
+          isFromLoginPage: isFromLoginPage);
+    } finally {
+      _$_VerityOtpStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void startTimer() {
+    final _$actionInfo = _$_VerityOtpStoreBaseActionController.startAction(
+        name: '_VerityOtpStoreBase.startTimer');
+    try {
+      return super.startTimer();
+    } finally {
+      _$_VerityOtpStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void resetTimer() {
+    final _$actionInfo = _$_VerityOtpStoreBaseActionController.startAction(
+        name: '_VerityOtpStoreBase.resetTimer');
+    try {
+      return super.resetTimer();
+    } finally {
+      _$_VerityOtpStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void resendOTPLogin(String identifier) {
+    final _$actionInfo = _$_VerityOtpStoreBaseActionController.startAction(
+        name: '_VerityOtpStoreBase.resendOTPLogin');
+    try {
+      return super.resendOTPLogin(identifier);
+    } finally {
+      _$_VerityOtpStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void resendOTPSignup(String firstName, String lastName, String dob,
+      String email, String phoneNumber) {
+    final _$actionInfo = _$_VerityOtpStoreBaseActionController.startAction(
+        name: '_VerityOtpStoreBase.resendOTPSignup');
+    try {
+      return super
+          .resendOTPSignup(firstName, lastName, dob, email, phoneNumber);
+    } finally {
+      _$_VerityOtpStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  String toString() {
+    return '''
+isLoading: ${isLoading},
+authFailure: ${authFailure},
+countdown: ${countdown},
+showResendButton: ${showResendButton},
+isResendLoading: ${isResendLoading},
+isError: ${isError}
+    ''';
+  }
+}

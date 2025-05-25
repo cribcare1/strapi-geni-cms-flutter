@@ -1,0 +1,65 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$MasterDataModelImpl _$$MasterDataModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$MasterDataModelImpl(
+      id: (json['id'] as num).toInt(),
+      masterData:
+          MasterData.fromJson(json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$MasterDataModelImplToJson(
+        _$MasterDataModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'attributes': instance.masterData.toJson(),
+    };
+
+_$MasterDataImpl _$$MasterDataImplFromJson(Map<String, dynamic> json) =>
+    _$MasterDataImpl(
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      contactUs: ContactUs.fromJson(json['contactUs'] as Map<String, dynamic>),
+      emergencyHelpline: EmergencyHelpline.fromJson(
+          json['emergencyHelpline'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$MasterDataImplToJson(_$MasterDataImpl instance) =>
+    <String, dynamic>{
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'contactUs': instance.contactUs.toJson(),
+      'emergencyHelpline': instance.emergencyHelpline.toJson(),
+    };
+
+_$ContactUsImpl _$$ContactUsImplFromJson(Map<String, dynamic> json) =>
+    _$ContactUsImpl(
+      id: (json['id'] as num).toInt(),
+      contactNumber: json['contactNumber'] as String,
+    );
+
+Map<String, dynamic> _$$ContactUsImplToJson(_$ContactUsImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'contactNumber': instance.contactNumber,
+    };
+
+_$EmergencyHelplineImpl _$$EmergencyHelplineImplFromJson(
+        Map<String, dynamic> json) =>
+    _$EmergencyHelplineImpl(
+      id: (json['id'] as num).toInt(),
+      contactNumber: json['contactNumber'] as String,
+      label: json['label'] as String? ?? null,
+      message: json['message'] as String? ?? null,
+    );
+
+Map<String, dynamic> _$$EmergencyHelplineImplToJson(
+        _$EmergencyHelplineImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'contactNumber': instance.contactNumber,
+      'label': instance.label,
+      'message': instance.message,
+    };

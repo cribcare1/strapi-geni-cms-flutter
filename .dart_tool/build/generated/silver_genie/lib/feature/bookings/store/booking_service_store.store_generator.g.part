@@ -1,0 +1,191 @@
+// **************************************************************************
+// StoreGenerator
+// **************************************************************************
+
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
+
+mixin _$BookingServiceStore on _BookingServiceStoreBase, Store {
+  Computed<List<Service>>? _$getAllRequestedServiceListComputed;
+
+  @override
+  List<Service> get getAllRequestedServiceList =>
+      (_$getAllRequestedServiceListComputed ??= Computed<List<Service>>(
+              () => super.getAllRequestedServiceList,
+              name: '_BookingServiceStoreBase.getAllRequestedServiceList'))
+          .value;
+  Computed<List<Service>>? _$getAllActiveServiceListComputed;
+
+  @override
+  List<Service> get getAllActiveServiceList =>
+      (_$getAllActiveServiceListComputed ??= Computed<List<Service>>(
+              () => super.getAllActiveServiceList,
+              name: '_BookingServiceStoreBase.getAllActiveServiceList'))
+          .value;
+  Computed<List<Service>>? _$getAllCompletedServiceListComputed;
+
+  @override
+  List<Service> get getAllCompletedServiceList =>
+      (_$getAllCompletedServiceListComputed ??= Computed<List<Service>>(
+              () => super.getAllCompletedServiceList,
+              name: '_BookingServiceStoreBase.getAllCompletedServiceList'))
+          .value;
+
+  late final _$isAllServiceLoadedAtom = Atom(
+      name: '_BookingServiceStoreBase.isAllServiceLoaded', context: context);
+
+  @override
+  bool get isAllServiceLoaded {
+    _$isAllServiceLoadedAtom.reportRead();
+    return super.isAllServiceLoaded;
+  }
+
+  @override
+  set isAllServiceLoaded(bool value) {
+    _$isAllServiceLoadedAtom.reportWrite(value, super.isAllServiceLoaded, () {
+      super.isAllServiceLoaded = value;
+    });
+  }
+
+  late final _$isAllServiceLoadingAtom = Atom(
+      name: '_BookingServiceStoreBase.isAllServiceLoading', context: context);
+
+  @override
+  bool get isAllServiceLoading {
+    _$isAllServiceLoadingAtom.reportRead();
+    return super.isAllServiceLoading;
+  }
+
+  @override
+  set isAllServiceLoading(bool value) {
+    _$isAllServiceLoadingAtom.reportWrite(value, super.isAllServiceLoading, () {
+      super.isAllServiceLoading = value;
+    });
+  }
+
+  late final _$isAllServiceRefreshingAtom = Atom(
+      name: '_BookingServiceStoreBase.isAllServiceRefreshing',
+      context: context);
+
+  @override
+  bool get isAllServiceRefreshing {
+    _$isAllServiceRefreshingAtom.reportRead();
+    return super.isAllServiceRefreshing;
+  }
+
+  @override
+  set isAllServiceRefreshing(bool value) {
+    _$isAllServiceRefreshingAtom
+        .reportWrite(value, super.isAllServiceRefreshing, () {
+      super.isAllServiceRefreshing = value;
+    });
+  }
+
+  late final _$allServiceRefreshFailureAtom = Atom(
+      name: '_BookingServiceStoreBase.allServiceRefreshFailure',
+      context: context);
+
+  @override
+  String? get allServiceRefreshFailure {
+    _$allServiceRefreshFailureAtom.reportRead();
+    return super.allServiceRefreshFailure;
+  }
+
+  @override
+  set allServiceRefreshFailure(String? value) {
+    _$allServiceRefreshFailureAtom
+        .reportWrite(value, super.allServiceRefreshFailure, () {
+      super.allServiceRefreshFailure = value;
+    });
+  }
+
+  late final _$fetchServiceErrorAtom = Atom(
+      name: '_BookingServiceStoreBase.fetchServiceError', context: context);
+
+  @override
+  String? get fetchServiceError {
+    _$fetchServiceErrorAtom.reportRead();
+    return super.fetchServiceError;
+  }
+
+  @override
+  set fetchServiceError(String? value) {
+    _$fetchServiceErrorAtom.reportWrite(value, super.fetchServiceError, () {
+      super.fetchServiceError = value;
+    });
+  }
+
+  late final _$bookingServicesAtom =
+      Atom(name: '_BookingServiceStoreBase.bookingServices', context: context);
+
+  @override
+  BookingServices? get bookingServices {
+    _$bookingServicesAtom.reportRead();
+    return super.bookingServices;
+  }
+
+  @override
+  set bookingServices(BookingServices? value) {
+    _$bookingServicesAtom.reportWrite(value, super.bookingServices, () {
+      super.bookingServices = value;
+    });
+  }
+
+  late final _$isFileInDownloadProcessAtom = Atom(
+      name: '_BookingServiceStoreBase.isFileInDownloadProcess',
+      context: context);
+
+  @override
+  bool get isFileInDownloadProcess {
+    _$isFileInDownloadProcessAtom.reportRead();
+    return super.isFileInDownloadProcess;
+  }
+
+  @override
+  set isFileInDownloadProcess(bool value) {
+    _$isFileInDownloadProcessAtom
+        .reportWrite(value, super.isFileInDownloadProcess, () {
+      super.isFileInDownloadProcess = value;
+    });
+  }
+
+  late final _$_BookingServiceStoreBaseActionController =
+      ActionController(name: '_BookingServiceStoreBase', context: context);
+
+  @override
+  void initGetAllServices() {
+    final _$actionInfo = _$_BookingServiceStoreBaseActionController.startAction(
+        name: '_BookingServiceStoreBase.initGetAllServices');
+    try {
+      return super.initGetAllServices();
+    } finally {
+      _$_BookingServiceStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void refresh() {
+    final _$actionInfo = _$_BookingServiceStoreBaseActionController.startAction(
+        name: '_BookingServiceStoreBase.refresh');
+    try {
+      return super.refresh();
+    } finally {
+      _$_BookingServiceStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  String toString() {
+    return '''
+isAllServiceLoaded: ${isAllServiceLoaded},
+isAllServiceLoading: ${isAllServiceLoading},
+isAllServiceRefreshing: ${isAllServiceRefreshing},
+allServiceRefreshFailure: ${allServiceRefreshFailure},
+fetchServiceError: ${fetchServiceError},
+bookingServices: ${bookingServices},
+isFileInDownloadProcess: ${isFileInDownloadProcess},
+getAllRequestedServiceList: ${getAllRequestedServiceList},
+getAllActiveServiceList: ${getAllActiveServiceList},
+getAllCompletedServiceList: ${getAllCompletedServiceList}
+    ''';
+  }
+}

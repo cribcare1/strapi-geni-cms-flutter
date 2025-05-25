@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "652454687122",
+    "project_id": "silver-genie-f841f",
+    "storage_bucket": "silver-genie-f841f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652454687122:android:5c1eb74b89633d4a19914b",
+        "android_client_info": {
+          "package_name": "silver.genie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlTRZ-_Vn_XPn1KElSOZIRH2FDRQlJ5sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,151 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$UserDetailsImpl _$$UserDetailsImplFromJson(Map<String, dynamic> json) =>
+    _$UserDetailsImpl(
+      user: User.fromJson(json['user'] as Map<String, dynamic>),
+      emergencyContacts: (json['emergencyContacts'] as List<dynamic>)
+          .map((e) => EmergencyContact.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      userInsurance: (json['userInsurance'] as List<dynamic>)
+          .map((e) => UserInsurance.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      preferredServices: (json['preferredServices'] as List<dynamic>)
+          .map((e) => PreferredService.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$UserDetailsImplToJson(_$UserDetailsImpl instance) =>
+    <String, dynamic>{
+      'user': instance.user.toJson(),
+      'emergencyContacts':
+          instance.emergencyContacts.map((e) => e.toJson()).toList(),
+      'userInsurance': instance.userInsurance.map((e) => e.toJson()).toList(),
+      'preferredServices':
+          instance.preferredServices.map((e) => e.toJson()).toList(),
+    };
+
+_$UserImpl _$$UserImplFromJson(Map<String, dynamic> json) => _$UserImpl(
+      id: (json['id'] as num).toInt(),
+      username: json['username'] as String,
+      email: json['email'] as String,
+      confirmed: json['confirmed'] as bool,
+      blocked: json['blocked'] as bool,
+      gender: json['gender'] as String,
+      phoneNumber: json['phoneNumber'] as String,
+      dateOfBirth: DateTime.parse(json['dateOfBirth'] as String),
+      uniqueKey: json['uniqueKey'] as String,
+      firstName: json['firstName'] as String,
+      lastName: json['lastName'] as String,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      provider: json['provider'],
+      relation: json['relation'] as String? ?? 'Self',
+      userTags: json['userTags'],
+      address: json['address'] == null
+          ? null
+          : Address.fromJson(json['address'] as Map<String, dynamic>),
+      profileImg: json['profileImg'] == null
+          ? null
+          : ProfileImg.fromJson(json['profileImg'] as Map<String, dynamic>),
+      members: (json['members'] as List<dynamic>?)
+              ?.map((e) => UserDetails.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$$UserImplToJson(_$UserImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'username': instance.username,
+      'email': instance.email,
+      'confirmed': instance.confirmed,
+      'blocked': instance.blocked,
+      'gender': instance.gender,
+      'phoneNumber': instance.phoneNumber,
+      'dateOfBirth': instance.dateOfBirth.toIso8601String(),
+      'uniqueKey': instance.uniqueKey,
+      'firstName': instance.firstName,
+      'lastName': instance.lastName,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'provider': instance.provider,
+      'relation': instance.relation,
+      'userTags': instance.userTags,
+      'address': instance.address?.toJson(),
+      'profileImg': instance.profileImg?.toJson(),
+      'members': instance.members.map((e) => e.toJson()).toList(),
+    };
+
+_$AddressImpl _$$AddressImplFromJson(Map<String, dynamic> json) =>
+    _$AddressImpl(
+      id: (json['id'] as num).toInt(),
+      state: json['state'] as String,
+      city: json['city'] as String,
+      streetAddress: json['streetAddress'] as String,
+      postalCode: json['postalCode'] as String,
+      country: json['country'] as String,
+    );
+
+Map<String, dynamic> _$$AddressImplToJson(_$AddressImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'state': instance.state,
+      'city': instance.city,
+      'streetAddress': instance.streetAddress,
+      'postalCode': instance.postalCode,
+      'country': instance.country,
+    };
+
+_$ProfileImgImpl _$$ProfileImgImplFromJson(Map<String, dynamic> json) =>
+    _$ProfileImgImpl(
+      id: (json['id'] as num).toInt(),
+      name: json['name'] as String,
+      width: (json['width'] as num).toInt(),
+      height: (json['height'] as num).toInt(),
+      formats: Formats.fromJson(json['formats'] as Map<String, dynamic>),
+      ext: json['ext'] as String,
+      url: json['url'] as String,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+    );
+
+Map<String, dynamic> _$$ProfileImgImplToJson(_$ProfileImgImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'width': instance.width,
+      'height': instance.height,
+      'formats': instance.formats.toJson(),
+      'ext': instance.ext,
+      'url': instance.url,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+_$FormatsImpl _$$FormatsImplFromJson(Map<String, dynamic> json) =>
+    _$FormatsImpl(
+      thumbnail: Thumbnail.fromJson(json['thumbnail'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$FormatsImplToJson(_$FormatsImpl instance) =>
+    <String, dynamic>{
+      'thumbnail': instance.thumbnail.toJson(),
+    };
+
+_$ThumbnailImpl _$$ThumbnailImplFromJson(Map<String, dynamic> json) =>
+    _$ThumbnailImpl(
+      ext: json['ext'] as String,
+      url: json['url'] as String,
+      width: (json['width'] as num).toInt(),
+      height: (json['height'] as num).toInt(),
+    );
+
+Map<String, dynamic> _$$ThumbnailImplToJson(_$ThumbnailImpl instance) =>
+    <String, dynamic>{
+      'ext': instance.ext,
+      'url': instance.url,
+      'width': instance.width,
+      'height': instance.height,
+    };

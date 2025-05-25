@@ -1,0 +1,185 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'payment_status_model.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$ServicePaymentStatusModelImpl _$$ServicePaymentStatusModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ServicePaymentStatusModelImpl(
+      id: (json['id'] as num).toInt(),
+      paymentStatus: json['paymentStatus'] as String,
+      status: json['status'] as String,
+      amount: (json['amount'] as num).toInt(),
+      priceId: (json['priceId'] as num).toInt(),
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      requestedAt: DateTime.parse(json['requestedAt'] as String),
+      razorpayOrderId: json['razorpayOrderId'],
+      metadata: (json['metadata'] as List<dynamic>)
+          .map((e) => ServiceMetaDatum.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      product: Product.fromJson(json['product'] as Map<String, dynamic>),
+      requestedBy:
+          RequestedBy.fromJson(json['requestedBy'] as Map<String, dynamic>),
+      requestedFor: (json['requestedFor'] as List<dynamic>)
+          .map((e) => RequestedFor.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      priceDetails:
+          PriceDetails.fromJson(json['priceDetails'] as Map<String, dynamic>),
+      paymentTansactions: (json['payment_transactions'] as List<dynamic>?)
+              ?.map(
+                  (e) => PaymentTansactions.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$$ServicePaymentStatusModelImplToJson(
+        _$ServicePaymentStatusModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'paymentStatus': instance.paymentStatus,
+      'status': instance.status,
+      'amount': instance.amount,
+      'priceId': instance.priceId,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'requestedAt': instance.requestedAt.toIso8601String(),
+      'razorpayOrderId': instance.razorpayOrderId,
+      'metadata': instance.metadata,
+      'product': instance.product,
+      'requestedBy': instance.requestedBy,
+      'requestedFor': instance.requestedFor,
+      'priceDetails': instance.priceDetails,
+      'payment_transactions': instance.paymentTansactions,
+    };
+
+_$PaymentTansactionsImpl _$$PaymentTansactionsImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PaymentTansactionsImpl(
+      id: (json['id'] as num).toInt(),
+      vendorInvoiceId: json['vendorInvoiceId'],
+      invoice: json['invoice'] == null
+          ? null
+          : Invoice.fromJson(json['invoice'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$PaymentTansactionsImplToJson(
+        _$PaymentTansactionsImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'vendorInvoiceId': instance.vendorInvoiceId,
+      'invoice': instance.invoice,
+    };
+
+_$InvoiceImpl _$$InvoiceImplFromJson(Map<String, dynamic> json) =>
+    _$InvoiceImpl(
+      id: (json['id'] as num).toInt(),
+      name: json['name'] as String,
+      url: json['url'] as String,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+    );
+
+Map<String, dynamic> _$$InvoiceImplToJson(_$InvoiceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'url': instance.url,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+_$ProductImpl _$$ProductImplFromJson(Map<String, dynamic> json) =>
+    _$ProductImpl(
+      id: (json['id'] as num).toInt(),
+      category: json['category'] as String,
+      name: json['name'] as String,
+      type: json['type'] as String,
+    );
+
+Map<String, dynamic> _$$ProductImplToJson(_$ProductImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'category': instance.category,
+      'name': instance.name,
+      'type': instance.type,
+    };
+
+_$RequestedByImpl _$$RequestedByImplFromJson(Map<String, dynamic> json) =>
+    _$RequestedByImpl(
+      id: (json['id'] as num).toInt(),
+    );
+
+Map<String, dynamic> _$$RequestedByImplToJson(_$RequestedByImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+    };
+
+_$RequestedForImpl _$$RequestedForImplFromJson(Map<String, dynamic> json) =>
+    _$RequestedForImpl(
+      id: (json['id'] as num).toInt(),
+      firstName: json['firstName'] as String,
+      lastName: json['lastName'] as String,
+      gender: json['gender'] as String,
+      relation: json['relation'] as String,
+      profileImg: json['profileImg'] == null
+          ? null
+          : ProfileImg.fromJson(json['profileImg'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$RequestedForImplToJson(_$RequestedForImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'firstName': instance.firstName,
+      'lastName': instance.lastName,
+      'gender': instance.gender,
+      'relation': instance.relation,
+      'profileImg': instance.profileImg,
+    };
+
+_$PriceDetailsImpl _$$PriceDetailsImplFromJson(Map<String, dynamic> json) =>
+    _$PriceDetailsImpl(
+      id: (json['id'] as num).toInt(),
+      totalAmount: (json['totalAmount'] as num).toInt(),
+      subTotal: (json['subTotal'] as num).toInt(),
+      totalTax: (json['totalTax'] as num).toInt(),
+      totalDiscount: (json['totalDiscount'] as num).toInt(),
+      products: (json['products'] as List<dynamic>)
+          .map((e) => ProductMetaData.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$PriceDetailsImplToJson(_$PriceDetailsImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'totalAmount': instance.totalAmount,
+      'subTotal': instance.subTotal,
+      'totalTax': instance.totalTax,
+      'totalDiscount': instance.totalDiscount,
+      'products': instance.products,
+    };
+
+_$ProductMetaDataImpl _$$ProductMetaDataImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ProductMetaDataImpl(
+      id: (json['id'] as num).toInt(),
+      productId: json['productId'] as String,
+      displayName: json['displayName'] as String,
+      quantity: (json['quantity'] as num).toInt(),
+      productName: json['productName'] as String? ?? '',
+      price: (json['price'] as num?)?.toInt() ?? 0,
+    );
+
+Map<String, dynamic> _$$ProductMetaDataImplToJson(
+        _$ProductMetaDataImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'productId': instance.productId,
+      'displayName': instance.displayName,
+      'quantity': instance.quantity,
+      'productName': instance.productName,
+      'price': instance.price,
+    };

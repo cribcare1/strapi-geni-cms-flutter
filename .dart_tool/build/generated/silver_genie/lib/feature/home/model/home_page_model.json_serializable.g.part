@@ -1,0 +1,256 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$AboutUsOfferModelImpl _$$AboutUsOfferModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AboutUsOfferModelImpl(
+      component: json['__component'] as String,
+      header: json['header'] as String,
+      description: json['description'] as String,
+      cta: json['cta'] == null
+          ? null
+          : Cta.fromJson(json['cta'] as Map<String, dynamic>),
+      offering: json['offering'] == null
+          ? null
+          : Offering.fromJson(json['offering'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$AboutUsOfferModelImplToJson(
+        _$AboutUsOfferModelImpl instance) =>
+    <String, dynamic>{
+      '__component': instance.component,
+      'header': instance.header,
+      'description': instance.description,
+      'cta': instance.cta?.toJson(),
+      'offering': instance.offering?.toJson(),
+    };
+
+_$BannerImageModelImpl _$$BannerImageModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$BannerImageModelImpl(
+      component: json['__component'] as String,
+      label: json['label'] as String,
+      bannerImage:
+          BannerImage.fromJson(json['bannerImage'] as Map<String, dynamic>),
+      cta: json['cta'] == null
+          ? null
+          : Cta.fromJson(json['cta'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$BannerImageModelImplToJson(
+        _$BannerImageModelImpl instance) =>
+    <String, dynamic>{
+      '__component': instance.component,
+      'label': instance.label,
+      'bannerImage': instance.bannerImage.toJson(),
+      'cta': instance.cta?.toJson(),
+    };
+
+_$TestimonialsModelImpl _$$TestimonialsModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$TestimonialsModelImpl(
+      component: json['__component'] as String,
+      title: json['title'] as String,
+      testimonials:
+          Testimonials.fromJson(json['testimonials'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$TestimonialsModelImplToJson(
+        _$TestimonialsModelImpl instance) =>
+    <String, dynamic>{
+      '__component': instance.component,
+      'title': instance.title,
+      'testimonials': instance.testimonials.toJson(),
+    };
+
+_$TestimonialsImpl _$$TestimonialsImplFromJson(Map<String, dynamic> json) =>
+    _$TestimonialsImpl(
+      data: (json['data'] as List<dynamic>)
+          .map((e) => Datum.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$TestimonialsImplToJson(_$TestimonialsImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data.map((e) => e.toJson()).toList(),
+    };
+
+_$DatumImpl _$$DatumImplFromJson(Map<String, dynamic> json) => _$DatumImpl(
+      id: (json['id'] as num).toInt(),
+      attributes:
+          Attributes.fromJson(json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$DatumImplToJson(_$DatumImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'attributes': instance.attributes.toJson(),
+    };
+
+_$AttributesImpl _$$AttributesImplFromJson(Map<String, dynamic> json) =>
+    _$AttributesImpl(
+      content: json['content'] as String,
+      testifierName: json['testifierName'] as String,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      publishedAt: DateTime.parse(json['publishedAt'] as String),
+      testifierImage: json['testifierImage'] == null
+          ? null
+          : BannerImage.fromJson(
+              json['testifierImage'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$AttributesImplToJson(_$AttributesImpl instance) =>
+    <String, dynamic>{
+      'content': instance.content,
+      'testifierName': instance.testifierName,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'publishedAt': instance.publishedAt.toIso8601String(),
+      'testifierImage': instance.testifierImage?.toJson(),
+    };
+
+_$BannerImageImpl _$$BannerImageImplFromJson(Map<String, dynamic> json) =>
+    _$BannerImageImpl(
+      data: json['data'] == null
+          ? null
+          : Data.fromJson(json['data'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$BannerImageImplToJson(_$BannerImageImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data?.toJson(),
+    };
+
+_$DataImpl _$$DataImplFromJson(Map<String, dynamic> json) => _$DataImpl(
+      attributes:
+          ImageDataModel.fromJson(json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$DataImplToJson(_$DataImpl instance) =>
+    <String, dynamic>{
+      'attributes': instance.attributes.toJson(),
+    };
+
+_$ImageDataModelImpl _$$ImageDataModelImplFromJson(Map<String, dynamic> json) =>
+    _$ImageDataModelImpl(
+      url: json['url'] as String,
+      width: (json['width'] as num?)?.toDouble() ?? double.infinity,
+      height: (json['height'] as num?)?.toDouble() ?? 300,
+    );
+
+Map<String, dynamic> _$$ImageDataModelImplToJson(
+        _$ImageDataModelImpl instance) =>
+    <String, dynamic>{
+      'url': instance.url,
+      'width': instance.width,
+      'height': instance.height,
+    };
+
+_$CtaImpl _$$CtaImplFromJson(Map<String, dynamic> json) => _$CtaImpl(
+      label: json['label'] as String?,
+      href: json['href'] as String?,
+      link: json['link'] == null
+          ? null
+          : Link.fromJson(json['link'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$CtaImplToJson(_$CtaImpl instance) => <String, dynamic>{
+      'label': instance.label,
+      'href': instance.href,
+      'link': instance.link?.toJson(),
+    };
+
+_$LinkImpl _$$LinkImplFromJson(Map<String, dynamic> json) => _$LinkImpl(
+      href: json['href'] as String,
+      label: json['label'] as String?,
+      isExternal: json['isExternal'] as bool?,
+      target: json['target'] as String?,
+      downloadLink: json['downloadLink'] as bool?,
+    );
+
+Map<String, dynamic> _$$LinkImplToJson(_$LinkImpl instance) =>
+    <String, dynamic>{
+      'href': instance.href,
+      'label': instance.label,
+      'isExternal': instance.isExternal,
+      'target': instance.target,
+      'downloadLink': instance.downloadLink,
+    };
+
+_$OfferingImpl _$$OfferingImplFromJson(Map<String, dynamic> json) =>
+    _$OfferingImpl(
+      header: json['header'] as String,
+      offers: (json['offers'] as List<dynamic>?)
+              ?.map((e) => Offer.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$$OfferingImplToJson(_$OfferingImpl instance) =>
+    <String, dynamic>{
+      'header': instance.header,
+      'offers': instance.offers.map((e) => e.toJson()).toList(),
+    };
+
+_$OfferImpl _$$OfferImplFromJson(Map<String, dynamic> json) => _$OfferImpl(
+      title: json['title'] as String,
+      values: (json['values'] as List<dynamic>?)
+              ?.map((e) => Value.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$$OfferImplToJson(_$OfferImpl instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'values': instance.values.map((e) => e.toJson()).toList(),
+    };
+
+_$ValueImpl _$$ValueImplFromJson(Map<String, dynamic> json) => _$ValueImpl(
+      value: json['value'] as String,
+    );
+
+Map<String, dynamic> _$$ValueImplToJson(_$ValueImpl instance) =>
+    <String, dynamic>{
+      'value': instance.value,
+    };
+
+_$NewsletterModelImpl _$$NewsletterModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$NewsletterModelImpl(
+      id: (json['id'] as num).toInt(),
+      component: json['__component'] as String,
+      title: json['title'] as String,
+      description: json['description'] as String,
+      newsletters: (json['newsletters'] as List<dynamic>)
+          .map((e) => Newsletter.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$NewsletterModelImplToJson(
+        _$NewsletterModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      '__component': instance.component,
+      'title': instance.title,
+      'description': instance.description,
+      'newsletters': instance.newsletters.map((e) => e.toJson()).toList(),
+    };
+
+_$NewsletterImpl _$$NewsletterImplFromJson(Map<String, dynamic> json) =>
+    _$NewsletterImpl(
+      id: (json['id'] as num).toInt(),
+      label: json['label'] as String,
+      theme: json['theme'] as String,
+      link: Link.fromJson(json['link'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$NewsletterImplToJson(_$NewsletterImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'label': instance.label,
+      'theme': instance.theme,
+      'link': instance.link.toJson(),
+    };

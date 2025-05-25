@@ -1,0 +1,1013 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$ProductListingModelImpl _$$ProductListingModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ProductListingModelImpl(
+      id: (json['id'] as num).toInt(),
+      product: Attributes.fromJson(json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$ProductListingModelImplToJson(
+        _$ProductListingModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'attributes': instance.product,
+    };
+
+_$AttributesImpl _$$AttributesImplFromJson(Map<String, dynamic> json) =>
+    _$AttributesImpl(
+      id: (json['id'] as num?)?.toInt(),
+      name: json['name'] as String,
+      type: json['type'] as String,
+      code: json['code'] as String?,
+      isActive: json['isActive'] as bool?,
+      category: json['category'] as String,
+      createdAt: json['createdAt'] == null
+          ? null
+          : DateTime.parse(json['createdAt'] as String),
+      updatedAt: json['updatedAt'] == null
+          ? null
+          : DateTime.parse(json['updatedAt'] as String),
+      prices: (json['prices'] as List<dynamic>)
+          .map((e) => Price.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      subscriptionContent: json['subscriptionContent'] == null
+          ? null
+          : SubscriptionContent.fromJson(
+              json['subscriptionContent'] as Map<String, dynamic>),
+      icon: IconImage.fromJson(json['icon'] as Map<String, dynamic>),
+      benefits: json['benefits'] == null
+          ? null
+          : Benefits.fromJson(json['benefits'] as Map<String, dynamic>),
+      metadata: (json['metadata'] as List<dynamic>?)
+          ?.map((e) => Metadatum.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      serviceContent: json['serviceContent'] as List<dynamic>? ?? const [],
+    );
+
+Map<String, dynamic> _$$AttributesImplToJson(_$AttributesImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'type': instance.type,
+      'code': instance.code,
+      'isActive': instance.isActive,
+      'category': instance.category,
+      'createdAt': instance.createdAt?.toIso8601String(),
+      'updatedAt': instance.updatedAt?.toIso8601String(),
+      'prices': instance.prices,
+      'subscriptionContent': instance.subscriptionContent,
+      'icon': instance.icon,
+      'benefits': instance.benefits,
+      'metadata': instance.metadata,
+      'serviceContent': instance.serviceContent,
+    };
+
+_$ProductImpl _$$ProductImplFromJson(Map<String, dynamic> json) =>
+    _$ProductImpl(
+      id: (json['id'] as num?)?.toInt(),
+      name: json['name'] as String,
+      type: json['type'] as String,
+      code: json['code'] as String?,
+      isActive: json['isActive'] as bool?,
+      category: json['category'] as String,
+      createdAt: json['createdAt'] == null
+          ? null
+          : DateTime.parse(json['createdAt'] as String),
+      updatedAt: json['updatedAt'] == null
+          ? null
+          : DateTime.parse(json['updatedAt'] as String),
+      prices: (json['prices'] as List<dynamic>)
+          .map((e) => Price.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      subscriptionContent: json['subscriptionContent'] == null
+          ? null
+          : SubscriptionContent.fromJson(
+              json['subscriptionContent'] as Map<String, dynamic>),
+      icon: json['icon'] == null
+          ? null
+          : IconImgMetaData.fromJson(json['icon'] as Map<String, dynamic>),
+      benefits: json['benefits'] == null
+          ? null
+          : Benefits.fromJson(json['benefits'] as Map<String, dynamic>),
+      metadata: (json['metadata'] as List<dynamic>?)
+          ?.map((e) => Metadatum.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      serviceContent: json['serviceContent'] as List<dynamic>? ?? const [],
+    );
+
+Map<String, dynamic> _$$ProductImplToJson(_$ProductImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'type': instance.type,
+      'code': instance.code,
+      'isActive': instance.isActive,
+      'category': instance.category,
+      'createdAt': instance.createdAt?.toIso8601String(),
+      'updatedAt': instance.updatedAt?.toIso8601String(),
+      'prices': instance.prices,
+      'subscriptionContent': instance.subscriptionContent,
+      'icon': instance.icon,
+      'benefits': instance.benefits,
+      'metadata': instance.metadata,
+      'serviceContent': instance.serviceContent,
+    };
+
+_$BenefitsImpl _$$BenefitsImplFromJson(Map<String, dynamic> json) =>
+    _$BenefitsImpl(
+      data: (json['data'] as List<dynamic>)
+          .map((e) => Datum.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$BenefitsImplToJson(_$BenefitsImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data,
+    };
+
+_$DatumImpl _$$DatumImplFromJson(Map<String, dynamic> json) => _$DatumImpl(
+      id: (json['id'] as num).toInt(),
+      attributes:
+          DatumAttributes.fromJson(json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$DatumImplToJson(_$DatumImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'attributes': instance.attributes,
+    };
+
+_$DatumAttributesImpl _$$DatumAttributesImplFromJson(
+        Map<String, dynamic> json) =>
+    _$DatumAttributesImpl(
+      label: json['label'] as String,
+      code: json['code'] as String,
+      isActive: json['isActive'] as bool,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+    );
+
+Map<String, dynamic> _$$DatumAttributesImplToJson(
+        _$DatumAttributesImpl instance) =>
+    <String, dynamic>{
+      'label': instance.label,
+      'code': instance.code,
+      'isActive': instance.isActive,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+_$MetadatumImpl _$$MetadatumImplFromJson(Map<String, dynamic> json) =>
+    _$MetadatumImpl(
+      id: (json['id'] as num).toInt(),
+      key: json['key'] as String,
+      value: json['value'] as String,
+    );
+
+Map<String, dynamic> _$$MetadatumImplToJson(_$MetadatumImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'key': instance.key,
+      'value': instance.value,
+    };
+
+_$PriceImpl _$$PriceImplFromJson(Map<String, dynamic> json) => _$PriceImpl(
+      id: (json['id'] as num).toInt(),
+      unitAmount: (json['unitAmount'] as num).toInt(),
+      label: json['label'] as String,
+      billingScheme: json['billingScheme'] as String?,
+      pricingType: json['pricingType'] as String,
+      recurringInterval: json['recurringInterval'] as String?,
+      recurringIntervalCount: (json['recurringIntervalCount'] as num?)?.toInt(),
+      recurringPlanId: json['recurringPlanId'],
+      benefitApplicableToMembersLimit:
+          (json['benefitApplicableToMembersLimit'] as num).toInt(),
+      discountPercentage: (json['discountPercentage'] as num?)?.toInt(),
+      amountWithoutDiscount: (json['amountWithoutDiscount'] as num?)?.toInt(),
+      rules: (json['rules'] as List<dynamic>?)
+              ?.map((e) => Rule.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      isSelected: json['isSelected'] as bool? ?? false,
+    );
+
+Map<String, dynamic> _$$PriceImplToJson(_$PriceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'unitAmount': instance.unitAmount,
+      'label': instance.label,
+      'billingScheme': instance.billingScheme,
+      'pricingType': instance.pricingType,
+      'recurringInterval': instance.recurringInterval,
+      'recurringIntervalCount': instance.recurringIntervalCount,
+      'recurringPlanId': instance.recurringPlanId,
+      'benefitApplicableToMembersLimit':
+          instance.benefitApplicableToMembersLimit,
+      'discountPercentage': instance.discountPercentage,
+      'amountWithoutDiscount': instance.amountWithoutDiscount,
+      'rules': instance.rules,
+      'isSelected': instance.isSelected,
+    };
+
+_$RuleImpl _$$RuleImplFromJson(Map<String, dynamic> json) => _$RuleImpl(
+      id: (json['id'] as num).toInt(),
+      ruleType: json['ruleType'] as String,
+      value: json['value'] as String,
+      label: json['label'] as String,
+    );
+
+Map<String, dynamic> _$$RuleImplToJson(_$RuleImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'ruleType': instance.ruleType,
+      'value': instance.value,
+      'label': instance.label,
+    };
+
+_$SubscriptionContentImpl _$$SubscriptionContentImplFromJson(
+        Map<String, dynamic> json) =>
+    _$SubscriptionContentImpl(
+      id: (json['id'] as num).toInt(),
+      mainHeading: json['mainHeading'] as String,
+      headingDescription: json['headingDescription'] as String,
+      subHeading1: json['subHeading1'] as String,
+      subHeading1Description: json['subHeading1Description'] as String,
+      showSinglesPlan: json['showSinglesPlan'] as bool,
+      showCouplePlans: json['showCouplePlans'] as bool,
+      exploreCouplePlansHeading: json['exploreCouplePlansHeading'] as String?,
+      faqHeading: json['faqHeading'] as String,
+      exploreNowCtaLabel: json['exploreNowCTALabel'] as String,
+      benefitsHeading: json['benefitsHeading'] as String,
+      faq: (json['FAQ'] as List<dynamic>?)
+              ?.map((e) => Faq.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      productImage: json['productImage'] == null
+          ? null
+          : ProductImage.fromJson(json['productImage'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$SubscriptionContentImplToJson(
+        _$SubscriptionContentImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'mainHeading': instance.mainHeading,
+      'headingDescription': instance.headingDescription,
+      'subHeading1': instance.subHeading1,
+      'subHeading1Description': instance.subHeading1Description,
+      'showSinglesPlan': instance.showSinglesPlan,
+      'showCouplePlans': instance.showCouplePlans,
+      'exploreCouplePlansHeading': instance.exploreCouplePlansHeading,
+      'faqHeading': instance.faqHeading,
+      'exploreNowCTALabel': instance.exploreNowCtaLabel,
+      'benefitsHeading': instance.benefitsHeading,
+      'FAQ': instance.faq,
+      'productImage': instance.productImage,
+    };
+
+_$FaqImpl _$$FaqImplFromJson(Map<String, dynamic> json) => _$FaqImpl(
+      id: (json['id'] as num).toInt(),
+      question: json['question'] as String,
+      answer: json['answer'] as String,
+    );
+
+Map<String, dynamic> _$$FaqImplToJson(_$FaqImpl instance) => <String, dynamic>{
+      'id': instance.id,
+      'question': instance.question,
+      'answer': instance.answer,
+    };
+
+_$ProductImageImpl _$$ProductImageImplFromJson(Map<String, dynamic> json) =>
+    _$ProductImageImpl(
+      data: ImgDetail.fromJson(json['data'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$ProductImageImplToJson(_$ProductImageImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data,
+    };
+
+_$ImgDetailImpl _$$ImgDetailImplFromJson(Map<String, dynamic> json) =>
+    _$ImgDetailImpl(
+      id: (json['id'] as num).toInt(),
+      attributes:
+          DataAttributes.fromJson(json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$ImgDetailImplToJson(_$ImgDetailImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'attributes': instance.attributes,
+    };
+
+_$DataAttributesImpl _$$DataAttributesImplFromJson(Map<String, dynamic> json) =>
+    _$DataAttributesImpl(
+      name: json['name'] as String,
+      width: (json['width'] as num).toInt(),
+      height: (json['height'] as num).toInt(),
+      formats: Formats.fromJson(json['formats'] as Map<String, dynamic>),
+      hash: json['hash'] as String,
+      url: json['url'] as String,
+      previewUrl: json['previewUrl'],
+    );
+
+Map<String, dynamic> _$$DataAttributesImplToJson(
+        _$DataAttributesImpl instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'width': instance.width,
+      'height': instance.height,
+      'formats': instance.formats,
+      'hash': instance.hash,
+      'url': instance.url,
+      'previewUrl': instance.previewUrl,
+    };
+
+_$ProductBasicDetailsModelImpl _$$ProductBasicDetailsModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ProductBasicDetailsModelImpl(
+      id: (json['id'] as num).toInt(),
+      attributes:
+          ProductMetaData.fromJson(json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$ProductBasicDetailsModelImplToJson(
+        _$ProductBasicDetailsModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'attributes': instance.attributes,
+    };
+
+_$ProductMetaDataImpl _$$ProductMetaDataImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ProductMetaDataImpl(
+      name: json['name'] as String,
+      type: json['type'] as String,
+      code: json['code'] as String,
+      isActive: json['isActive'] as bool,
+      category: json['category'] as String,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      metadata: (json['metadata'] as List<dynamic>)
+          .map((e) => Metadatum.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      icon: IconImage.fromJson(json['icon'] as Map<String, dynamic>),
+      upgradableProducts: json['upgradeable_products'] == null
+          ? const UpgradableProducts(data: [])
+          : UpgradableProducts.fromJson(
+              json['upgradeable_products'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$ProductMetaDataImplToJson(
+        _$ProductMetaDataImpl instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'type': instance.type,
+      'code': instance.code,
+      'isActive': instance.isActive,
+      'category': instance.category,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'metadata': instance.metadata,
+      'icon': instance.icon,
+      'upgradeable_products': instance.upgradableProducts,
+    };
+
+_$IconImageImpl _$$IconImageImplFromJson(Map<String, dynamic> json) =>
+    _$IconImageImpl(
+      data: Data.fromJson(json['data'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$IconImageImplToJson(_$IconImageImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data,
+    };
+
+_$DataImpl _$$DataImplFromJson(Map<String, dynamic> json) => _$DataImpl(
+      id: (json['id'] as num).toInt(),
+      attributes:
+          IconImgMetaData.fromJson(json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$DataImplToJson(_$DataImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'attributes': instance.attributes,
+    };
+
+_$IconImgMetaDataImpl _$$IconImgMetaDataImplFromJson(
+        Map<String, dynamic> json) =>
+    _$IconImgMetaDataImpl(
+      name: json['name'] as String,
+      alternativeText: json['alternativeText'],
+      caption: json['caption'],
+      width: (json['width'] as num).toInt(),
+      height: (json['height'] as num).toInt(),
+      formats: json['formats'],
+      hash: json['hash'] as String,
+      ext: json['ext'] as String,
+      mime: json['mime'] as String,
+      size: (json['size'] as num).toDouble(),
+      url: json['url'] as String,
+      previewUrl: json['previewUrl'],
+      provider: json['provider'] as String,
+      providerMetadata: json['provider_metadata'],
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+    );
+
+Map<String, dynamic> _$$IconImgMetaDataImplToJson(
+        _$IconImgMetaDataImpl instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'alternativeText': instance.alternativeText,
+      'caption': instance.caption,
+      'width': instance.width,
+      'height': instance.height,
+      'formats': instance.formats,
+      'hash': instance.hash,
+      'ext': instance.ext,
+      'mime': instance.mime,
+      'size': instance.size,
+      'url': instance.url,
+      'previewUrl': instance.previewUrl,
+      'provider': instance.provider,
+      'provider_metadata': instance.providerMetadata,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+_$UpgradableProductsImpl _$$UpgradableProductsImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UpgradableProductsImpl(
+      data: (json['data'] as List<dynamic>)
+          .map((e) =>
+              ProductBasicDetailsModel.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$UpgradableProductsImplToJson(
+        _$UpgradableProductsImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data,
+    };
+
+_$HeaderModelImpl _$$HeaderModelImplFromJson(Map<String, dynamic> json) =>
+    _$HeaderModelImpl(
+      id: (json['id'] as num).toInt(),
+      component: json['__component'] as String,
+      heading: json['heading'] as String,
+      description: json['description'] as String,
+      headingAlignment: json['headingAlignment'] as String,
+      serviceImage:
+          BannerImage.fromJson(json['serviceImage'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$HeaderModelImplToJson(_$HeaderModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      '__component': instance.component,
+      'heading': instance.heading,
+      'description': instance.description,
+      'headingAlignment': instance.headingAlignment,
+      'serviceImage': instance.serviceImage,
+    };
+
+_$ServiceOfferingModelImpl _$$ServiceOfferingModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ServiceOfferingModelImpl(
+      id: (json['id'] as num).toInt(),
+      component: json['__component'] as String,
+      label: json['label'] as String,
+      offerings: (json['offerings'] as List<dynamic>)
+          .map((e) => OfferingList.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$ServiceOfferingModelImplToJson(
+        _$ServiceOfferingModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      '__component': instance.component,
+      'label': instance.label,
+      'offerings': instance.offerings,
+    };
+
+_$ServicePriceModelImpl _$$ServicePriceModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ServicePriceModelImpl(
+      id: (json['id'] as num).toInt(),
+      component: json['__component'] as String,
+      label: json['label'] as String,
+      startPrice: (json['startPrice'] as num).toInt(),
+      priceSuperscript: json['priceSuperscript'] as String? ?? null,
+      priceDescription: json['priceDescription'] as String? ?? null,
+      endPrice: (json['endPrice'] as num?)?.toInt() ?? null,
+    );
+
+Map<String, dynamic> _$$ServicePriceModelImplToJson(
+        _$ServicePriceModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      '__component': instance.component,
+      'label': instance.label,
+      'startPrice': instance.startPrice,
+      'priceSuperscript': instance.priceSuperscript,
+      'priceDescription': instance.priceDescription,
+      'endPrice': instance.endPrice,
+    };
+
+_$OfferingListImpl _$$OfferingListImplFromJson(Map<String, dynamic> json) =>
+    _$OfferingListImpl(
+      id: (json['id'] as num).toInt(),
+      value: json['value'] as String,
+    );
+
+Map<String, dynamic> _$$OfferingListImplToJson(_$OfferingListImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'value': instance.value,
+    };
+
+_$FaqModelDetailsImpl _$$FaqModelDetailsImplFromJson(
+        Map<String, dynamic> json) =>
+    _$FaqModelDetailsImpl(
+      id: (json['id'] as num).toInt(),
+      component: json['__component'] as String,
+      label: json['label'] as String,
+      faq: (json['faq'] as List<dynamic>)
+          .map((e) => Faq.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$FaqModelDetailsImplToJson(
+        _$FaqModelDetailsImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      '__component': instance.component,
+      'label': instance.label,
+      'faq': instance.faq,
+    };
+
+_$BookSubscriptionModelImpl _$$BookSubscriptionModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$BookSubscriptionModelImpl(
+      data: SubscriptionData.fromJson(json['data'] as Map<String, dynamic>),
+      details: Details.fromJson(json['details'] as Map<String, dynamic>),
+      success: json['success'] as bool,
+    );
+
+Map<String, dynamic> _$$BookSubscriptionModelImplToJson(
+        _$BookSubscriptionModelImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data,
+      'details': instance.details,
+      'success': instance.success,
+    };
+
+_$SubscriptionDataImpl _$$SubscriptionDataImplFromJson(
+        Map<String, dynamic> json) =>
+    _$SubscriptionDataImpl(
+      id: (json['id'] as num).toInt(),
+      paymentStatus: json['paymentStatus'] as String,
+      status: json['status'] as String,
+      expiresOn: DateTime.parse(json['expiresOn'] as String),
+      startDate: DateTime.parse(json['startDate'] as String),
+      priceId: (json['priceId'] as num).toInt(),
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      product:
+          SubscriptionProduct.fromJson(json['product'] as Map<String, dynamic>),
+      userId: (json['userId'] as num).toInt(),
+      familyMemberIds: (json['familyMemberIds'] as List<dynamic>)
+          .map((e) => (e as num).toInt())
+          .toList(),
+      amount: (json['amount'] as num).toInt(),
+      razorpaySubscriptionId: json['razorpaySubscriptionId'] as String,
+      razorpayApiKey: json['razorpay_api_key'] as String,
+      subscription: json['Subscription'] == null
+          ? null
+          : Subscription.fromJson(json['Subscription'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$SubscriptionDataImplToJson(
+        _$SubscriptionDataImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'paymentStatus': instance.paymentStatus,
+      'status': instance.status,
+      'expiresOn': instance.expiresOn.toIso8601String(),
+      'startDate': instance.startDate.toIso8601String(),
+      'priceId': instance.priceId,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'product': instance.product,
+      'userId': instance.userId,
+      'familyMemberIds': instance.familyMemberIds,
+      'amount': instance.amount,
+      'razorpaySubscriptionId': instance.razorpaySubscriptionId,
+      'razorpay_api_key': instance.razorpayApiKey,
+      'Subscription': instance.subscription,
+    };
+
+_$SubscriptionProductImpl _$$SubscriptionProductImplFromJson(
+        Map<String, dynamic> json) =>
+    _$SubscriptionProductImpl(
+      id: (json['id'] as num).toInt(),
+      category: json['category'] as String,
+      name: json['name'] as String,
+      type: json['type'] as String,
+      prices: (json['prices'] as List<dynamic>)
+          .map((e) => Price.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$SubscriptionProductImplToJson(
+        _$SubscriptionProductImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'category': instance.category,
+      'name': instance.name,
+      'type': instance.type,
+      'prices': instance.prices,
+    };
+
+_$SubscriptionImpl _$$SubscriptionImplFromJson(Map<String, dynamic> json) =>
+    _$SubscriptionImpl(
+      id: json['id'] as String,
+      entity: json['entity'] as String,
+      planId: json['plan_id'] as String,
+      status: json['status'] as String,
+      currentStart: json['current_start'],
+      currentEnd: json['current_end'],
+      endedAt: json['ended_at'],
+      quantity: (json['quantity'] as num).toInt(),
+      notes: json['notes'] == null
+          ? null
+          : Notes.fromJson(json['notes'] as Map<String, dynamic>),
+      chargeAt: json['charge_at'],
+      startAt: json['start_at'],
+      endAt: json['end_at'],
+      authAttempts: (json['auth_attempts'] as num).toInt(),
+      totalCount: (json['total_count'] as num).toInt(),
+      paidCount: (json['paid_count'] as num).toInt(),
+      customerNotify: json['customer_notify'] as bool,
+      createdAt: (json['created_at'] as num).toInt(),
+      expireBy: json['expire_by'],
+      shortUrl: json['short_url'] as String,
+      hasScheduledChanges: json['has_scheduled_changes'] as bool,
+      changeScheduledAt: json['change_scheduled_at'],
+      source: json['source'] as String,
+      remainingCount: (json['remaining_count'] as num).toInt(),
+    );
+
+Map<String, dynamic> _$$SubscriptionImplToJson(_$SubscriptionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'entity': instance.entity,
+      'plan_id': instance.planId,
+      'status': instance.status,
+      'current_start': instance.currentStart,
+      'current_end': instance.currentEnd,
+      'ended_at': instance.endedAt,
+      'quantity': instance.quantity,
+      'notes': instance.notes,
+      'charge_at': instance.chargeAt,
+      'start_at': instance.startAt,
+      'end_at': instance.endAt,
+      'auth_attempts': instance.authAttempts,
+      'total_count': instance.totalCount,
+      'paid_count': instance.paidCount,
+      'customer_notify': instance.customerNotify,
+      'created_at': instance.createdAt,
+      'expire_by': instance.expireBy,
+      'short_url': instance.shortUrl,
+      'has_scheduled_changes': instance.hasScheduledChanges,
+      'change_scheduled_at': instance.changeScheduledAt,
+      'source': instance.source,
+      'remaining_count': instance.remainingCount,
+    };
+
+_$SubscriptionTrackerImpl _$$SubscriptionTrackerImplFromJson(
+        Map<String, dynamic> json) =>
+    _$SubscriptionTrackerImpl(
+      id: (json['id'] as num).toInt(),
+      paymentStatus: json['paymentStatus'] as String,
+      status: json['status'] as String,
+      expiresOn: DateTime.parse(json['expiresOn'] as String),
+      startDate: DateTime.parse(json['startDate'] as String),
+      amount: (json['amount'] as num).toInt(),
+      priceId: (json['priceId'] as num).toInt(),
+      razorpaySubscriptionId: json['razorpaySubscriptionId'],
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+    );
+
+Map<String, dynamic> _$$SubscriptionTrackerImplToJson(
+        _$SubscriptionTrackerImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'paymentStatus': instance.paymentStatus,
+      'status': instance.status,
+      'expiresOn': instance.expiresOn.toIso8601String(),
+      'startDate': instance.startDate.toIso8601String(),
+      'amount': instance.amount,
+      'priceId': instance.priceId,
+      'razorpaySubscriptionId': instance.razorpaySubscriptionId,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+_$NotesImpl _$$NotesImplFromJson(Map<String, dynamic> json) => _$NotesImpl(
+      subscriptionTrackerId: json['subscriptionTrackerId'] as String,
+    );
+
+Map<String, dynamic> _$$NotesImplToJson(_$NotesImpl instance) =>
+    <String, dynamic>{
+      'subscriptionTrackerId': instance.subscriptionTrackerId,
+    };
+
+_$DetailsImpl _$$DetailsImplFromJson(Map<String, dynamic> json) =>
+    _$DetailsImpl(
+      message: json['message'] as String,
+      name: json['name'] as String,
+      status: (json['status'] as num).toInt(),
+    );
+
+Map<String, dynamic> _$$DetailsImplToJson(_$DetailsImpl instance) =>
+    <String, dynamic>{
+      'message': instance.message,
+      'name': instance.name,
+      'status': instance.status,
+    };
+
+_$SubscriptionModelImpl _$$SubscriptionModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$SubscriptionModelImpl(
+      data: (json['data'] as List<dynamic>)
+          .map((e) => SubscriptionDetails.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$SubscriptionModelImplToJson(
+        _$SubscriptionModelImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data,
+    };
+
+_$SubscriptionDetailsImpl _$$SubscriptionDetailsImplFromJson(
+        Map<String, dynamic> json) =>
+    _$SubscriptionDetailsImpl(
+      id: (json['id'] as num).toInt(),
+      paymentStatus: json['paymentStatus'] as String,
+      status: json['status'] as String,
+      expiresOn: DateTime.parse(json['expiresOn'] as String),
+      startDate: DateTime.parse(json['startDate'] as String),
+      amount: (json['amount'] as num).toInt(),
+      priceId: (json['priceId'] as num?)?.toInt() ?? null,
+      razorpaySubscriptionId: json['razorpaySubscriptionId'] as String?,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      subscriptionStatus: json['subscriptionStatus'] as String?,
+      metadata: json['metadata'] as List<dynamic>?,
+      product: Product.fromJson(json['product'] as Map<String, dynamic>),
+      subscribedBy: json['subscribedBy'] == null
+          ? null
+          : FamilyMember.fromJson(json['subscribedBy'] as Map<String, dynamic>),
+      belongsTo: (json['belongsTo'] as List<dynamic>?)
+          ?.map((e) => FamilyMember.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      razorpay_subscription: json['razorpay_subscription'] == null
+          ? null
+          : RazorpaySubscription.fromJson(
+              json['razorpay_subscription'] as Map<String, dynamic>),
+      payment_transactions: (json['payment_transactions'] as List<dynamic>?)
+              ?.map(
+                  (e) => PaymentTransaction.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      benefits: (json['benefits'] as List<dynamic>?)
+              ?.map((e) => DatumAttributes.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$$SubscriptionDetailsImplToJson(
+        _$SubscriptionDetailsImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'paymentStatus': instance.paymentStatus,
+      'status': instance.status,
+      'expiresOn': instance.expiresOn.toIso8601String(),
+      'startDate': instance.startDate.toIso8601String(),
+      'amount': instance.amount,
+      'priceId': instance.priceId,
+      'razorpaySubscriptionId': instance.razorpaySubscriptionId,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'subscriptionStatus': instance.subscriptionStatus,
+      'metadata': instance.metadata,
+      'product': instance.product,
+      'subscribedBy': instance.subscribedBy,
+      'belongsTo': instance.belongsTo,
+      'razorpay_subscription': instance.razorpay_subscription,
+      'payment_transactions': instance.payment_transactions,
+      'benefits': instance.benefits,
+    };
+
+_$FamilyMemberImpl _$$FamilyMemberImplFromJson(Map<String, dynamic> json) =>
+    _$FamilyMemberImpl(
+      id: (json['id'] as num).toInt(),
+      firstName: json['firstName'] as String,
+      lastName: json['lastName'] as String,
+      relation: json['relation'] as String? ?? null,
+      dateOfBirth: json['dateOfBirth'] as String? ?? null,
+      profileImg: json['profileImg'] == null
+          ? null
+          : IconImgMetaData.fromJson(
+              json['profileImg'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$FamilyMemberImplToJson(_$FamilyMemberImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'firstName': instance.firstName,
+      'lastName': instance.lastName,
+      'relation': instance.relation,
+      'dateOfBirth': instance.dateOfBirth,
+      'profileImg': instance.profileImg,
+    };
+
+_$RazorpaySubscriptionImpl _$$RazorpaySubscriptionImplFromJson(
+        Map<String, dynamic> json) =>
+    _$RazorpaySubscriptionImpl(
+      id: (json['id'] as num).toInt(),
+      subscriptionId: json['subscriptionId'] as String,
+      status: json['status'] as String,
+      planId: json['planId'] as String,
+      chargeAt: json['chargeAt'] == null
+          ? null
+          : DateTime.parse(json['chargeAt'] as String),
+      totalCount: (json['totalCount'] as num).toInt(),
+      paidCount: (json['paidCount'] as num).toInt(),
+      shortUrl: json['shortUrl'],
+      hasScheduledChanges: json['hasScheduledChanges'] as bool,
+      remainingCount: (json['remainingCount'] as num).toInt(),
+      customerId: json['customerId'],
+      currentStart: DateTime.parse(json['currentStart'] as String),
+      currentEnd: DateTime.parse(json['currentEnd'] as String),
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+    );
+
+Map<String, dynamic> _$$RazorpaySubscriptionImplToJson(
+        _$RazorpaySubscriptionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'subscriptionId': instance.subscriptionId,
+      'status': instance.status,
+      'planId': instance.planId,
+      'chargeAt': instance.chargeAt?.toIso8601String(),
+      'totalCount': instance.totalCount,
+      'paidCount': instance.paidCount,
+      'shortUrl': instance.shortUrl,
+      'hasScheduledChanges': instance.hasScheduledChanges,
+      'remainingCount': instance.remainingCount,
+      'customerId': instance.customerId,
+      'currentStart': instance.currentStart.toIso8601String(),
+      'currentEnd': instance.currentEnd.toIso8601String(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+_$PaymentTransactionImpl _$$PaymentTransactionImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PaymentTransactionImpl(
+      id: (json['id'] as num).toInt(),
+      vendorInvoiceId: json['vendorInvoiceId'],
+      invoice: json['invoice'] == null
+          ? null
+          : Invoice.fromJson(json['invoice'] as Map<String, dynamic>),
+      transactionDate: json['transactionDate'] == null
+          ? null
+          : DateTime.parse(json['transactionDate'] as String),
+      status: json['status'] as String?,
+      request: json['request'],
+      paymentFor: json['paymentFor'] as String?,
+      value: (json['value'] as num?)?.toInt(),
+      paymentMethod: json['paymentMethod'] as String?,
+      uniqueKey: json['uniqueKey'] as String?,
+      vendor: json['vendor'] as String?,
+      vendorPaymentId: json['vendorPaymentId'] as String?,
+    );
+
+Map<String, dynamic> _$$PaymentTransactionImplToJson(
+        _$PaymentTransactionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'vendorInvoiceId': instance.vendorInvoiceId,
+      'invoice': instance.invoice,
+      'transactionDate': instance.transactionDate?.toIso8601String(),
+      'status': instance.status,
+      'request': instance.request,
+      'paymentFor': instance.paymentFor,
+      'value': instance.value,
+      'paymentMethod': instance.paymentMethod,
+      'uniqueKey': instance.uniqueKey,
+      'vendor': instance.vendor,
+      'vendorPaymentId': instance.vendorPaymentId,
+    };
+
+_$InvoiceImpl _$$InvoiceImplFromJson(Map<String, dynamic> json) =>
+    _$InvoiceImpl(
+      id: (json['id'] as num).toInt(),
+      name: json['name'] as String,
+      alternativeText: json['alternativeText'],
+      caption: json['caption'],
+      width: json['width'],
+      height: json['height'],
+      formats: json['formats'],
+      hash: json['hash'] as String,
+      ext: json['ext'] as String,
+      mime: json['mime'] as String,
+      size: (json['size'] as num).toDouble(),
+      url: json['url'] as String,
+      previewUrl: json['previewUrl'],
+      provider: json['provider'] as String,
+      providerMetadata: json['providerMetadata'],
+      folderPath: json['folderPath'] as String,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+    );
+
+Map<String, dynamic> _$$InvoiceImplToJson(_$InvoiceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'alternativeText': instance.alternativeText,
+      'caption': instance.caption,
+      'width': instance.width,
+      'height': instance.height,
+      'formats': instance.formats,
+      'hash': instance.hash,
+      'ext': instance.ext,
+      'mime': instance.mime,
+      'size': instance.size,
+      'url': instance.url,
+      'previewUrl': instance.previewUrl,
+      'provider': instance.provider,
+      'providerMetadata': instance.providerMetadata,
+      'folderPath': instance.folderPath,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+_$AcquirerDataImpl _$$AcquirerDataImplFromJson(Map<String, dynamic> json) =>
+    _$AcquirerDataImpl(
+      auth_code: json['auth_code'] as String,
+    );
+
+Map<String, dynamic> _$$AcquirerDataImplToJson(_$AcquirerDataImpl instance) =>
+    <String, dynamic>{
+      'auth_code': instance.auth_code,
+    };
+
+_$CardImpl _$$CardImplFromJson(Map<String, dynamic> json) => _$CardImpl(
+      id: json['id'] as String,
+      emi: json['emi'] as bool,
+      name: json['name'] as String,
+      type: json['type'] as String,
+      color: json['color'] as String,
+      last4: json['last4'] as String,
+      entity: json['entity'] as String,
+      issuer: json['issuer'] as String?,
+      number: json['number'] as String,
+      network: json['network'] as String,
+      sub_type: json['sub_type'] as String,
+      token_iin: json['token_iin'],
+      expiry_year: json['expiry_year'],
+      expiry_month: json['expiry_month'],
+      international: json['international'] as bool,
+    );
+
+Map<String, dynamic> _$$CardImplToJson(_$CardImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'emi': instance.emi,
+      'name': instance.name,
+      'type': instance.type,
+      'color': instance.color,
+      'last4': instance.last4,
+      'entity': instance.entity,
+      'issuer': instance.issuer,
+      'number': instance.number,
+      'network': instance.network,
+      'sub_type': instance.sub_type,
+      'token_iin': instance.token_iin,
+      'expiry_year': instance.expiry_year,
+      'expiry_month': instance.expiry_month,
+      'international': instance.international,
+    };

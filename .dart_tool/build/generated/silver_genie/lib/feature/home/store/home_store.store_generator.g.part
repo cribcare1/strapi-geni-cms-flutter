@@ -1,0 +1,161 @@
+// **************************************************************************
+// StoreGenerator
+// **************************************************************************
+
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
+
+mixin _$HomeStore on _HomeScreenStore, Store {
+  Computed<bool>? _$isHomepageDataLoadedComputed;
+
+  @override
+  bool get isHomepageDataLoaded => (_$isHomepageDataLoadedComputed ??=
+          Computed<bool>(() => super.isHomepageDataLoaded,
+              name: '_HomeScreenStore.isHomepageDataLoaded'))
+      .value;
+  Computed<MasterDataModel?>? _$getMasterDataModelComputed;
+
+  @override
+  MasterDataModel? get getMasterDataModel => (_$getMasterDataModelComputed ??=
+          Computed<MasterDataModel?>(() => super.getMasterDataModel,
+              name: '_HomeScreenStore.getMasterDataModel'))
+      .value;
+  Computed<List<dynamic>>? _$isHomepageDataComputed;
+
+  @override
+  List<dynamic> get isHomepageData => (_$isHomepageDataComputed ??=
+          Computed<List<dynamic>>(() => super.isHomepageData,
+              name: '_HomeScreenStore.isHomepageData'))
+      .value;
+
+  late final _$familyMembersAtom =
+      Atom(name: '_HomeScreenStore.familyMembers', context: context);
+
+  @override
+  ObservableList<FamilyMember> get familyMembers {
+    _$familyMembersAtom.reportRead();
+    return super.familyMembers;
+  }
+
+  @override
+  set familyMembers(ObservableList<FamilyMember> value) {
+    _$familyMembersAtom.reportWrite(value, super.familyMembers, () {
+      super.familyMembers = value;
+    });
+  }
+
+  late final _$selectedIndexAtom =
+      Atom(name: '_HomeScreenStore.selectedIndex', context: context);
+
+  @override
+  int get selectedIndex {
+    _$selectedIndexAtom.reportRead();
+    return super.selectedIndex;
+  }
+
+  @override
+  set selectedIndex(int value) {
+    _$selectedIndexAtom.reportWrite(value, super.selectedIndex, () {
+      super.selectedIndex = value;
+    });
+  }
+
+  late final _$homePageComponentDetailsListAtom = Atom(
+      name: '_HomeScreenStore.homePageComponentDetailsList', context: context);
+
+  @override
+  Either<Failure, List<dynamic>>? get homePageComponentDetailsList {
+    _$homePageComponentDetailsListAtom.reportRead();
+    return super.homePageComponentDetailsList;
+  }
+
+  @override
+  set homePageComponentDetailsList(Either<Failure, List<dynamic>>? value) {
+    _$homePageComponentDetailsListAtom
+        .reportWrite(value, super.homePageComponentDetailsList, () {
+      super.homePageComponentDetailsList = value;
+    });
+  }
+
+  late final _$isHomepageComponentInitialloadingAtom = Atom(
+      name: '_HomeScreenStore.isHomepageComponentInitialloading',
+      context: context);
+
+  @override
+  bool get isHomepageComponentInitialloading {
+    _$isHomepageComponentInitialloadingAtom.reportRead();
+    return super.isHomepageComponentInitialloading;
+  }
+
+  @override
+  set isHomepageComponentInitialloading(bool value) {
+    _$isHomepageComponentInitialloadingAtom
+        .reportWrite(value, super.isHomepageComponentInitialloading, () {
+      super.isHomepageComponentInitialloading = value;
+    });
+  }
+
+  late final _$isHomepageComponentRefreshingAtom = Atom(
+      name: '_HomeScreenStore.isHomepageComponentRefreshing', context: context);
+
+  @override
+  bool get isHomepageComponentRefreshing {
+    _$isHomepageComponentRefreshingAtom.reportRead();
+    return super.isHomepageComponentRefreshing;
+  }
+
+  @override
+  set isHomepageComponentRefreshing(bool value) {
+    _$isHomepageComponentRefreshingAtom
+        .reportWrite(value, super.isHomepageComponentRefreshing, () {
+      super.isHomepageComponentRefreshing = value;
+    });
+  }
+
+  late final _$refreshHomePageDataAsyncAction =
+      AsyncAction('_HomeScreenStore.refreshHomePageData', context: context);
+
+  @override
+  Future<void> refreshHomePageData() {
+    return _$refreshHomePageDataAsyncAction
+        .run(() => super.refreshHomePageData());
+  }
+
+  late final _$_HomeScreenStoreActionController =
+      ActionController(name: '_HomeScreenStore', context: context);
+
+  @override
+  void selectAvatar(int index) {
+    final _$actionInfo = _$_HomeScreenStoreActionController.startAction(
+        name: '_HomeScreenStore.selectAvatar');
+    try {
+      return super.selectAvatar(index);
+    } finally {
+      _$_HomeScreenStoreActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void initHomePageData() {
+    final _$actionInfo = _$_HomeScreenStoreActionController.startAction(
+        name: '_HomeScreenStore.initHomePageData');
+    try {
+      return super.initHomePageData();
+    } finally {
+      _$_HomeScreenStoreActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  String toString() {
+    return '''
+familyMembers: ${familyMembers},
+selectedIndex: ${selectedIndex},
+homePageComponentDetailsList: ${homePageComponentDetailsList},
+isHomepageComponentInitialloading: ${isHomepageComponentInitialloading},
+isHomepageComponentRefreshing: ${isHomepageComponentRefreshing},
+isHomepageDataLoaded: ${isHomepageDataLoaded},
+getMasterDataModel: ${getMasterDataModel},
+isHomepageData: ${isHomepageData}
+    ''';
+  }
+}
