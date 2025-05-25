@@ -9,6 +9,7 @@ import 'package:silver_genie/feature/book_services/model/payment_status_model.da
 import 'package:silver_genie/feature/book_services/model/service_tracking_response.dart';
 import 'package:silver_genie/feature/genie/model/product_listing_model.dart';
 import 'package:silver_genie/feature/genie/services/product_listing_services.dart';
+import 'package:silver_genie/main.dart';
 
 part 'product_listing_store.g.dart';
 
@@ -150,18 +151,48 @@ abstract class _ProductListingStoreBase with Store {
               .toList()
           : [];
 
+  // @computed
+  // List<ProductBasicDetailsModel> get getHomeCareServicesList =>
+  //     productBasicDetailsModelList != null
+  //         ? productBasicDetailsModelList!
+  //             .where(
+  //               (element) =>
+  //                   element.attributes.category == 'homeCare' &&
+  //                   element.attributes.isActive == false &&
+  //                   element.attributes.type == 'service',
+  //
+  //             )
+  //             .toList()
+  //         : [];
+
   @computed
-  List<ProductBasicDetailsModel> get getHomeCareServicesList =>
-      productBasicDetailsModelList != null
-          ? productBasicDetailsModelList!
-              .where(
-                (element) =>
-                    element.attributes.category == 'homeCare' &&
-                    element.attributes.isActive == true &&
-                    element.attributes.type == 'service',
-              )
-              .toList()
-          : [];
+  List<ProductBasicDetailsModel> get getHomeCareServicesList {
+    print('getHomeCareServicesList called');
+    if (productBasicDetailsModelList == null) {
+      print('productBasicDetailsModelList is null');
+      return [];
+    }
+    print('productBasicDetailsModelList length: ${productBasicDetailsModelList!.length}');
+
+    final filtered = productBasicDetailsModelList!
+        .map((element) {
+      print('Inspecting: ${element.attributes.category}, '
+          '${element.attributes.isActive}, '
+          '${element.attributes.type}');
+      return element;
+    })
+        .where(
+          (element) =>
+      element.attributes.category == 'homeCare' &&
+          element.attributes.isActive == false &&
+          element.attributes.type == 'service',
+    )
+        .toList();
+
+    print('Filtered list length: ${filtered.length}');
+    return filtered;
+  }
+
 
   @computed
   List<ProductBasicDetailsModel> get getHealthCareServicesList =>
@@ -192,6 +223,7 @@ abstract class _ProductListingStoreBase with Store {
     fetchProductLoading = true;
     productListingService.getAllProductBasicDetails().then((value) {
       value.fold((l) {
+        print('Failure: $l');
         l.maybeMap(
           socketError: (value) => getProductFailure = 'No Internet',
           orElse: () {
@@ -199,6 +231,7 @@ abstract class _ProductListingStoreBase with Store {
           },
         );
       }, (r) {
+        print('Success: Loaded ${r.length} products');
         productBasicDetailsModelList = r;
         isProductLoaded = true;
       });

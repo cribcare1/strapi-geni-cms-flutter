@@ -8,6 +8,7 @@ import 'package:silver_genie/core/utils/http_client.dart';
 import 'package:silver_genie/feature/home/model/home_page_model.dart';
 import 'package:silver_genie/feature/home/model/master_data_model.dart';
 import 'package:silver_genie/feature/home/repository/local/home_page_details.dart';
+import 'package:silver_genie/main.dart';
 
 abstract class IHomeServices {
   List<dynamic>? getHomePageInfoCache();
@@ -32,6 +33,7 @@ class HomeService implements IHomeServices {
         '/api/pages/1?populate[0]=content.bannerImage&populate[1]=content.cta.href&populate[2]=content.offering.offers.values&populate[3]=content.cta.link&populate[4]=content.testimonials.testifierImage&populate[5]=content.newsletters.link',
       );
       if (response.statusCode == 200) {
+        logger.w(response.data);
         if (response.data['data']['attributes']['content'] != null) {
           final componetList = <dynamic>[];
           final masterData = await getMasterData();
@@ -62,6 +64,7 @@ class HomeService implements IHomeServices {
                   component as Map<String, dynamic>,
                 ),
               );
+              logger.v("componetList ===== $componetList");
             }
             if (component['__component'] == 'mobile-ui.testimonials') {
               componetList.add(

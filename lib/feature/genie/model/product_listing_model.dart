@@ -263,13 +263,29 @@ class Data with _$Data {
 }
 
 @freezed
+class IconDataModel with _$IconDataModel {
+  const factory IconDataModel({
+    required int id,
+    @JsonKey(name: 'attributes') required IconImgMetaData attributes,
+  }) = _IconDataModel;
+
+  factory IconDataModel.fromJson(Map<String, dynamic> json) =>
+      _$IconDataModelFromJson(json);
+}
+int _nullableIntToZero(dynamic value) {
+  if (value == null) return 0;
+  if (value is int) return value;
+  return int.tryParse(value.toString()) ?? 0;
+}
+
+@freezed
 class IconImgMetaData with _$IconImgMetaData {
   const factory IconImgMetaData({
     required String name,
     required dynamic alternativeText,
     required dynamic caption,
-    required int width,
-    required int height,
+    @JsonKey(fromJson: _nullableIntToZero) required int width,
+    @JsonKey(fromJson: _nullableIntToZero) required int height,
     required dynamic formats,
     required String hash,
     required String ext,
@@ -607,36 +623,36 @@ class Invoice with _$Invoice {
   factory Invoice.fromJson(Map<String, dynamic> json) =>
       _$InvoiceFromJson(json);
 }
+//
+// @freezed
+// class AcquirerData with _$AcquirerData {
+//   const factory AcquirerData({
+//     required String auth_code,
+//   }) = _AcquirerData;
+//
+//   factory AcquirerData.fromJson(Map<String, dynamic> json) =>
+//       _$AcquirerDataFromJson(json);
+// }
 
-@freezed
-class AcquirerData with _$AcquirerData {
-  const factory AcquirerData({
-    required String auth_code,
-  }) = _AcquirerData;
-
-  factory AcquirerData.fromJson(Map<String, dynamic> json) =>
-      _$AcquirerDataFromJson(json);
-}
-
-@freezed
-class Card with _$Card {
-  const factory Card({
-    required String id,
-    required bool emi,
-    required String name,
-    required String type,
-    required String color,
-    required String last4,
-    required String entity,
-    required String? issuer,
-    required String number,
-    required String network,
-    required String sub_type,
-    required dynamic token_iin,
-    required dynamic expiry_year,
-    required dynamic expiry_month,
-    required bool international,
-  }) = _Card;
-
-  factory Card.fromJson(Map<String, dynamic> json) => _$CardFromJson(json);
-}
+// @freezed
+// class Card with _$Card {
+//   const factory Card({
+//     required String id,
+//     required bool emi,
+//     required String name,
+//     required String type,
+//     required String color,
+//     required String last4,
+//     required String entity,
+//     required String? issuer,
+//     required String number,
+//     required String network,
+//     required String sub_type,
+//     required dynamic token_iin,
+//     required dynamic expiry_year,
+//     required dynamic expiry_month,
+//     required bool international,
+//   }) = _Card;
+//
+//   factory Card.fromJson(Map<String, dynamic> json) => _$CardFromJson(json);
+// }

@@ -2052,7 +2052,7 @@
             "outputFile": "silver.genie.app-merged_res-70:/values-v31_values-v31.arsc.flat",
             "map": [
                 {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
                     "from": {
                         "startLines": "3,15",
                         "startColumns": "4,4",
@@ -5062,7 +5062,7 @@
             "outputFile": "silver.genie.app-merged_res-70:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,18",
                         "startColumns": "4,4",
@@ -5722,23 +5722,6 @@
                     }
                 },
                 {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,137,241,350,470,580",
-                        "endColumns": "81,103,108,119,109,78",
-                        "endOffsets": "132,236,345,465,575,654"
-                    },
-                    "to": {
-                        "startLines": "652,653,654,655,656,663",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "39725,39807,39911,40020,40140,40564",
-                        "endColumns": "81,103,108,119,109,78",
-                        "endOffsets": "39802,39906,40015,40135,40245,40638"
-                    }
-                },
-                {
                     "source": "C:\\Users\\LENOVO\\.gradle\\caches\\8.9\\transforms\\92b931998d2e976749412127ab8045bb\\transformed\\transition-1.4.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -5756,7 +5739,7 @@
                     }
                 },
                 {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\build\\app\\generated\\crashlytics\\res\\debug\\values\\com_crashlytics_build_id.xml",
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\build\\app\\generated\\crashlytics\\res\\debug\\values\\com_crashlytics_build_id.xml",
                     "from": {
                         "startLines": "8",
                         "startColumns": "0",
@@ -5809,23 +5792,6 @@
                     }
                 },
                 {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\android\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "46",
-                        "endOffsets": "97"
-                    },
-                    "to": {
-                        "startLines": "274",
-                        "startColumns": "4",
-                        "startOffsets": "13965",
-                        "endColumns": "46",
-                        "endOffsets": "14007"
-                    }
-                },
-                {
                     "source": "C:\\Users\\LENOVO\\.gradle\\caches\\8.9\\transforms\\6e10bcde3e90814b10a2626137f143b1\\transformed\\jetified-firebase-inappmessaging-display-21.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,16,19,25,31,40,47,50,59,62,67,77,87,91,97",
@@ -5864,7 +5830,24 @@
                     }
                 },
                 {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\build\\firebase_crashlytics\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    },
+                    "to": {
+                        "startLines": "188",
+                        "startColumns": "4",
+                        "startOffsets": "7969",
+                        "endColumns": "60",
+                        "endOffsets": "8025"
+                    }
+                },
+                {
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,18",
                         "startColumns": "4,4",
@@ -5974,7 +5957,7 @@
                     }
                 },
                 {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\build\\flutter_downloader\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\build\\flutter_downloader\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -6046,6 +6029,23 @@
                     }
                 },
                 {
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\android\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    },
+                    "to": {
+                        "startLines": "274",
+                        "startColumns": "4",
+                        "startOffsets": "13965",
+                        "endColumns": "46",
+                        "endOffsets": "14007"
+                    }
+                },
+                {
                     "source": "C:\\Users\\LENOVO\\.gradle\\caches\\8.9\\transforms\\e7d5053b6a863548500c9c1cb263c45c\\transformed\\jetified-firebase-messaging-24.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -6060,23 +6060,6 @@
                         "startOffsets": "38989",
                         "endColumns": "81",
                         "endOffsets": "39066"
-                    }
-                },
-                {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\build\\firebase_crashlytics\\intermediates\\packaged_res\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "60",
-                        "endOffsets": "111"
-                    },
-                    "to": {
-                        "startLines": "188",
-                        "startColumns": "4",
-                        "startOffsets": "7969",
-                        "endColumns": "60",
-                        "endOffsets": "8025"
                     }
                 },
                 {
@@ -6113,6 +6096,23 @@
                         "startOffsets": "30818",
                         "endColumns": "57",
                         "endOffsets": "30871"
+                    }
+                },
+                {
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,137,241,350,470,580",
+                        "endColumns": "81,103,108,119,109,78",
+                        "endOffsets": "132,236,345,465,575,654"
+                    },
+                    "to": {
+                        "startLines": "652,653,654,655,656,663",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "39725,39807,39911,40020,40140,40564",
+                        "endColumns": "81,103,108,119,109,78",
+                        "endOffsets": "39802,39906,40015,40135,40245,40638"
                     }
                 },
                 {
@@ -9328,7 +9328,7 @@
             "outputFile": "silver.genie.app-merged_res-70:/values-night-v31_values-night-v31.arsc.flat",
             "map": [
                 {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
                     "from": {
                         "startLines": "3,15",
                         "startColumns": "4,4",

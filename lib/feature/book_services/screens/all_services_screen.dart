@@ -13,6 +13,7 @@ import 'package:silver_genie/core/widgets/search_textfield_componet.dart';
 import 'package:silver_genie/feature/book_services/screens/services_screen.dart';
 import 'package:silver_genie/feature/genie/model/product_listing_model.dart';
 import 'package:silver_genie/feature/genie/store/product_listing_store.dart';
+import 'package:silver_genie/main.dart';
 
 class AllServicesScreen extends StatefulWidget {
   const AllServicesScreen({
@@ -49,13 +50,14 @@ class _AllServicesScreenState extends State<AllServicesScreen> {
   }
 
   List<ProductBasicDetailsModel> getAllServices() {
-    print("++++++==== ${widget.isConvenience}");
+    print("++++++==== ${widget.isHealthCare}");
     print("=====${store.getHealthCareServicesList.toList()}");
     if (widget.isConvenience) {
       return store.getConvenienceCareServicesList;
     } else if (widget.isHealthCare) {
       return store.getHealthCareServicesList;
     } else {
+      logger.e("else called ==================");
       return store.getHomeCareServicesList;
     }
   }

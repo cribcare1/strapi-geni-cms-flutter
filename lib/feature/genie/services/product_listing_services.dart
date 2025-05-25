@@ -12,6 +12,7 @@ import 'package:silver_genie/feature/book_services/model/form_details_model.dart
 import 'package:silver_genie/feature/book_services/model/payment_status_model.dart';
 import 'package:silver_genie/feature/book_services/model/service_tracking_response.dart';
 import 'package:silver_genie/feature/genie/model/product_listing_model.dart';
+import 'package:silver_genie/main.dart';
 
 abstract class IProductListingService {
   Future<Either<Failure, List<ProductBasicDetailsModel>>>
@@ -75,7 +76,10 @@ class ProductListingServices extends IProductListingService {
       response = await httpClient.get(
         '/api/products?populate[0]=metadata&populate[1]=icon&populate[2]=upgradeable_products.icon&populate[3]=upgradeable_products.metadata',
       );
+      logger.w("========== Service API Call ==== '/api/products?populate[0]=metadata&populate[1]=icon&populate[2]=upgradeable_products.icon&populate[3]=upgradeable_products.metadata'");
       httpClient.interceptors.remove(dioCacheInterceptor);
+      logger.v(response.data);
+      logger.e(response.statusCode);
       switch (response.statusCode) {
         case 200:
           return _processResponseData(response);
@@ -110,20 +114,30 @@ class ProductListingServices extends IProductListingService {
     }
   }
 
-  Either<Failure, List<ProductBasicDetailsModel>> _processResponseData(
-    // ignore: strict_raw_type
-    Response response,
-  ) {
+  Either<Failure, List<ProductBasicDetailsModel>> _processResponseData(Response response) {
+    print('Response status code: ${response.statusCode}');
+    print('Response data keys: ${response.data.keys}');
+
     if (response.data['data'] != null) {
       final receivedList = response.data['data'] as List;
-      final allProductList = <ProductBasicDetailsModel>[];
-      for (final item in receivedList) {
-        allProductList.add(
-          ProductBasicDetailsModel.fromJson(item as Map<String, dynamic>),
-        );
+      print('Received list length: ${receivedList.length}');
+      try {
+        final allProductList = <ProductBasicDetailsModel>[];
+        for (final item in receivedList) {
+          allProductList.add(
+            ProductBasicDetailsModel.fromJson(item as Map<String, dynamic>),
+          );
+        }
+        print('Parsed all products successfully');
+        return Right([...allProductList]);
+      } catch (e, stack) {
+        print('Error during JSON parsing: $e');
+        print(stack);
+        return Left(Failure.someThingWentWrong());
       }
-      return Right([...allProductList]);
     }
+
+    print('Data key is null in response');
     return const Left(Failure.badResponse())
       ..firebaseCrashAnalyticsLogApiFailure(
           statusCode: response.statusCode,

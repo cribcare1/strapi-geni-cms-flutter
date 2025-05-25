@@ -160,7 +160,7 @@ class ProfileImgAdapter extends TypeAdapter<ProfileImg> {
       height: fields[3] as int,
       formats: fields[4] as Formats,
       ext: fields[5] as String,
-      url: fields[6] as String??"",
+      url: fields[6] as String,
       createdAt: fields[7] as DateTime,
       updatedAt: fields[8] as DateTime,
     );

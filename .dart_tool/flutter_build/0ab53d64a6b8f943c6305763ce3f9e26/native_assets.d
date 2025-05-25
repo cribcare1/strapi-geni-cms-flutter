@@ -1,0 +1,1 @@
+ D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\.dart_tool\\flutter_build\\0ab53d64a6b8f943c6305763ce3f9e26\\native_assets.yaml: 

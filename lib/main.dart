@@ -15,6 +15,7 @@ import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive_flutter/adapters.dart';
+import 'package:logger/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:silver_genie/core/app/app.dart';
 import 'package:silver_genie/core/constants/colors.dart';
@@ -44,6 +45,8 @@ import 'package:silver_genie/feature/user_profile/repository/local/user_details_
 import 'package:silver_genie/feature/user_profile/services/user_services.dart';
 import 'package:silver_genie/feature/user_profile/store/user_details_store.dart';
 import 'package:silver_genie/setup_hive_boxes.dart';
+
+Logger logger = Logger();
 
 void main() async {
   await runZonedGuarded(

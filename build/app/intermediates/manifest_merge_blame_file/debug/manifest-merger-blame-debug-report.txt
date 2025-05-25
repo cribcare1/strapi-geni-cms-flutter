@@ -13,43 +13,43 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:4:5-67
-15-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:4:22-64
+15-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:4:5-67
+15-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:4:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:3:5-79
-16-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:3:22-76
+16-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:3:5-79
+16-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:3:22-76
 17    <uses-permission android:name="android.permission.CAMERA" />
-17-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:5:5-65
-17-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:5:22-62
+17-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:5:5-65
+17-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:5:22-62
 18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions options for the `notification` group -->
-18-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-68
-18-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-65
+18-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-68
+18-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-65
 19    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- See https://developer.android.com/training/package-visibility -->
-19-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
-19-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
+19-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
+19-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
 20    <queries>
-20-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-12:15
+20-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-12:15
 21        <intent>
-21-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:18
+21-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:18
 22            <action android:name="android.intent.action.VIEW" />
-22-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-22-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+22-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+22-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 23        </intent>
 24        <intent>
 24-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:11:9-15:18
 25            <action android:name="android.intent.action.VIEW" />
-25-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-25-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+25-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+25-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 26
 27            <data android:scheme="https" />
 27-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:13-44
 27-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:19-41
 28        </intent>
 29        <intent>
-29-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:11:9-17:18
+29-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:11:9-17:18
 30            <action android:name="android.intent.action.VIEW" />
-30-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-30-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+30-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+30-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 31
 32            <data
 32-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:13-44
@@ -58,14 +58,14 @@
 34-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:19-41
 35        </intent>
 36        <intent>
-36-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:18:9-27:18
+36-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:18:9-27:18
 37            <action android:name="android.intent.action.VIEW" />
-37-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-37-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+37-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+37-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 38
 39            <category android:name="android.intent.category.BROWSABLE" />
-39-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:21:13-74
-39-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:21:23-71
+39-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:21:13-74
+39-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:21:23-71
 40
 41            <data
 41-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:13-44
@@ -75,31 +75,31 @@
 44-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:19-41
 45        </intent>
 46        <intent>
-46-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:28:9-30:18
+46-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:28:9-30:18
 47            <action android:name="android.intent.action.MAIN" />
-47-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:29:13-65
-47-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:29:21-62
+47-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:29:13-65
+47-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:29:21-62
 48        </intent>
 49        <intent>
-49-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:31:9-35:18
+49-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:31:9-35:18
 50            <action android:name="android.intent.action.SEND" />
-50-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:32:13-65
-50-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:32:21-62
+50-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:32:13-65
+50-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:32:21-62
 51
 52            <data android:mimeType="*/*" />
 52-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:13-44
 53        </intent>
 54        <intent>
-54-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:36:9-38:18
+54-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:36:9-38:18
 55            <action android:name="rzp.device_token.share" />
-55-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:37:13-61
-55-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:37:21-58
+55-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:37:13-61
+55-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:37:21-58
 56        </intent>
 57    </queries>
 58
 59    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-59-->[:flutter_local_notifications] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
-59-->[:flutter_local_notifications] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
+59-->[:flutter_local_notifications] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
+59-->[:flutter_local_notifications] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
 60    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 60-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:26:5-82
 60-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:26:22-79
@@ -170,8 +170,8 @@
 104
 105            <intent-filter>
 106                <action android:name="android.intent.action.MAIN" />
-106-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:29:13-65
-106-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:29:21-62
+106-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:29:13-65
+106-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:29:21-62
 107
 108                <category android:name="android.intent.category.LAUNCHER" />
 109            </intent-filter>
@@ -182,13 +182,13 @@
 114
 115            <intent-filter android:autoVerify="true" >
 116                <action android:name="android.intent.action.VIEW" />
-116-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-116-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+116-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+116-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 117
 118                <category android:name="android.intent.category.DEFAULT" />
 119                <category android:name="android.intent.category.BROWSABLE" />
-119-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:21:13-74
-119-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:21:23-71
+119-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:21:13-74
+119-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:21:23-71
 120
 121                <data android:scheme="silvergenie" />
 121-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:13-44
@@ -227,16 +227,16 @@
 151-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:48:13-43
 152            android:exported="false" >
 153            <intent-filter>
-153-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+153-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 154                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-154-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-154-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+154-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+154-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 155            </intent-filter>
 156            <intent-filter android:priority="-500" >
-156-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+156-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 157                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-157-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-157-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+157-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+157-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 158            </intent-filter>
 159        </service>
 160
@@ -246,57 +246,57 @@
 164            android:exported="false"
 165            android:grantUriPermissions="true" >
 166            <meta-data
-166-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:75
+166-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:75
 167                android:name="android.support.FILE_PROVIDER_PATHS"
-167-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-67
+167-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-67
 168                android:resource="@xml/provider_paths" />
-168-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-72
+168-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-72
 169        </provider>
 170
 171        <service
-171-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:19
+171-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:19
 172            android:name="com.google.firebase.components.ComponentDiscoveryService"
-172-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:12:18-89
+172-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:12:18-89
 173            android:directBootAware="true"
 173-->[com.google.firebase:firebase-common:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\9df1422bfe0257302225ec7802eb03e6\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
 174            android:exported="false" >
 174-->[com.google.firebase:firebase-crashlytics:19.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b61e761a50fd14037fd7ea301931d417\transformed\jetified-firebase-crashlytics-19.0.2\AndroidManifest.xml:14:13-37
 175            <meta-data
-175-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:85
+175-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:85
 176                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
-176-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-128
+176-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-128
 177                android:value="com.google.firebase.components.ComponentRegistrar" />
-177-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-82
+177-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-82
 178            <meta-data
-178-->[:firebase_crashlytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+178-->[:firebase_crashlytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 179                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
-179-->[:firebase_crashlytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-130
+179-->[:firebase_crashlytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-130
 180                android:value="com.google.firebase.components.ComponentRegistrar" />
-180-->[:firebase_crashlytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+180-->[:firebase_crashlytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 181            <meta-data
-181-->[:firebase_in_app_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+181-->[:firebase_in_app_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 182                android:name="com.google.firebase.components:io.flutter.plugins.firebase.inappmessaging.FlutterFirebaseAppRegistrar"
-182-->[:firebase_in_app_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-133
+182-->[:firebase_in_app_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-133
 183                android:value="com.google.firebase.components.ComponentRegistrar" />
-183-->[:firebase_in_app_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+183-->[:firebase_in_app_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 184            <meta-data
-184-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
+184-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
 185                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-185-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
+185-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
 186                android:value="com.google.firebase.components.ComponentRegistrar" />
-186-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
+186-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
 187            <meta-data
-187-->[:firebase_performance] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+187-->[:firebase_performance] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 188                android:name="com.google.firebase.components:io.flutter.plugins.firebase.performance.FlutterFirebaseAppRegistrar"
-188-->[:firebase_performance] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-130
+188-->[:firebase_performance] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-130
 189                android:value="com.google.firebase.components.ComponentRegistrar" />
-189-->[:firebase_performance] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+189-->[:firebase_performance] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 190            <meta-data
-190-->[:firebase_core] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+190-->[:firebase_core] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 191                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-191-->[:firebase_core] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+191-->[:firebase_core] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
 192                android:value="com.google.firebase.components.ComponentRegistrar" />
-192-->[:firebase_core] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+192-->[:firebase_core] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 193            <meta-data
 193-->[com.google.firebase:firebase-crashlytics:19.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b61e761a50fd14037fd7ea301931d417\transformed\jetified-firebase-crashlytics-19.0.2\AndroidManifest.xml:15:13-17:85
 194                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
@@ -419,79 +419,79 @@
 252-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\c6c433782d80543f41b20267aba1a700\transformed\jetified-firebase-abt-21.1.1\AndroidManifest.xml:14:17-82
 253        </service>
 254        <service
-254-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
+254-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
 255            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-255-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
+255-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
 256            android:exported="false"
-256-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+256-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 257            android:permission="android.permission.BIND_JOB_SERVICE" />
-257-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
+257-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
 258        <service
-258-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
+258-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
 259            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-259-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
+259-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
 260            android:exported="false" >
-260-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+260-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
 261            <intent-filter>
-261-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+261-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 262                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-262-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-262-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+262-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+262-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 263            </intent-filter>
 264        </service>
 265
 266        <receiver
-266-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
+266-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
 267            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-267-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
+267-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
 268            android:exported="true"
-268-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
+268-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
 269            android:permission="com.google.android.c2dm.permission.SEND" >
-269-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
+269-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
 270            <intent-filter>
-270-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+270-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 271                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-271-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-271-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+271-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+271-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 272            </intent-filter>
 273        </receiver>
 274
 275        <provider
-275-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
+275-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
 276            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-276-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
+276-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
 277            android:authorities="silver.genie.flutterfirebasemessaginginitprovider"
-277-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
+277-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
 278            android:exported="false"
-278-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+278-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
 279            android:initOrder="99" />
-279-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
+279-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
 280        <provider
-280-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-17:20
+280-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-17:20
 281            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-281-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-82
+281-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-82
 282            android:authorities="silver.genie.flutter.image_provider"
-282-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+282-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 283            android:exported="false"
-283-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+283-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
 284            android:grantUriPermissions="true" >
-284-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-47
+284-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-47
 285            <meta-data
-285-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:75
+285-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:75
 286                android:name="android.support.FILE_PROVIDER_PATHS"
-286-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-67
+286-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-67
 287                android:resource="@xml/flutter_image_picker_file_paths" />
-287-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-72
+287-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-72
 288        </provider>
 289
 290        <activity
-290-->[:url_launcher_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+290-->[:url_launcher_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
 291            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-291-->[:url_launcher_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+291-->[:url_launcher_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
 292            android:exported="false"
-292-->[:url_launcher_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+292-->[:url_launcher_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
 293            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-293-->[:url_launcher_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+293-->[:url_launcher_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 294
 295        <receiver
 295-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:29:9-40:20
@@ -502,10 +502,10 @@
 298            android:permission="com.google.android.c2dm.permission.SEND" >
 298-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:32:13-73
 299            <intent-filter>
-299-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+299-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 300                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-300-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-300-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+300-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+300-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 301            </intent-filter>
 302
 303            <meta-data
@@ -560,11 +560,11 @@
 330                android:value="androidx.startup" />
 330-->[androidx.work:work-runtime:2.9.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\923e1e395834b833a18acdfc1cec3b28\transformed\work-runtime-2.9.0\AndroidManifest.xml:36:17-49
 331            <meta-data
-331-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:66:13-68:52
+331-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:57:13-59:52
 332                android:name="com.razorpay.RazorpayInitializer"
-332-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:67:17-64
+332-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:58:17-64
 333                android:value="androidx.startup" />
-333-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:68:17-49
+333-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:59:17-49
 334            <meta-data
 334-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\10110374d8f0da0abb6bab9daf877d7c\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
 335                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
@@ -781,201 +781,187 @@
 444            android:initOrder="100" />
 444-->[com.google.firebase:firebase-common:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\9df1422bfe0257302225ec7802eb03e6\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
 445
-446        <receiver
-446-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:42:9-49:20
-447            android:name="com.razorpay.RzpTokenReceiver"
-447-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:43:13-57
-448            android:exported="true" >
-448-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:44:13-36
-449            <intent-filter>
-449-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:46:13-48:29
-450                <action android:name="rzp.device_token.share" />
-450-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:37:13-61
-450-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:37:21-58
-451            </intent-filter>
-452        </receiver>
-453
-454        <activity
-454-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:51:9-59:20
-455            android:name="com.razorpay.CheckoutActivity"
-455-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:52:13-57
-456            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-456-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:53:13-83
+446        <activity
+446-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:42:9-50:20
+447            android:name="com.razorpay.CheckoutActivity"
+447-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:43:13-57
+448            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+448-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:44:13-83
+449            android:exported="false"
+449-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:45:13-37
+450            android:theme="@style/CheckoutTheme" >
+450-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:46:13-49
+451            <intent-filter>
+451-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:47:13-49:29
+452                <action android:name="android.intent.action.MAIN" />
+452-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:29:13-65
+452-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:29:21-62
+453            </intent-filter>
+454        </activity>
+455        <activity
+455-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:62:9-65:75
+456            android:name="com.razorpay.MagicXActivity"
+456-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:63:13-55
 457            android:exported="false"
-457-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:54:13-37
-458            android:theme="@style/CheckoutTheme" >
-458-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:55:13-49
-459            <intent-filter>
-459-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:56:13-58:29
-460                <action android:name="android.intent.action.MAIN" />
-460-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:29:13-65
-460-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:29:21-62
-461            </intent-filter>
-462        </activity>
-463        <activity
-463-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:71:9-74:75
-464            android:name="com.razorpay.MagicXActivity"
-464-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:72:13-55
-465            android:exported="false"
-465-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:73:13-37
-466            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-466-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:74:13-72
-467
-468        <meta-data
-468-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:76:9-78:58
-469            android:name="com.razorpay.plugin.googlepay_all"
-469-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:77:13-61
-470            android:value="com.razorpay.RzpGpayMerged" />
-470-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:78:13-55
-471
-472        <activity
-472-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:23:9-27:75
-473            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-473-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:24:13-93
-474            android:excludeFromRecents="true"
-474-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:25:13-46
-475            android:exported="false"
-475-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:26:13-37
-476            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-476-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:27:13-72
-477        <!--
-478            Service handling Google Sign-In user revocation. For apps that do not integrate with
-479            Google Sign-In, this service will never be started.
-480        -->
-481        <service
-481-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:33:9-37:51
-482            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-482-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:34:13-89
-483            android:exported="true"
-483-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:35:13-36
-484            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-484-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:36:13-107
-485            android:visibleToInstantApps="true" />
-485-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:37:13-48
-486
-487        <receiver
-487-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:29:9-33:20
-488            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-488-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:30:13-85
-489            android:enabled="true"
-489-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:31:13-35
-490            android:exported="false" >
-490-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:32:13-37
-491        </receiver>
-492
-493        <service
-493-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:35:9-38:40
-494            android:name="com.google.android.gms.measurement.AppMeasurementService"
-494-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:36:13-84
-495            android:enabled="true"
-495-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:37:13-35
-496            android:exported="false" />
-496-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:38:13-37
-497        <service
-497-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:39:9-43:72
-498            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-498-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:40:13-87
-499            android:enabled="true"
-499-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:41:13-35
+457-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:64:13-37
+458            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+458-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:65:13-72
+459
+460        <meta-data
+460-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:67:9-69:58
+461            android:name="com.razorpay.plugin.googlepay_all"
+461-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:68:13-61
+462            android:value="com.razorpay.RzpGpayMerged" />
+462-->[com.razorpay:standard-core:1.6.50] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b6978d3f57831759d43782277763642d\transformed\jetified-standard-core-1.6.50\AndroidManifest.xml:69:13-55
+463
+464        <activity
+464-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:23:9-27:75
+465            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+465-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:24:13-93
+466            android:excludeFromRecents="true"
+466-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:25:13-46
+467            android:exported="false"
+467-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:26:13-37
+468            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+468-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:27:13-72
+469        <!--
+470            Service handling Google Sign-In user revocation. For apps that do not integrate with
+471            Google Sign-In, this service will never be started.
+472        -->
+473        <service
+473-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:33:9-37:51
+474            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+474-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:34:13-89
+475            android:exported="true"
+475-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:35:13-36
+476            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+476-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:36:13-107
+477            android:visibleToInstantApps="true" />
+477-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ec20597bac87fee8930a75ec9ec09bc4\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:37:13-48
+478
+479        <receiver
+479-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:29:9-33:20
+480            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+480-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:30:13-85
+481            android:enabled="true"
+481-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:31:13-35
+482            android:exported="false" >
+482-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:32:13-37
+483        </receiver>
+484
+485        <service
+485-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:35:9-38:40
+486            android:name="com.google.android.gms.measurement.AppMeasurementService"
+486-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:36:13-84
+487            android:enabled="true"
+487-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:37:13-35
+488            android:exported="false" />
+488-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:38:13-37
+489        <service
+489-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:39:9-43:72
+490            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+490-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:40:13-87
+491            android:enabled="true"
+491-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:41:13-35
+492            android:exported="false"
+492-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:42:13-37
+493            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+493-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:43:13-69
+494        <uses-library
+494-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\922b5c6d475718ba2bfb21b00213579b\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+495            android:name="org.apache.http.legacy"
+495-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\922b5c6d475718ba2bfb21b00213579b\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+496            android:required="false" />
+496-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\922b5c6d475718ba2bfb21b00213579b\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+497
+498        <activity
+498-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\fc35934392b99b2ed76491dd511e288f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+499            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+499-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\fc35934392b99b2ed76491dd511e288f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
 500            android:exported="false"
-500-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:42:13-37
-501            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
-501-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\d278d5c9808a2e635672c20f484b7d8e\transformed\jetified-play-services-measurement-22.0.2\AndroidManifest.xml:43:13-69
-502        <uses-library
-502-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\922b5c6d475718ba2bfb21b00213579b\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-503            android:name="org.apache.http.legacy"
-503-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\922b5c6d475718ba2bfb21b00213579b\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-504            android:required="false" />
-504-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\922b5c6d475718ba2bfb21b00213579b\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-505
-506        <activity
-506-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\fc35934392b99b2ed76491dd511e288f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
-507            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-507-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\fc35934392b99b2ed76491dd511e288f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
-508            android:exported="false"
-508-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\fc35934392b99b2ed76491dd511e288f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
-509            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-509-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\fc35934392b99b2ed76491dd511e288f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
-510
-511        <uses-library
-511-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
-512            android:name="androidx.window.extensions"
-512-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
-513            android:required="false" />
-513-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
-514        <uses-library
-514-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
-515            android:name="androidx.window.sidecar"
-515-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
-516            android:required="false" />
-516-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
-517        <uses-library
-517-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e2447acb947be8a8da7dd950badab82a\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
-518            android:name="android.ext.adservices"
-518-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e2447acb947be8a8da7dd950badab82a\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
-519            android:required="false" />
-519-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e2447acb947be8a8da7dd950badab82a\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
-520
-521        <meta-data
-521-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\f009551febc6a857b5ef9a1c68b5d3c9\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
-522            android:name="com.google.android.gms.version"
-522-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\f009551febc6a857b5ef9a1c68b5d3c9\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
-523            android:value="@integer/google_play_services_version" />
-523-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\f009551febc6a857b5ef9a1c68b5d3c9\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
-524
-525        <service
-525-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
-526            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-526-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
-527            android:exported="false"
-527-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
-528            android:permission="android.permission.BIND_JOB_SERVICE" >
-528-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
-529        </service>
-530
-531        <receiver
-531-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
-532            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-532-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
-533            android:exported="false" />
-533-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
-534        <receiver
-534-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-535            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-535-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-536            android:directBootAware="false"
-536-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-537            android:enabled="true"
-537-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-538            android:exported="true"
-538-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-539            android:permission="android.permission.DUMP" >
-539-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-540            <intent-filter>
-540-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-541                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-541-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-541-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-542            </intent-filter>
-543            <intent-filter>
-543-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-544                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-544-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-544-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-545            </intent-filter>
-546            <intent-filter>
-546-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-547                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-547-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-547-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-548            </intent-filter>
-549            <intent-filter>
-549-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-550                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-550-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-550-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-551            </intent-filter>
-552        </receiver>
-553    </application>
-554
-555</manifest>
+500-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\fc35934392b99b2ed76491dd511e288f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+501            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+501-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\fc35934392b99b2ed76491dd511e288f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+502
+503        <uses-library
+503-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+504            android:name="androidx.window.extensions"
+504-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+505            android:required="false" />
+505-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+506        <uses-library
+506-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+507            android:name="androidx.window.sidecar"
+507-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+508            android:required="false" />
+508-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\ca35cdc2db6e0b6207dbb4e9e4dceda8\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+509        <uses-library
+509-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e2447acb947be8a8da7dd950badab82a\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+510            android:name="android.ext.adservices"
+510-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e2447acb947be8a8da7dd950badab82a\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+511            android:required="false" />
+511-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e2447acb947be8a8da7dd950badab82a\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+512
+513        <meta-data
+513-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\f009551febc6a857b5ef9a1c68b5d3c9\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+514            android:name="com.google.android.gms.version"
+514-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\f009551febc6a857b5ef9a1c68b5d3c9\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+515            android:value="@integer/google_play_services_version" />
+515-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\f009551febc6a857b5ef9a1c68b5d3c9\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+516
+517        <service
+517-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+518            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+518-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+519            android:exported="false"
+519-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+520            android:permission="android.permission.BIND_JOB_SERVICE" >
+520-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+521        </service>
+522
+523        <receiver
+523-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+524            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+524-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+525            android:exported="false" />
+525-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\8.9\transforms\639fe88898c7af4a52507480058494e9\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+526        <receiver
+526-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+527            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+527-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+528            android:directBootAware="false"
+528-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+529            android:enabled="true"
+529-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+530            android:exported="true"
+530-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+531            android:permission="android.permission.DUMP" >
+531-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+532            <intent-filter>
+532-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+533                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+533-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+533-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+534            </intent-filter>
+535            <intent-filter>
+535-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+536                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+536-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+536-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+537            </intent-filter>
+538            <intent-filter>
+538-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+539                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+539-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+539-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+540            </intent-filter>
+541            <intent-filter>
+541-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+542                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+542-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+542-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\86b8159e01ba7616b8a83cba96a835bd\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+543            </intent-filter>
+544        </receiver>
+545    </application>
+546
+547</manifest>

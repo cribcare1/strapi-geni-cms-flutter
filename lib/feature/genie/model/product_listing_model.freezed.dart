@@ -4825,6 +4825,195 @@ abstract class _Data implements Data {
       throw _privateConstructorUsedError;
 }
 
+IconDataModel _$IconDataModelFromJson(Map<String, dynamic> json) {
+  return _IconDataModel.fromJson(json);
+}
+
+/// @nodoc
+mixin _$IconDataModel {
+  int get id => throw _privateConstructorUsedError;
+  @JsonKey(name: 'attributes')
+  IconImgMetaData get attributes => throw _privateConstructorUsedError;
+
+  /// Serializes this IconDataModel to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of IconDataModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $IconDataModelCopyWith<IconDataModel> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $IconDataModelCopyWith<$Res> {
+  factory $IconDataModelCopyWith(
+          IconDataModel value, $Res Function(IconDataModel) then) =
+      _$IconDataModelCopyWithImpl<$Res, IconDataModel>;
+  @useResult
+  $Res call({int id, @JsonKey(name: 'attributes') IconImgMetaData attributes});
+
+  $IconImgMetaDataCopyWith<$Res> get attributes;
+}
+
+/// @nodoc
+class _$IconDataModelCopyWithImpl<$Res, $Val extends IconDataModel>
+    implements $IconDataModelCopyWith<$Res> {
+  _$IconDataModelCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of IconDataModel
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? attributes = null,
+  }) {
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      attributes: null == attributes
+          ? _value.attributes
+          : attributes // ignore: cast_nullable_to_non_nullable
+              as IconImgMetaData,
+    ) as $Val);
+  }
+
+  /// Create a copy of IconDataModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $IconImgMetaDataCopyWith<$Res> get attributes {
+    return $IconImgMetaDataCopyWith<$Res>(_value.attributes, (value) {
+      return _then(_value.copyWith(attributes: value) as $Val);
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$$IconDataModelImplCopyWith<$Res>
+    implements $IconDataModelCopyWith<$Res> {
+  factory _$$IconDataModelImplCopyWith(
+          _$IconDataModelImpl value, $Res Function(_$IconDataModelImpl) then) =
+      __$$IconDataModelImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({int id, @JsonKey(name: 'attributes') IconImgMetaData attributes});
+
+  @override
+  $IconImgMetaDataCopyWith<$Res> get attributes;
+}
+
+/// @nodoc
+class __$$IconDataModelImplCopyWithImpl<$Res>
+    extends _$IconDataModelCopyWithImpl<$Res, _$IconDataModelImpl>
+    implements _$$IconDataModelImplCopyWith<$Res> {
+  __$$IconDataModelImplCopyWithImpl(
+      _$IconDataModelImpl _value, $Res Function(_$IconDataModelImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of IconDataModel
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? attributes = null,
+  }) {
+    return _then(_$IconDataModelImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      attributes: null == attributes
+          ? _value.attributes
+          : attributes // ignore: cast_nullable_to_non_nullable
+              as IconImgMetaData,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$IconDataModelImpl implements _IconDataModel {
+  const _$IconDataModelImpl(
+      {required this.id,
+      @JsonKey(name: 'attributes') required this.attributes});
+
+  factory _$IconDataModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$IconDataModelImplFromJson(json);
+
+  @override
+  final int id;
+  @override
+  @JsonKey(name: 'attributes')
+  final IconImgMetaData attributes;
+
+  @override
+  String toString() {
+    return 'IconDataModel(id: $id, attributes: $attributes)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$IconDataModelImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.attributes, attributes) ||
+                other.attributes == attributes));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, id, attributes);
+
+  /// Create a copy of IconDataModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$IconDataModelImplCopyWith<_$IconDataModelImpl> get copyWith =>
+      __$$IconDataModelImplCopyWithImpl<_$IconDataModelImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$IconDataModelImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _IconDataModel implements IconDataModel {
+  const factory _IconDataModel(
+      {required final int id,
+      @JsonKey(name: 'attributes')
+      required final IconImgMetaData attributes}) = _$IconDataModelImpl;
+
+  factory _IconDataModel.fromJson(Map<String, dynamic> json) =
+      _$IconDataModelImpl.fromJson;
+
+  @override
+  int get id;
+  @override
+  @JsonKey(name: 'attributes')
+  IconImgMetaData get attributes;
+
+  /// Create a copy of IconDataModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$IconDataModelImplCopyWith<_$IconDataModelImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
 IconImgMetaData _$IconImgMetaDataFromJson(Map<String, dynamic> json) {
   return _IconImgMetaData.fromJson(json);
 }
@@ -4834,7 +5023,9 @@ mixin _$IconImgMetaData {
   String get name => throw _privateConstructorUsedError;
   dynamic get alternativeText => throw _privateConstructorUsedError;
   dynamic get caption => throw _privateConstructorUsedError;
+  @JsonKey(fromJson: _nullableIntToZero)
   int get width => throw _privateConstructorUsedError;
+  @JsonKey(fromJson: _nullableIntToZero)
   int get height => throw _privateConstructorUsedError;
   dynamic get formats => throw _privateConstructorUsedError;
   String get hash => throw _privateConstructorUsedError;
@@ -4869,8 +5060,8 @@ abstract class $IconImgMetaDataCopyWith<$Res> {
       {String name,
       dynamic alternativeText,
       dynamic caption,
-      int width,
-      int height,
+      @JsonKey(fromJson: _nullableIntToZero) int width,
+      @JsonKey(fromJson: _nullableIntToZero) int height,
       dynamic formats,
       String hash,
       String ext,
@@ -4997,8 +5188,8 @@ abstract class _$$IconImgMetaDataImplCopyWith<$Res>
       {String name,
       dynamic alternativeText,
       dynamic caption,
-      int width,
-      int height,
+      @JsonKey(fromJson: _nullableIntToZero) int width,
+      @JsonKey(fromJson: _nullableIntToZero) int height,
       dynamic formats,
       String hash,
       String ext,
@@ -5118,8 +5309,8 @@ class _$IconImgMetaDataImpl implements _IconImgMetaData {
       {required this.name,
       required this.alternativeText,
       required this.caption,
-      required this.width,
-      required this.height,
+      @JsonKey(fromJson: _nullableIntToZero) required this.width,
+      @JsonKey(fromJson: _nullableIntToZero) required this.height,
       required this.formats,
       required this.hash,
       required this.ext,
@@ -5142,8 +5333,10 @@ class _$IconImgMetaDataImpl implements _IconImgMetaData {
   @override
   final dynamic caption;
   @override
+  @JsonKey(fromJson: _nullableIntToZero)
   final int width;
   @override
+  @JsonKey(fromJson: _nullableIntToZero)
   final int height;
   @override
   final dynamic formats;
@@ -5246,8 +5439,8 @@ abstract class _IconImgMetaData implements IconImgMetaData {
       {required final String name,
       required final dynamic alternativeText,
       required final dynamic caption,
-      required final int width,
-      required final int height,
+      @JsonKey(fromJson: _nullableIntToZero) required final int width,
+      @JsonKey(fromJson: _nullableIntToZero) required final int height,
       required final dynamic formats,
       required final String hash,
       required final String ext,
@@ -5271,8 +5464,10 @@ abstract class _IconImgMetaData implements IconImgMetaData {
   @override
   dynamic get caption;
   @override
+  @JsonKey(fromJson: _nullableIntToZero)
   int get width;
   @override
+  @JsonKey(fromJson: _nullableIntToZero)
   int get height;
   @override
   dynamic get formats;
@@ -11429,604 +11624,5 @@ abstract class _Invoice implements Invoice {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$InvoiceImplCopyWith<_$InvoiceImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-AcquirerData _$AcquirerDataFromJson(Map<String, dynamic> json) {
-  return _AcquirerData.fromJson(json);
-}
-
-/// @nodoc
-mixin _$AcquirerData {
-  String get auth_code => throw _privateConstructorUsedError;
-
-  /// Serializes this AcquirerData to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of AcquirerData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $AcquirerDataCopyWith<AcquirerData> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $AcquirerDataCopyWith<$Res> {
-  factory $AcquirerDataCopyWith(
-          AcquirerData value, $Res Function(AcquirerData) then) =
-      _$AcquirerDataCopyWithImpl<$Res, AcquirerData>;
-  @useResult
-  $Res call({String auth_code});
-}
-
-/// @nodoc
-class _$AcquirerDataCopyWithImpl<$Res, $Val extends AcquirerData>
-    implements $AcquirerDataCopyWith<$Res> {
-  _$AcquirerDataCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of AcquirerData
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? auth_code = null,
-  }) {
-    return _then(_value.copyWith(
-      auth_code: null == auth_code
-          ? _value.auth_code
-          : auth_code // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$AcquirerDataImplCopyWith<$Res>
-    implements $AcquirerDataCopyWith<$Res> {
-  factory _$$AcquirerDataImplCopyWith(
-          _$AcquirerDataImpl value, $Res Function(_$AcquirerDataImpl) then) =
-      __$$AcquirerDataImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String auth_code});
-}
-
-/// @nodoc
-class __$$AcquirerDataImplCopyWithImpl<$Res>
-    extends _$AcquirerDataCopyWithImpl<$Res, _$AcquirerDataImpl>
-    implements _$$AcquirerDataImplCopyWith<$Res> {
-  __$$AcquirerDataImplCopyWithImpl(
-      _$AcquirerDataImpl _value, $Res Function(_$AcquirerDataImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of AcquirerData
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? auth_code = null,
-  }) {
-    return _then(_$AcquirerDataImpl(
-      auth_code: null == auth_code
-          ? _value.auth_code
-          : auth_code // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$AcquirerDataImpl implements _AcquirerData {
-  const _$AcquirerDataImpl({required this.auth_code});
-
-  factory _$AcquirerDataImpl.fromJson(Map<String, dynamic> json) =>
-      _$$AcquirerDataImplFromJson(json);
-
-  @override
-  final String auth_code;
-
-  @override
-  String toString() {
-    return 'AcquirerData(auth_code: $auth_code)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AcquirerDataImpl &&
-            (identical(other.auth_code, auth_code) ||
-                other.auth_code == auth_code));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, auth_code);
-
-  /// Create a copy of AcquirerData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AcquirerDataImplCopyWith<_$AcquirerDataImpl> get copyWith =>
-      __$$AcquirerDataImplCopyWithImpl<_$AcquirerDataImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$AcquirerDataImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _AcquirerData implements AcquirerData {
-  const factory _AcquirerData({required final String auth_code}) =
-      _$AcquirerDataImpl;
-
-  factory _AcquirerData.fromJson(Map<String, dynamic> json) =
-      _$AcquirerDataImpl.fromJson;
-
-  @override
-  String get auth_code;
-
-  /// Create a copy of AcquirerData
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$AcquirerDataImplCopyWith<_$AcquirerDataImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-Card _$CardFromJson(Map<String, dynamic> json) {
-  return _Card.fromJson(json);
-}
-
-/// @nodoc
-mixin _$Card {
-  String get id => throw _privateConstructorUsedError;
-  bool get emi => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  String get type => throw _privateConstructorUsedError;
-  String get color => throw _privateConstructorUsedError;
-  String get last4 => throw _privateConstructorUsedError;
-  String get entity => throw _privateConstructorUsedError;
-  String? get issuer => throw _privateConstructorUsedError;
-  String get number => throw _privateConstructorUsedError;
-  String get network => throw _privateConstructorUsedError;
-  String get sub_type => throw _privateConstructorUsedError;
-  dynamic get token_iin => throw _privateConstructorUsedError;
-  dynamic get expiry_year => throw _privateConstructorUsedError;
-  dynamic get expiry_month => throw _privateConstructorUsedError;
-  bool get international => throw _privateConstructorUsedError;
-
-  /// Serializes this Card to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Card
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $CardCopyWith<Card> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $CardCopyWith<$Res> {
-  factory $CardCopyWith(Card value, $Res Function(Card) then) =
-      _$CardCopyWithImpl<$Res, Card>;
-  @useResult
-  $Res call(
-      {String id,
-      bool emi,
-      String name,
-      String type,
-      String color,
-      String last4,
-      String entity,
-      String? issuer,
-      String number,
-      String network,
-      String sub_type,
-      dynamic token_iin,
-      dynamic expiry_year,
-      dynamic expiry_month,
-      bool international});
-}
-
-/// @nodoc
-class _$CardCopyWithImpl<$Res, $Val extends Card>
-    implements $CardCopyWith<$Res> {
-  _$CardCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of Card
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? emi = null,
-    Object? name = null,
-    Object? type = null,
-    Object? color = null,
-    Object? last4 = null,
-    Object? entity = null,
-    Object? issuer = freezed,
-    Object? number = null,
-    Object? network = null,
-    Object? sub_type = null,
-    Object? token_iin = freezed,
-    Object? expiry_year = freezed,
-    Object? expiry_month = freezed,
-    Object? international = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      emi: null == emi
-          ? _value.emi
-          : emi // ignore: cast_nullable_to_non_nullable
-              as bool,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      color: null == color
-          ? _value.color
-          : color // ignore: cast_nullable_to_non_nullable
-              as String,
-      last4: null == last4
-          ? _value.last4
-          : last4 // ignore: cast_nullable_to_non_nullable
-              as String,
-      entity: null == entity
-          ? _value.entity
-          : entity // ignore: cast_nullable_to_non_nullable
-              as String,
-      issuer: freezed == issuer
-          ? _value.issuer
-          : issuer // ignore: cast_nullable_to_non_nullable
-              as String?,
-      number: null == number
-          ? _value.number
-          : number // ignore: cast_nullable_to_non_nullable
-              as String,
-      network: null == network
-          ? _value.network
-          : network // ignore: cast_nullable_to_non_nullable
-              as String,
-      sub_type: null == sub_type
-          ? _value.sub_type
-          : sub_type // ignore: cast_nullable_to_non_nullable
-              as String,
-      token_iin: freezed == token_iin
-          ? _value.token_iin
-          : token_iin // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-      expiry_year: freezed == expiry_year
-          ? _value.expiry_year
-          : expiry_year // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-      expiry_month: freezed == expiry_month
-          ? _value.expiry_month
-          : expiry_month // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-      international: null == international
-          ? _value.international
-          : international // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$CardImplCopyWith<$Res> implements $CardCopyWith<$Res> {
-  factory _$$CardImplCopyWith(
-          _$CardImpl value, $Res Function(_$CardImpl) then) =
-      __$$CardImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      bool emi,
-      String name,
-      String type,
-      String color,
-      String last4,
-      String entity,
-      String? issuer,
-      String number,
-      String network,
-      String sub_type,
-      dynamic token_iin,
-      dynamic expiry_year,
-      dynamic expiry_month,
-      bool international});
-}
-
-/// @nodoc
-class __$$CardImplCopyWithImpl<$Res>
-    extends _$CardCopyWithImpl<$Res, _$CardImpl>
-    implements _$$CardImplCopyWith<$Res> {
-  __$$CardImplCopyWithImpl(_$CardImpl _value, $Res Function(_$CardImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of Card
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? emi = null,
-    Object? name = null,
-    Object? type = null,
-    Object? color = null,
-    Object? last4 = null,
-    Object? entity = null,
-    Object? issuer = freezed,
-    Object? number = null,
-    Object? network = null,
-    Object? sub_type = null,
-    Object? token_iin = freezed,
-    Object? expiry_year = freezed,
-    Object? expiry_month = freezed,
-    Object? international = null,
-  }) {
-    return _then(_$CardImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      emi: null == emi
-          ? _value.emi
-          : emi // ignore: cast_nullable_to_non_nullable
-              as bool,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      color: null == color
-          ? _value.color
-          : color // ignore: cast_nullable_to_non_nullable
-              as String,
-      last4: null == last4
-          ? _value.last4
-          : last4 // ignore: cast_nullable_to_non_nullable
-              as String,
-      entity: null == entity
-          ? _value.entity
-          : entity // ignore: cast_nullable_to_non_nullable
-              as String,
-      issuer: freezed == issuer
-          ? _value.issuer
-          : issuer // ignore: cast_nullable_to_non_nullable
-              as String?,
-      number: null == number
-          ? _value.number
-          : number // ignore: cast_nullable_to_non_nullable
-              as String,
-      network: null == network
-          ? _value.network
-          : network // ignore: cast_nullable_to_non_nullable
-              as String,
-      sub_type: null == sub_type
-          ? _value.sub_type
-          : sub_type // ignore: cast_nullable_to_non_nullable
-              as String,
-      token_iin: freezed == token_iin
-          ? _value.token_iin
-          : token_iin // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-      expiry_year: freezed == expiry_year
-          ? _value.expiry_year
-          : expiry_year // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-      expiry_month: freezed == expiry_month
-          ? _value.expiry_month
-          : expiry_month // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-      international: null == international
-          ? _value.international
-          : international // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$CardImpl implements _Card {
-  const _$CardImpl(
-      {required this.id,
-      required this.emi,
-      required this.name,
-      required this.type,
-      required this.color,
-      required this.last4,
-      required this.entity,
-      required this.issuer,
-      required this.number,
-      required this.network,
-      required this.sub_type,
-      required this.token_iin,
-      required this.expiry_year,
-      required this.expiry_month,
-      required this.international});
-
-  factory _$CardImpl.fromJson(Map<String, dynamic> json) =>
-      _$$CardImplFromJson(json);
-
-  @override
-  final String id;
-  @override
-  final bool emi;
-  @override
-  final String name;
-  @override
-  final String type;
-  @override
-  final String color;
-  @override
-  final String last4;
-  @override
-  final String entity;
-  @override
-  final String? issuer;
-  @override
-  final String number;
-  @override
-  final String network;
-  @override
-  final String sub_type;
-  @override
-  final dynamic token_iin;
-  @override
-  final dynamic expiry_year;
-  @override
-  final dynamic expiry_month;
-  @override
-  final bool international;
-
-  @override
-  String toString() {
-    return 'Card(id: $id, emi: $emi, name: $name, type: $type, color: $color, last4: $last4, entity: $entity, issuer: $issuer, number: $number, network: $network, sub_type: $sub_type, token_iin: $token_iin, expiry_year: $expiry_year, expiry_month: $expiry_month, international: $international)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$CardImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.emi, emi) || other.emi == emi) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.color, color) || other.color == color) &&
-            (identical(other.last4, last4) || other.last4 == last4) &&
-            (identical(other.entity, entity) || other.entity == entity) &&
-            (identical(other.issuer, issuer) || other.issuer == issuer) &&
-            (identical(other.number, number) || other.number == number) &&
-            (identical(other.network, network) || other.network == network) &&
-            (identical(other.sub_type, sub_type) ||
-                other.sub_type == sub_type) &&
-            const DeepCollectionEquality().equals(other.token_iin, token_iin) &&
-            const DeepCollectionEquality()
-                .equals(other.expiry_year, expiry_year) &&
-            const DeepCollectionEquality()
-                .equals(other.expiry_month, expiry_month) &&
-            (identical(other.international, international) ||
-                other.international == international));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      emi,
-      name,
-      type,
-      color,
-      last4,
-      entity,
-      issuer,
-      number,
-      network,
-      sub_type,
-      const DeepCollectionEquality().hash(token_iin),
-      const DeepCollectionEquality().hash(expiry_year),
-      const DeepCollectionEquality().hash(expiry_month),
-      international);
-
-  /// Create a copy of Card
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$CardImplCopyWith<_$CardImpl> get copyWith =>
-      __$$CardImplCopyWithImpl<_$CardImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$CardImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _Card implements Card {
-  const factory _Card(
-      {required final String id,
-      required final bool emi,
-      required final String name,
-      required final String type,
-      required final String color,
-      required final String last4,
-      required final String entity,
-      required final String? issuer,
-      required final String number,
-      required final String network,
-      required final String sub_type,
-      required final dynamic token_iin,
-      required final dynamic expiry_year,
-      required final dynamic expiry_month,
-      required final bool international}) = _$CardImpl;
-
-  factory _Card.fromJson(Map<String, dynamic> json) = _$CardImpl.fromJson;
-
-  @override
-  String get id;
-  @override
-  bool get emi;
-  @override
-  String get name;
-  @override
-  String get type;
-  @override
-  String get color;
-  @override
-  String get last4;
-  @override
-  String get entity;
-  @override
-  String? get issuer;
-  @override
-  String get number;
-  @override
-  String get network;
-  @override
-  String get sub_type;
-  @override
-  dynamic get token_iin;
-  @override
-  dynamic get expiry_year;
-  @override
-  dynamic get expiry_month;
-  @override
-  bool get international;
-
-  /// Create a copy of Card
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$CardImplCopyWith<_$CardImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
