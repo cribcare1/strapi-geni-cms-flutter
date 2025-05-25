@@ -13,33 +13,33 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:4:5-67
-15-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:4:22-64
+15-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:4:5-67
+15-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:4:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:3:5-79
-16-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:3:22-76
+16-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:3:5-79
+16-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:3:22-76
 17    <uses-permission android:name="android.permission.CAMERA" />
-17-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:5:5-65
-17-->D:\applications\sg-dl_application\sg-dl-mobile-app-main\android\app\src\main\AndroidManifest.xml:5:22-62
+17-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:5:5-65
+17-->D:\applications\strapi_new\strapi-geni-cms-flutter\android\app\src\main\AndroidManifest.xml:5:22-62
 18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions options for the `notification` group -->
-18-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-68
-18-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-65
+18-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-68
+18-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-65
 19    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- See https://developer.android.com/training/package-visibility -->
-19-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
-19-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
+19-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
+19-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
 20    <queries>
-20-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-12:15
+20-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-12:15
 21        <intent>
-21-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:18
+21-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:18
 22            <action android:name="android.intent.action.VIEW" />
-22-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-22-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+22-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+22-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 23        </intent>
 24        <intent>
 24-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:11:9-15:18
 25            <action android:name="android.intent.action.VIEW" />
-25-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-25-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+25-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+25-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 26
 27            <data android:scheme="https" />
 27-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:13-44
@@ -48,8 +48,8 @@
 29        <intent>
 29-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:11:9-17:18
 30            <action android:name="android.intent.action.VIEW" />
-30-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-30-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+30-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+30-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 31
 32            <data
 32-->[com.google.firebase:firebase-inappmessaging-display:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\6e10bcde3e90814b10a2626137f143b1\transformed\jetified-firebase-inappmessaging-display-21.0.0\AndroidManifest.xml:14:13-44
@@ -60,8 +60,8 @@
 36        <intent>
 36-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:18:9-27:18
 37            <action android:name="android.intent.action.VIEW" />
-37-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-37-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+37-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+37-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 38
 39            <category android:name="android.intent.category.BROWSABLE" />
 39-->[com.razorpay:standard-core:1.6.49] C:\Users\LENOVO\.gradle\caches\8.9\transforms\bd94b08024ab19e239ae89f9ed3cfda5\transformed\jetified-standard-core-1.6.49\AndroidManifest.xml:21:13-74
@@ -98,8 +98,8 @@
 57    </queries>
 58
 59    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-59-->[:flutter_local_notifications] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
-59-->[:flutter_local_notifications] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
+59-->[:flutter_local_notifications] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
+59-->[:flutter_local_notifications] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
 60    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 60-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:26:5-82
 60-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:26:22-79
@@ -182,8 +182,8 @@
 114
 115            <intent-filter android:autoVerify="true" >
 116                <action android:name="android.intent.action.VIEW" />
-116-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
-116-->[:flutter_downloader] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
+116-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-65
+116-->[:flutter_downloader] D:\applications\strapi_new\strapi-geni-cms-flutter\build\flutter_downloader\intermediates\merged_manifest\debug\AndroidManifest.xml:10:21-62
 117
 118                <category android:name="android.intent.category.DEFAULT" />
 119                <category android:name="android.intent.category.BROWSABLE" />
@@ -227,16 +227,16 @@
 151-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:48:13-43
 152            android:exported="false" >
 153            <intent-filter>
-153-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+153-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 154                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-154-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-154-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+154-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+154-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 155            </intent-filter>
 156            <intent-filter android:priority="-500" >
-156-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+156-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 157                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-157-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-157-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+157-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+157-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 158            </intent-filter>
 159        </service>
 160
@@ -246,57 +246,57 @@
 164            android:exported="false"
 165            android:grantUriPermissions="true" >
 166            <meta-data
-166-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:75
+166-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:75
 167                android:name="android.support.FILE_PROVIDER_PATHS"
-167-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-67
+167-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-67
 168                android:resource="@xml/provider_paths" />
-168-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-72
+168-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-72
 169        </provider>
 170
 171        <service
-171-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:19
+171-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:19
 172            android:name="com.google.firebase.components.ComponentDiscoveryService"
-172-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:12:18-89
+172-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:12:18-89
 173            android:directBootAware="true"
 173-->[com.google.firebase:firebase-common:21.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\9df1422bfe0257302225ec7802eb03e6\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
 174            android:exported="false" >
 174-->[com.google.firebase:firebase-crashlytics:19.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b61e761a50fd14037fd7ea301931d417\transformed\jetified-firebase-crashlytics-19.0.2\AndroidManifest.xml:14:13-37
 175            <meta-data
-175-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:85
+175-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:85
 176                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
-176-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-128
+176-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-128
 177                android:value="com.google.firebase.components.ComponentRegistrar" />
-177-->[:firebase_analytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-82
+177-->[:firebase_analytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-82
 178            <meta-data
-178-->[:firebase_crashlytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+178-->[:firebase_crashlytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 179                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
-179-->[:firebase_crashlytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-130
+179-->[:firebase_crashlytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-130
 180                android:value="com.google.firebase.components.ComponentRegistrar" />
-180-->[:firebase_crashlytics] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+180-->[:firebase_crashlytics] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_crashlytics\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 181            <meta-data
-181-->[:firebase_in_app_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+181-->[:firebase_in_app_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 182                android:name="com.google.firebase.components:io.flutter.plugins.firebase.inappmessaging.FlutterFirebaseAppRegistrar"
-182-->[:firebase_in_app_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-133
+182-->[:firebase_in_app_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-133
 183                android:value="com.google.firebase.components.ComponentRegistrar" />
-183-->[:firebase_in_app_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+183-->[:firebase_in_app_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_in_app_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 184            <meta-data
-184-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
+184-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
 185                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-185-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
+185-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
 186                android:value="com.google.firebase.components.ComponentRegistrar" />
-186-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
+186-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
 187            <meta-data
-187-->[:firebase_performance] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+187-->[:firebase_performance] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 188                android:name="com.google.firebase.components:io.flutter.plugins.firebase.performance.FlutterFirebaseAppRegistrar"
-188-->[:firebase_performance] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-130
+188-->[:firebase_performance] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-130
 189                android:value="com.google.firebase.components.ComponentRegistrar" />
-189-->[:firebase_performance] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+189-->[:firebase_performance] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 190            <meta-data
-190-->[:firebase_core] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+190-->[:firebase_core] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 191                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-191-->[:firebase_core] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+191-->[:firebase_core] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
 192                android:value="com.google.firebase.components.ComponentRegistrar" />
-192-->[:firebase_core] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+192-->[:firebase_core] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 193            <meta-data
 193-->[com.google.firebase:firebase-crashlytics:19.0.2] C:\Users\LENOVO\.gradle\caches\8.9\transforms\b61e761a50fd14037fd7ea301931d417\transformed\jetified-firebase-crashlytics-19.0.2\AndroidManifest.xml:15:13-17:85
 194                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
@@ -419,79 +419,79 @@
 252-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\LENOVO\.gradle\caches\8.9\transforms\c6c433782d80543f41b20267aba1a700\transformed\jetified-firebase-abt-21.1.1\AndroidManifest.xml:14:17-82
 253        </service>
 254        <service
-254-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
+254-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
 255            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-255-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
+255-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
 256            android:exported="false"
-256-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+256-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 257            android:permission="android.permission.BIND_JOB_SERVICE" />
-257-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
+257-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
 258        <service
-258-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
+258-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
 259            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-259-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
+259-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
 260            android:exported="false" >
-260-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+260-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
 261            <intent-filter>
-261-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+261-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 262                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-262-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-262-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+262-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+262-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 263            </intent-filter>
 264        </service>
 265
 266        <receiver
-266-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
+266-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
 267            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-267-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
+267-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
 268            android:exported="true"
-268-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
+268-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
 269            android:permission="com.google.android.c2dm.permission.SEND" >
-269-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
+269-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
 270            <intent-filter>
-270-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+270-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 271                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-271-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-271-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+271-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+271-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 272            </intent-filter>
 273        </receiver>
 274
 275        <provider
-275-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
+275-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
 276            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-276-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
+276-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
 277            android:authorities="silver.genie.flutterfirebasemessaginginitprovider"
-277-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
+277-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
 278            android:exported="false"
-278-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+278-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
 279            android:initOrder="99" />
-279-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
+279-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
 280        <provider
-280-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-17:20
+280-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-17:20
 281            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-281-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-82
+281-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-82
 282            android:authorities="silver.genie.flutter.image_provider"
-282-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+282-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 283            android:exported="false"
-283-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+283-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
 284            android:grantUriPermissions="true" >
-284-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-47
+284-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-47
 285            <meta-data
-285-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:75
+285-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:75
 286                android:name="android.support.FILE_PROVIDER_PATHS"
-286-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-67
+286-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-67
 287                android:resource="@xml/flutter_image_picker_file_paths" />
-287-->[:image_picker_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-72
+287-->[:image_picker_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-72
 288        </provider>
 289
 290        <activity
-290-->[:url_launcher_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+290-->[:url_launcher_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
 291            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-291-->[:url_launcher_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+291-->[:url_launcher_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
 292            android:exported="false"
-292-->[:url_launcher_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+292-->[:url_launcher_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
 293            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-293-->[:url_launcher_android] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+293-->[:url_launcher_android] D:\applications\strapi_new\strapi-geni-cms-flutter\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 294
 295        <receiver
 295-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:29:9-40:20
@@ -502,10 +502,10 @@
 298            android:permission="com.google.android.c2dm.permission.SEND" >
 298-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\LENOVO\.gradle\caches\8.9\transforms\e7d5053b6a863548500c9c1cb263c45c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:32:13-73
 299            <intent-filter>
-299-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+299-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 300                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-300-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-300-->[:firebase_messaging] D:\applications\sg-dl_application\sg-dl-mobile-app-main\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+300-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+300-->[:firebase_messaging] D:\applications\strapi_new\strapi-geni-cms-flutter\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 301            </intent-filter>
 302
 303            <meta-data

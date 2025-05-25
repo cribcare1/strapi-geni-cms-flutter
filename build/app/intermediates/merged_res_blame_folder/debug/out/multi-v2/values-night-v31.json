@@ -4,7 +4,7 @@
             "outputFile": "silver.genie.app-mergeDebugResources-68:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "D:\\applications\\sg-dl_application\\sg-dl-mobile-app-main\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "source": "D:\\applications\\strapi_new\\strapi-geni-cms-flutter\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
                     "from": {
                         "startLines": "3,15",
                         "startColumns": "4,4",
