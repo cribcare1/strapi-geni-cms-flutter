@@ -398,14 +398,27 @@ Map<String, dynamic> _$$DataImplToJson(_$DataImpl instance) =>
       'attributes': instance.attributes,
     };
 
+_$IconDataModelImpl _$$IconDataModelImplFromJson(Map<String, dynamic> json) =>
+    _$IconDataModelImpl(
+      id: (json['id'] as num).toInt(),
+      attributes:
+          IconImgMetaData.fromJson(json['attributes'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$IconDataModelImplToJson(_$IconDataModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'attributes': instance.attributes,
+    };
+
 _$IconImgMetaDataImpl _$$IconImgMetaDataImplFromJson(
         Map<String, dynamic> json) =>
     _$IconImgMetaDataImpl(
       name: json['name'] as String,
       alternativeText: json['alternativeText'],
       caption: json['caption'],
-      width: (json['width'] as num).toInt(),
-      height: (json['height'] as num).toInt(),
+      width: _nullableIntToZero(json['width']),
+      height: _nullableIntToZero(json['height']),
       formats: json['formats'],
       hash: json['hash'] as String,
       ext: json['ext'] as String,
@@ -963,51 +976,4 @@ Map<String, dynamic> _$$InvoiceImplToJson(_$InvoiceImpl instance) =>
       'folderPath': instance.folderPath,
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
-    };
-
-_$AcquirerDataImpl _$$AcquirerDataImplFromJson(Map<String, dynamic> json) =>
-    _$AcquirerDataImpl(
-      auth_code: json['auth_code'] as String,
-    );
-
-Map<String, dynamic> _$$AcquirerDataImplToJson(_$AcquirerDataImpl instance) =>
-    <String, dynamic>{
-      'auth_code': instance.auth_code,
-    };
-
-_$CardImpl _$$CardImplFromJson(Map<String, dynamic> json) => _$CardImpl(
-      id: json['id'] as String,
-      emi: json['emi'] as bool,
-      name: json['name'] as String,
-      type: json['type'] as String,
-      color: json['color'] as String,
-      last4: json['last4'] as String,
-      entity: json['entity'] as String,
-      issuer: json['issuer'] as String?,
-      number: json['number'] as String,
-      network: json['network'] as String,
-      sub_type: json['sub_type'] as String,
-      token_iin: json['token_iin'],
-      expiry_year: json['expiry_year'],
-      expiry_month: json['expiry_month'],
-      international: json['international'] as bool,
-    );
-
-Map<String, dynamic> _$$CardImplToJson(_$CardImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'emi': instance.emi,
-      'name': instance.name,
-      'type': instance.type,
-      'color': instance.color,
-      'last4': instance.last4,
-      'entity': instance.entity,
-      'issuer': instance.issuer,
-      'number': instance.number,
-      'network': instance.network,
-      'sub_type': instance.sub_type,
-      'token_iin': instance.token_iin,
-      'expiry_year': instance.expiry_year,
-      'expiry_month': instance.expiry_month,
-      'international': instance.international,
     };
