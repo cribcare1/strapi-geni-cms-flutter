@@ -49,8 +49,11 @@ class _AllServicesScreenState extends State<AllServicesScreen> {
   }
 
   List<ProductBasicDetailsModel> getAllServices() {
+
     print("++++++==== ${widget.isConvenience}");
     print("=====${store.getHealthCareServicesList.toList()}");
+
+
     if (widget.isConvenience) {
       return store.getConvenienceCareServicesList;
     } else if (widget.isHealthCare) {
@@ -111,6 +114,9 @@ class _AllServicesScreenState extends State<AllServicesScreen> {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
+                      print('+++++id+++++: ${displayedServices[index].id}');
+                      print('+++++++title+++++: displayedServices[index].attributes.name}');
+
                       context.pushNamed(
                         RoutesConstants.serviceDetailsScreen,
                         pathParameters: {

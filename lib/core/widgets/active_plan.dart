@@ -318,7 +318,7 @@ class _ActivePlanComponentState extends State<ActivePlanComponent> {
                   itemCount: 4,
                   gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                     maxCrossAxisExtent: 180,
-                    mainAxisExtent: 70,
+                    mainAxisExtent: 90,
                     mainAxisSpacing: 8,
                     crossAxisSpacing: 8,
                   ),

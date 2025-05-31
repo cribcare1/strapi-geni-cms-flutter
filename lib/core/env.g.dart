@@ -9,6 +9,6 @@ part of 'env.dart';
 // coverage:ignore-file
 // ignore_for_file: type=lint
 final class _Env {
-  static const String serverUrl = 'http://52.66.203.154:1337';
+  static const String serverUrl = 'http://13.233.90.234:1337';
   //http://192.168.31.106:1337
 }

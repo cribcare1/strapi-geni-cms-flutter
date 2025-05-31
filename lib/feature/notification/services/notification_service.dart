@@ -28,6 +28,8 @@ class NotificationServices extends INotificationFacade {
     try {
       response = await httpClient.get('/api/user-notifications');
 
+      print("Notification response: $response");
+
       if (response.statusCode == 200) {
         if (response.data != null) {
           return Right(

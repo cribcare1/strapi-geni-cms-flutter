@@ -37,6 +37,19 @@ mixin _$ProductListingStore on _ProductListingStoreBase, Store {
           .value;
   Computed<List<ProductBasicDetailsModel>>? _$getServicesListComputed;
 
+
+  // @override
+  // void initGetProductBasicDetails() {
+  //   final _$actionInfo = _$_ProductListingStoreBaseActionController.startAction(
+  //       name: '_ProductListingStoreBase.initGetAllProductList');
+  //   try {
+  //     return super.initGetAllProductList();
+  //   } finally {
+  //     _$_ProductListingStoreBaseActionController.endAction(_$actionInfo);
+  //   }
+  // }
+
+
   @override
   List<ProductBasicDetailsModel> get getServicesList =>
       (_$getServicesListComputed ??= Computed<List<ProductBasicDetailsModel>>(
@@ -57,12 +70,19 @@ mixin _$ProductListingStore on _ProductListingStoreBase, Store {
 
   @override
   List<ProductBasicDetailsModel> get getHomeCareServicesList =>
-      (_$getHomeCareServicesListComputed ??=
-              Computed<List<ProductBasicDetailsModel>>(
-                  () => super.getHomeCareServicesList,
-                  name: '_ProductListingStoreBase.getHomeCareServicesList'))
-          .value;
-  Computed<List<ProductBasicDetailsModel>>? _$getHealthCareServicesListComputed;
+        (_$getHomeCareServicesListComputed ??=
+        Computed<List<ProductBasicDetailsModel>>(
+                () {
+                  final data = super.getHomeCareServicesList;
+                  print("getHomeCareServiceList data: $data");
+                  return data;
+                },
+            name: '_ProductListingStoreBase.getHomeCareServicesList'))
+        .value;
+
+    Computed<
+        List<ProductBasicDetailsModel>>? _$getHealthCareServicesListComputed;
+
 
   @override
   List<ProductBasicDetailsModel> get getHealthCareServicesList =>
@@ -74,6 +94,7 @@ mixin _$ProductListingStore on _ProductListingStoreBase, Store {
 
   late final _$fetchProductLoadingAtom = Atom(
       name: '_ProductListingStoreBase.fetchProductLoading', context: context);
+
 
   @override
   bool get fetchProductLoading {

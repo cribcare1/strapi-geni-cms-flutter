@@ -4,6 +4,7 @@ import 'dart:io';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 import 'package:go_router/go_router.dart';
@@ -116,12 +117,14 @@ class _AddEditFamilyMemberScreenState extends State<AddEditFamilyMemberScreen> {
     reaction((_) => memberStore.addOrEditMemberFailure, (_) {
       if (mounted) {
         if (memberStore.addOrEditMemberFailure != null) {
-          ScaffoldMessenger.of(context)..hideCurrentSnackBar()..showSnackBar(
-            SnackBar(
-              content: Text(memberStore.addOrEditMemberFailure!),
-              duration: const Duration(seconds: 3),
-            ),
-          );
+          ScaffoldMessenger.of(context)
+            ..hideCurrentSnackBar()
+            ..showSnackBar(
+              SnackBar(
+                content: Text(memberStore.addOrEditMemberFailure!),
+                duration: const Duration(seconds: 3),
+              ),
+            );
           memberStore.addOrEditMemberFailure = null;
         }
       }
@@ -130,7 +133,7 @@ class _AddEditFamilyMemberScreenState extends State<AddEditFamilyMemberScreen> {
     reaction((_) => memberStore.addOrEditMemberSuccessful,
         (successValue) async {
       if (mounted) {
-      if (successValue == null) return;
+        if (successValue == null) return;
         await showDialog(
           context: context,
           builder: (context) {
@@ -315,7 +318,7 @@ class _AddEditFamilyMemberScreenState extends State<AddEditFamilyMemberScreen> {
                             const SizedBox(height: 8),
                             CustomTextField(
                               hintText: 'Enter your first name',
-                              keyboardType: TextInputType.name,
+                              keyboardType: TextInputType.text,
                               controller: firstNameContr,
                               large: false,
                               enabled: widget.isSelf ? false : true,
@@ -476,6 +479,12 @@ class _AddEditFamilyMemberScreenState extends State<AddEditFamilyMemberScreen> {
                                         }
                                         return null;
                                       },
+                                // inputFormatters: widget.edit || widget.isSelf
+                                //     ? null
+                                //     : [
+                                //         FilteringTextInputFormatter.digitsOnly,
+                                //         LengthLimitingTextInputFormatter(10),
+                                //       ],
                               ),
                             ),
                             const SizedBox(height: 16),
@@ -618,23 +627,31 @@ class _AddEditFamilyMemberScreenState extends State<AddEditFamilyMemberScreen> {
                             const AsteriskLabel(label: 'Postal code'),
                             const SizedBox(height: 8),
                             CustomTextField(
-                              hintText: 'Enter postal code',
-                              keyboardType: TextInputType.number,
-                              controller: postalCodeContr,
-                              large: false,
-                              enabled: true,
-                              autovalidateMode: autoValidate
-                                  ? AutovalidateMode.onUserInteraction
-                                  : AutovalidateMode.disabled,
-                              validationLogic: (value) {
-                                if (value!.isEmpty) {
-                                  return 'Please enter your postal code';
-                                } else if (value.length > 6 ||
-                                    value.length < 6) {
-                                  return 'Please enter 6 digits postal code';
-                                }
-                                return null;
-                              },
+                                hintText: 'Enter postal code',
+                                keyboardType: TextInputType.number,
+                                controller: postalCodeContr,
+                                large: false,
+                                enabled: true,
+                                autovalidateMode: autoValidate
+                                    ? AutovalidateMode.onUserInteraction
+                                    : AutovalidateMode.disabled,
+                                validationLogic: (value) {
+                                  if (value!.isEmpty) {
+                                    return 'Please enter your postal code';
+                                  } else if (value.length > 6 ||
+                                      value.length < 6) {
+                                    return 'Please enter 6 digits postal code';
+                                  }
+                                  return null;
+                                },
+                                // inputFormatters: [
+                                //   widget.edit || widget.isSelf
+                                //       ? null
+                                //       : [
+                                //           FilteringTextInputFormatter.digitsOnly,
+                                //           LengthLimitingTextInputFormatter(6),
+                                //         ],
+                                // ]
                             ),
                             const SizedBox(
                               height: Dimension.d10,

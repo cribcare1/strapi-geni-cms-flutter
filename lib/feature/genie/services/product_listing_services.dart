@@ -75,6 +75,9 @@ class ProductListingServices extends IProductListingService {
       response = await httpClient.get(
         '/api/products?populate[0]=metadata&populate[1]=icon&populate[2]=upgradeable_products.icon&populate[3]=upgradeable_products.metadata',
       );
+
+      print("getAllProductBasicDetails: $response");
+
       httpClient.interceptors.remove(dioCacheInterceptor);
       switch (response.statusCode) {
         case 200:
@@ -141,6 +144,9 @@ class ProductListingServices extends IProductListingService {
       response = await httpClient.get(
         '/api/products/$id?populate[0]=prices.rules&populate[1]=subscriptionContent.productImage&populate[2]=subscriptionContent.FAQ&populate[3]=icon&populate[4]=benefits&populate[5]=metadata&populate[6]=serviceContent.offerings&populate[7]=serviceContent.serviceImage&populate[8]=serviceContent.faq&populate[9]=serviceContent.servicePrice&populate[10]=serviceContent.cta&populate[11]=serviceContent.bannerImage',
       );
+
+      print("getProductById: $response");
+
       if (response.statusCode == 200) {
         if (response.data['data'] != null) {
           final data = response.data['data'];
@@ -204,6 +210,9 @@ class ProductListingServices extends IProductListingService {
       response = await httpClient.get(
         '/api/products?filters[code][\$eq]=$productCode&populate[1]=product_form.form.formDetails&populate[2]=product_form.form.options&populate[3]=product_form.form.validations.valueMsg',
       );
+
+      print("getBookingServiceDetailsById: $response");
+
       if (response.statusCode == 200) {
         final data = response.data['data'][0];
         if (data != null) {

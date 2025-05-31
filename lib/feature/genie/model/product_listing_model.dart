@@ -218,9 +218,13 @@ class ProductBasicDetailsModel with _$ProductBasicDetailsModel {
     required int id,
     @JsonKey(name: 'attributes') required ProductMetaData attributes,
   }) = _ProductBasicDetailsModel;
-
-  factory ProductBasicDetailsModel.fromJson(Map<String, dynamic> json) =>
-      _$ProductBasicDetailsModelFromJson(json);
+  factory ProductBasicDetailsModel.fromJson(Map<String, dynamic> json)
+  // =>
+  {
+    final result = _$ProductBasicDetailsModelFromJson(json);
+    print("ProductBasicDetailsModelData: $result");
+    return result;
+  }
 }
 
 @freezed

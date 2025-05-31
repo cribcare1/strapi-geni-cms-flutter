@@ -49,6 +49,10 @@ class _HomeScreenState extends State<HomeScreen> {
     memberStore = GetIt.I<MembersStore>()..init();
     memberStore.refresh();
     bookingServiceStore.initGetAllServices();
+    productLStore.initGetProductBasicDetails();
+
+    print("[HomeScreen] productBasicDetailsModelList length: ${productLStore.productBasicDetailsModelList?.length}");
+
     GetIt.I<NotificationStore>().fetchNotifications();
     reaction((_) => memberStore.errorMessage, (loaded) {
       if (memberStore.errorMessage == null) {

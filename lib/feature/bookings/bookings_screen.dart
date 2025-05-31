@@ -75,9 +75,9 @@ class _BookingsScreenState extends State<BookingsScreen>
               controller: controller,
               tabCount: 3,
               widgetList: [
-                Tab(icon: Text('Requested'.tr())),
-                Tab(icon: Text('Active'.tr())),
-                Tab(icon: Text('Completed'.tr())),
+                Tab(text: 'Requested'.tr()),
+                Tab(text: 'Active'.tr()),
+                Tab(text: 'Completed'.tr()),
               ],
             ),
             const SizedBox(

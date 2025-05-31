@@ -31,6 +31,11 @@ class HomeService implements IHomeServices {
       response = await httpClient.get(
         '/api/pages/1?populate[0]=content.bannerImage&populate[1]=content.cta.href&populate[2]=content.offering.offers.values&populate[3]=content.cta.link&populate[4]=content.testimonials.testifierImage&populate[5]=content.newsletters.link',
       );
+
+      print(StackTrace.current);
+      print("${runtimeType}");
+      print("HomePage with Service Respones = $response");
+
       if (response.statusCode == 200) {
         if (response.data['data']['attributes']['content'] != null) {
           final componetList = <dynamic>[];
@@ -129,6 +134,8 @@ class HomeService implements IHomeServices {
       response = await httpClient.get(
         '/api/masterdata?populate=*',
       );
+      print("===Master Response data == ${response.data}");
+
       if (response.statusCode == 200) {
         final data = response.data['data'];
         if (data != null) {

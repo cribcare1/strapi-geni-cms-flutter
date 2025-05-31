@@ -1,5 +1,6 @@
 // ignore_for_file: lines_longer_than_80_chars, library_private_types_in_public_api
 
+import 'package:flutter/physics.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:mobx/mobx.dart';
 import 'package:silver_genie/core/failure/failure.dart';
@@ -129,6 +130,7 @@ abstract class _ProductListingStoreBase with Store {
               .toList()
           : [];
 
+
   @computed
   List<ProductBasicDetailsModel> get getServicesList =>
       productBasicDetailsModelList != null
@@ -136,6 +138,7 @@ abstract class _ProductListingStoreBase with Store {
               .where((element) => element.attributes.type == 'service')
               .toList()
           : [];
+
 
   @computed
   List<ProductBasicDetailsModel> get getConvenienceCareServicesList =>
@@ -150,18 +153,55 @@ abstract class _ProductListingStoreBase with Store {
               .toList()
           : [];
 
+
+  // @computed
+  // List<ProductBasicDetailsModel> get getHomeCareServicesList =>
+  //     productBasicDetailsModelList != null
+  //         ? productBasicDetailsModelList!
+  //             .where(
+  //               (element) =>
+  //                   element.attributes.category == 'homeCare' &&
+  //                   element.attributes.isActive == true &&
+  //                   element.attributes.type == 'service',
+  //             )
+  //             .toList()
+  //         : [];
+
+
+
+
   @computed
-  List<ProductBasicDetailsModel> get getHomeCareServicesList =>
-      productBasicDetailsModelList != null
-          ? productBasicDetailsModelList!
-              .where(
-                (element) =>
-                    element.attributes.category == 'homeCare' &&
-                    element.attributes.isActive == true &&
-                    element.attributes.type == 'service',
-              )
-              .toList()
-          : [];
+  List<ProductBasicDetailsModel> get getHomeCareServicesList {
+    print("Recomputing getHomeCareServicesList");
+    if (productBasicDetailsModelList == null) {
+      print("productBasicDetailsModelList is null");
+      return [];
+    }
+
+    print("All services count: ${productBasicDetailsModelList!.length}");
+
+    final filtered = productBasicDetailsModelList!.where((element) {
+      final result = element.attributes.category.toLowerCase() == 'homeCare' &&
+          element.attributes.isActive == true &&
+          element.attributes.type.toLowerCase() == 'service';
+
+      if (!result) {
+        print("Filtered out: ${element.attributes.name} => "
+            "category: ${element.attributes.category.toLowerCase()}, "
+            "active: ${element.attributes.isActive}, "
+            "type: ${element.attributes.type.toLowerCase()}");
+      }
+
+      return result;
+    }).toList();
+
+    print("Filtered home care count: ${filtered.length}");
+    return filtered;
+  }
+
+
+/////////////////
+
 
   @computed
   List<ProductBasicDetailsModel> get getHealthCareServicesList =>
@@ -179,7 +219,8 @@ abstract class _ProductListingStoreBase with Store {
   ProductBasicDetailsModel? getProductBasicDetailsById(int id) =>
       productBasicDetailsModelList?.firstWhere((product) => product.id == id);
 
-  @action
+
+  @computed
   List<ProductBasicDetailsModel> getUpgradeProdListById(String id) {
     return getSubscriptProdList
         .where((element) => element.id.toString() == id)
@@ -188,6 +229,8 @@ abstract class _ProductListingStoreBase with Store {
         .toList();
   }
 
+
+  @action
   void initGetProductBasicDetails() {
     fetchProductLoading = true;
     productListingService.getAllProductBasicDetails().then((value) {

@@ -132,32 +132,35 @@ class _PageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final mediaQueryContext = MediaQuery.sizeOf(context);
-    return Column(
-      children: [
-        Container(
-          height: isLandscape
-              ? mediaQueryContext.height * 0.4
-              : mediaQueryContext.height * 0.65,
-          width: isLandscape ? mediaQueryContext.width * 0.6 : double.infinity,
-          decoration: const BoxDecoration(
-            color: AppColors.secondary,
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            height: isLandscape
+                ? mediaQueryContext.height * 0.4
+                : mediaQueryContext.height * 0.65,
+            width: isLandscape ? mediaQueryContext.width * 0.6 : double.infinity,
+            decoration: const BoxDecoration(
+              color: AppColors.secondary,
+            ),
+            child: Image.asset(
+              imgPath,
+              scale: 0.85,
+            ),
           ),
-          child: Image.asset(
-            imgPath,
-            scale: 0.85,
+          const SizedBox(height: 15),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Text(
+              desc,
+              textAlign: TextAlign.center,
+              style: AppTextStyle.bodyLargeMedium
+                  .copyWith(color: AppColors.grayscale800),
+            ),
           ),
-        ),
-        const SizedBox(height: 15),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Text(
-            desc,
-            textAlign: TextAlign.center,
-            style: AppTextStyle.bodyLargeMedium
-                .copyWith(color: AppColors.grayscale800),
-          ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

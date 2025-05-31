@@ -58,6 +58,9 @@ class ServiceDetailsScreen extends StatelessWidget {
               child: LoadingWidget(showShadow: false),
             );
           }
+
+          print("#########id: $id \n #########title: $title");
+
           if (snapshot.hasError) {
             return const Center(
               child: ErrorStateComponent(
@@ -278,6 +281,10 @@ class ServiceDetailsScreen extends StatelessWidget {
                           ontap: () {
                             store.isLoading = true;
                             final userStore = GetIt.I<UserDetailStore>();
+                            print("Home Care Name: ${userStore.userDetails?.name}");
+                            print("Home Care phone number: ${userStore.userDetails?.phoneNumber}");
+                            print("Home Care email: ${userStore.userDetails?.email}");
+
                             service
                                 .bookService(
                               name: userStore.userDetails?.name ?? '',
