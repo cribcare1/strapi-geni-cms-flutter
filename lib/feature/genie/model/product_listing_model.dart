@@ -219,12 +219,7 @@ class ProductBasicDetailsModel with _$ProductBasicDetailsModel {
     @JsonKey(name: 'attributes') required ProductMetaData attributes,
   }) = _ProductBasicDetailsModel;
   factory ProductBasicDetailsModel.fromJson(Map<String, dynamic> json)
-  // =>
-  {
-    final result = _$ProductBasicDetailsModelFromJson(json);
-    print("ProductBasicDetailsModelData: $result");
-    return result;
-  }
+    =>  _$ProductBasicDetailsModelFromJson(json);
 }
 
 @freezed
@@ -266,14 +261,20 @@ class Data with _$Data {
   factory Data.fromJson(Map<String, dynamic> json) => _$DataFromJson(json);
 }
 
+int _nullableIntToZero(dynamic value) {
+  if (value == null) return 0;
+  if (value is int) return value;
+  return int.tryParse(value.toString()) ?? 0;
+}
+
 @freezed
 class IconImgMetaData with _$IconImgMetaData {
   const factory IconImgMetaData({
     required String name,
     required dynamic alternativeText,
     required dynamic caption,
-    required int width,
-    required int height,
+    @JsonKey(fromJson: _nullableIntToZero) required int width,
+    @JsonKey(fromJson: _nullableIntToZero) required int height,
     required dynamic formats,
     required String hash,
     required String ext,

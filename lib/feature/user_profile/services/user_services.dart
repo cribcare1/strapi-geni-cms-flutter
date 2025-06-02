@@ -20,6 +20,8 @@ class UserDetailServices implements IUserFacades {
   final UserDetailsCache _userDetailCache;
   HttpClient httpClient;
 
+  get logger => null;
+
   @override
   Future<Either<Failure, User>> updateUserDetails({
     required User user,
@@ -219,6 +221,9 @@ class UserDetailServices implements IUserFacades {
     late final Response response;
     try {
       response = await httpClient.get('/api/all-subscription');
+      
+      print("Subscription response: ${response.data}");
+      
       if (response.statusCode == 200) {
         if (response.data != null) {
           final data = response.data;

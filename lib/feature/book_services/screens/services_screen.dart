@@ -79,9 +79,6 @@ class _ServicesScreenState extends State<ServicesScreen> {
               final healthCareServices = store.getHealthCareServicesList;
               final convenienceCareServices =
                   store.getConvenienceCareServicesList;
-              print("Home Care Services: ${homeCareServices.length}");
-              print("Health Care Services: ${healthCareServices.length}");
-              print("Convenience Care Services: ${convenienceCareServices.length}");
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

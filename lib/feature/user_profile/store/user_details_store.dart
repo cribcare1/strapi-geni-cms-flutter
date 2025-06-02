@@ -158,7 +158,9 @@ abstract class _UserDetailStoreBase with Store {
   @action
   Future<Either<Failure, SubscriptionDetails>> getSubscriptionById({
     required int id,
-  }) async {
+  })
+  async {
+    print("====SubscriptionId====$id");
     isLoading = true;
     final response = await userDetailServices.getSubscriptionById(id: id);
     isLoading = false;

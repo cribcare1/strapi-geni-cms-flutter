@@ -1,6 +1,5 @@
 // ignore_for_file: lines_longer_than_80_chars, library_private_types_in_public_api
 
-import 'package:flutter/physics.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:mobx/mobx.dart';
 import 'package:silver_genie/core/failure/failure.dart';
@@ -94,22 +93,22 @@ abstract class _ProductListingStoreBase with Store {
   List<ProductBasicDetailsModel> get getSubscriptActiveProdList =>
       productBasicDetailsModelList != null
           ? productBasicDetailsModelList!
-              .where(
-                (element) =>
-                    element.attributes.isActive &&
-                    element.attributes.type == 'subscription',
-              )
-              .toList()
+          .where(
+            (element) =>
+        element.attributes.isActive &&
+            element.attributes.type == 'subscription',
+      )
+          .toList()
           : [];
 
   List<ProductBasicDetailsModel> getProdListRankOrder(
-    List<ProductBasicDetailsModel> prodList,
-  ) {
+      List<ProductBasicDetailsModel> prodList,
+      ) {
     return prodList
         .where(
           (element) => element.attributes.metadata
-              .any((metadata) => metadata.key == 'rank'),
-        )
+          .any((metadata) => metadata.key == 'rank'),
+    )
         .toList()
       ..sort((a, b) {
         final aRank = a.attributes.metadata
@@ -126,101 +125,61 @@ abstract class _ProductListingStoreBase with Store {
   List<ProductBasicDetailsModel> get getSubscriptProdList =>
       productBasicDetailsModelList != null
           ? productBasicDetailsModelList!
-              .where((element) => element.attributes.type == 'subscription')
-              .toList()
+          .where((element) => element.attributes.type == 'subscription')
+          .toList()
           : [];
-
 
   @computed
   List<ProductBasicDetailsModel> get getServicesList =>
       productBasicDetailsModelList != null
           ? productBasicDetailsModelList!
-              .where((element) => element.attributes.type == 'service')
-              .toList()
+          .where((element) => element.attributes.type == 'service')
+          .toList()
           : [];
-
 
   @computed
   List<ProductBasicDetailsModel> get getConvenienceCareServicesList =>
       productBasicDetailsModelList != null
           ? productBasicDetailsModelList!
-              .where(
-                (element) =>
-                    element.attributes.category == 'convenienceCare' &&
-                    element.attributes.isActive == true &&
-                    element.attributes.type == 'service',
-              )
-              .toList()
+          .where(
+            (element) =>
+        element.attributes.category == 'convenienceCare' &&
+            element.attributes.isActive == true &&
+            element.attributes.type == 'service',
+      )
+          .toList()
           : [];
 
-
-  // @computed
-  // List<ProductBasicDetailsModel> get getHomeCareServicesList =>
-  //     productBasicDetailsModelList != null
-  //         ? productBasicDetailsModelList!
-  //             .where(
-  //               (element) =>
-  //                   element.attributes.category == 'homeCare' &&
-  //                   element.attributes.isActive == true &&
-  //                   element.attributes.type == 'service',
-  //             )
-  //             .toList()
-  //         : [];
-
-
-
-
   @computed
-  List<ProductBasicDetailsModel> get getHomeCareServicesList {
-    print("Recomputing getHomeCareServicesList");
-    if (productBasicDetailsModelList == null) {
-      print("productBasicDetailsModelList is null");
-      return [];
-    }
-
-    print("All services count: ${productBasicDetailsModelList!.length}");
-
-    final filtered = productBasicDetailsModelList!.where((element) {
-      final result = element.attributes.category.toLowerCase() == 'homeCare' &&
-          element.attributes.isActive == true &&
-          element.attributes.type.toLowerCase() == 'service';
-
-      if (!result) {
-        print("Filtered out: ${element.attributes.name} => "
-            "category: ${element.attributes.category.toLowerCase()}, "
-            "active: ${element.attributes.isActive}, "
-            "type: ${element.attributes.type.toLowerCase()}");
-      }
-
-      return result;
-    }).toList();
-
-    print("Filtered home care count: ${filtered.length}");
-    return filtered;
-  }
-
-
-/////////////////
-
+  List<ProductBasicDetailsModel> get getHomeCareServicesList =>
+      productBasicDetailsModelList != null
+          ? productBasicDetailsModelList!
+          .where(
+            (element) =>
+        element.attributes.category == 'homeCare' &&
+            element.attributes.isActive == true &&
+            element.attributes.type == 'service',
+      )
+          .toList()
+          : [];
 
   @computed
   List<ProductBasicDetailsModel> get getHealthCareServicesList =>
       productBasicDetailsModelList != null
           ? productBasicDetailsModelList!
-              .where(
-                (element) =>
-                    element.attributes.category == 'healthCare' &&
-                    element.attributes.isActive == true &&
-                    element.attributes.type == 'service',
-              )
-              .toList()
+          .where(
+            (element) =>
+        element.attributes.category == 'healthCare' &&
+            element.attributes.isActive == true &&
+            element.attributes.type == 'service',
+      )
+          .toList()
           : [];
 
   ProductBasicDetailsModel? getProductBasicDetailsById(int id) =>
       productBasicDetailsModelList?.firstWhere((product) => product.id == id);
 
-
-  @computed
+  @action
   List<ProductBasicDetailsModel> getUpgradeProdListById(String id) {
     return getSubscriptProdList
         .where((element) => element.id.toString() == id)
@@ -229,8 +188,6 @@ abstract class _ProductListingStoreBase with Store {
         .toList();
   }
 
-
-  @action
   void initGetProductBasicDetails() {
     fetchProductLoading = true;
     productListingService.getAllProductBasicDetails().then((value) {
@@ -255,9 +212,9 @@ abstract class _ProductListingStoreBase with Store {
       value.fold((l) {
         l.maybeMap(
           serviceNotAvailbaleForUser: (value) => buyServiceFailed =
-              'Service is not available for this Particular area',
+          'Service is not available for this Particular area',
           socketExceptionError: (value) =>
-              buyServiceFailed = 'No Internet Connection',
+          buyServiceFailed = 'No Internet Connection',
           orElse: () => buyServiceFailed = 'Something went wrong',
         );
       }, (r) {
@@ -271,14 +228,14 @@ abstract class _ProductListingStoreBase with Store {
     pytmStatusLoading = true;
     productListingService.getPaymentStatus(id: id).then((response) {
       response.fold(
-        (l) {
+            (l) {
           l.maybeMap(
             socketError: (value) =>
-                getPaymentStatusFailure = 'No Internet Connection',
+            getPaymentStatusFailure = 'No Internet Connection',
             orElse: () => getPaymentStatusFailure = 'Something went wrong',
           );
         },
-        (r) {
+            (r) {
           servicePaymentStatusModel = r;
         },
       );
@@ -290,15 +247,15 @@ abstract class _ProductListingStoreBase with Store {
     pytmStatusLoading = true;
     productListingService.getSubscriptionPaymentStatus(id: id).then((response) {
       response.fold(
-        (l) {
+            (l) {
           l.maybeMap(
             socketError: (value) =>
-                getSubscrPaymentStatusFailure = 'No Internet Connection',
+            getSubscrPaymentStatusFailure = 'No Internet Connection',
             orElse: () =>
-                getSubscrPaymentStatusFailure = 'Something went wrong',
+            getSubscrPaymentStatusFailure = 'Something went wrong',
           );
         },
-        (r) {
+            (r) {
           subscrpaymentStatusModel = r;
         },
       );
@@ -329,10 +286,10 @@ abstract class _ProductListingStoreBase with Store {
     final response = await productListingService.getProductById(id: id);
     subscriptionLoading = false;
     response.fold(
-      (failure) {
+          (failure) {
         subscriptionModel = null;
       },
-      (productListingModel) {
+          (productListingModel) {
         subscriptionModel = productListingModel;
       },
     );
@@ -343,7 +300,7 @@ String getMetadataValue(List<Metadatum> metadata, String key) {
   return metadata
       .firstWhere(
         (element) => element.key == key,
-        orElse: () => Metadatum(id: 1, key: key, value: 'FFFDFDFD'),
-      )
+    orElse: () => Metadatum(id: 1, key: key, value: 'FFFDFDFD'),
+  )
       .value;
 }

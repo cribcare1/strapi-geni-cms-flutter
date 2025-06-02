@@ -177,6 +177,10 @@ class _SubscriptionList extends StatelessWidget {
         name: 'subscriptions',
       );
     }
+
+    print("expiredPlanList===${expiredPlanList.length}");
+    print("activePlanList===${activePlanList.length}");
+
     return ListView.builder(
       itemCount: isPrevious ? expiredPlanList.length : activePlanList.length,
       physics: const BouncingScrollPhysics(
