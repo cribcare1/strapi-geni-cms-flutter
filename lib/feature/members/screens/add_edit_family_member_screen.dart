@@ -67,6 +67,7 @@ class _AddEditFamilyMemberScreenState extends State<AddEditFamilyMemberScreen> {
     const ValueItem(label: 'Male', value: 'Male'),
     const ValueItem(label: 'Female', value: 'Female'),
     const ValueItem(label: 'Other', value: 'Other'),
+    const ValueItem(label: 'Prefer not to say', value: 'Prefer not to say'),
   ];
   List<ValueItem<String>> _relationList = [];
   late Member _member;
@@ -107,6 +108,13 @@ class _AddEditFamilyMemberScreenState extends State<AddEditFamilyMemberScreen> {
       ValueItem(label: 'Wife'.tr(), value: 'Wife'),
       if (widget.isSelf == true) ValueItem(label: 'Self'.tr(), value: 'self'),
     ];
+
+    if (widget.isSelf == true) {
+        _relationList.add(ValueItem(label: 'Self'.tr(), value: 'self'));
+      }
+    else if (!widget.edit) {
+        _relationList.add(ValueItem(label: 'More'.tr(), value: '__more__'));
+      }
 
     if (widget.edit) {
       _initializeControllers();
@@ -418,6 +426,7 @@ class _AddEditFamilyMemberScreenState extends State<AddEditFamilyMemberScreen> {
                                 return null;
                               },
                             ),
+
                             const SizedBox(height: 16),
                             const AsteriskLabel(label: 'Mobile number'),
                             const SizedBox(height: 8),

@@ -27,6 +27,13 @@ class MultiSelectFormField extends FormField<List<ValueItem<dynamic>>> {
           initialValue: selectedOptions,
           builder: (FormFieldState<List<ValueItem<dynamic>>> state) {
             final memberStore = GetIt.I<MembersStore>();
+
+            final List<ValueItem> moreRelations = [
+              ValueItem(label: 'Grandfather', value: 'Grandfather'),
+              ValueItem(label: 'Grandmother', value: 'Grandmother'),
+              ValueItem(label: 'Husband', value: 'Husband'),
+            ];
+
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -47,7 +54,39 @@ class MultiSelectFormField extends FormField<List<ValueItem<dynamic>>> {
                     child: MultiSelectDropDown(
                       searchEnabled: searchEnabled,
                       controller: controller,
-                      onOptionSelected: (selectedOptions) {
+                      onOptionSelected: (selectedOptions)  async{
+
+                        final moreOption = selectedOptions.firstWhere(
+                              (option) => option.value == '__more__',
+                          orElse: () => ValueItem(label: '', value: ''),
+                        );
+
+                        if (moreOption.value == '__more__') {
+                          selectedOptions.remove(moreOption);
+
+                          final ValueItem? selectedMore = await showModalBottomSheet<ValueItem>(
+                            context: state.context,
+                            builder: (BuildContext ctx) {
+                              return SafeArea(
+                                child: ListView(
+                                  shrinkWrap: true,
+                                  children: moreRelations.map((item) {
+                                    return ListTile(
+                                      title: Text(item.label),
+                                      onTap: () {
+                                        Navigator.pop(ctx, item);
+                                      },
+                                    );
+                                  }).toList(),
+                                ),
+                              );
+                            },
+                          );
+                          if (selectedMore != null) {
+                            selectedOptions.add(selectedMore);
+                          }
+                        }
+
                         state.didChange(selectedOptions);
                         if (onSaved != null) {
                           onSaved(selectedOptions);
